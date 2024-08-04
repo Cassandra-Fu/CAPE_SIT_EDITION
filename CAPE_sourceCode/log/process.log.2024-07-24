@@ -1,0 +1,45 @@
+2024-07-26 03:10:19,393 [root] INFO: Processing analysis data for Task #28
+2024-07-26 03:10:23,869 [root] INFO: Reports generation completed for Task #28
+2024-07-26 03:19:55,297 [root] INFO: Processing analysis data for Task #29
+2024-07-26 03:19:59,850 [root] INFO: Reports generation completed for Task #29
+2024-07-26 03:39:52,193 [root] INFO: Processing analysis data for Task #30
+2024-07-26 03:40:05,145 [root] INFO: Reports generation completed for Task #30
+2024-07-26 08:48:00,593 [root] INFO: Processing analysis data for Task #31
+2024-07-26 08:48:08,327 [Task 31] [lib.cuckoo.core.plugins] ERROR: Failed to run the reporting module "CAPASummary": 'NoneType' object has no attribute 'enabled'
+Traceback (most recent call last):
+  File "/opt/CAPEv2/utils/../lib/cuckoo/core/plugins.py", line 738, in process
+    current.run(self.results)
+  File "/opt/CAPEv2/utils/../modules/reporting/flare_capa_summary.py", line 26, in run
+    if HAVE_FLARE_CAPA and self.options.flare_capa_summary.enabled and not self.options.flare_capa_summary.on_demand:
+AttributeError: 'NoneType' object has no attribute 'enabled'
+2024-07-26 08:48:10,424 [root] INFO: Reports generation completed for Task #31
+2024-07-26 10:18:19,160 [root] INFO: Processing analysis data for Task #32
+2024-07-26 10:18:48,854 [Task 32] [lib.cuckoo.core.plugins] ERROR: Failed to run the reporting module "CAPASummary": 'NoneType' object has no attribute 'enabled'
+Traceback (most recent call last):
+  File "/opt/CAPEv2/utils/../lib/cuckoo/core/plugins.py", line 738, in process
+    current.run(self.results)
+  File "/opt/CAPEv2/utils/../modules/reporting/flare_capa_summary.py", line 26, in run
+    if HAVE_FLARE_CAPA and self.options.flare_capa_summary.enabled and not self.options.flare_capa_summary.on_demand:
+AttributeError: 'NoneType' object has no attribute 'enabled'
+2024-07-26 10:19:33,232 [root] INFO: Reports generation completed for Task #32
+2024-07-26 11:06:18,612 [root] INFO: Processing analysis data for Task #33
+2024-07-26 11:07:06,293 [root] INFO: Reports generation completed for Task #33
+2024-07-26 11:43:17,049 [root] INFO: Processing analysis data for Task #34
+2024-07-26 11:43:21,008 [root] INFO: Reports generation completed for Task #34
+2024-07-26 13:01:24,245 [root] INFO: Processing analysis data for Task #35
+2024-07-26 13:01:31,720 [Task 35] [lib.cuckoo.core.plugins] ERROR: Failed to run the reporting module "CAPASummary": 'NoneType' object has no attribute 'enabled'
+Traceback (most recent call last):
+  File "/opt/CAPEv2/utils/../lib/cuckoo/core/plugins.py", line 738, in process
+    current.run(self.results)
+  File "/opt/CAPEv2/utils/../modules/reporting/flare_capa_summary.py", line 26, in run
+    if HAVE_FLARE_CAPA and self.options.flare_capa_summary.enabled and not self.options.flare_capa_summary.on_demand:
+AttributeError: 'NoneType' object has no attribute 'enabled'
+2024-07-26 13:01:34,006 [root] INFO: Reports generation completed for Task #35
+2024-07-26 13:24:26,366 [root] INFO: Processing analysis data for Task #36
+2024-07-26 13:26:16,558 [root] INFO: Reports generation completed for Task #36
+2024-07-26 14:24:32,032 [root] INFO: Processing analysis data for Task #38
+2024-07-26 14:24:40,972 [root] INFO: Reports generation completed for Task #38
+2024-07-26 15:01:35,456 [root] INFO: Processing analysis data for Task #39
+2024-07-26 15:02:09,845 [root] INFO: Reports generation completed for Task #39
+2024-07-26 15:46:24,617 [root] INFO: Processing analysis data for Task #40
+2024-07-26 15:52:50,589 [root] INFO: Reports generation completed for Task #40
