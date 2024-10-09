@@ -1,0 +1,3 @@
+2024-08-23 11:33:40,228 [lib.cuckoo.core.scheduler] INFO: Using "physical" machine manager with max_analysis_count=0, max_machines_count=10, and max_vmstartup_count=5
+2024-08-23 11:33:40,234 [lib.cuckoo.core.scheduler] INFO: Loaded 3 machine/s
+2024-08-23 11:33:40,252 [lib.cuckoo.core.scheduler] INFO: Waiting for analysis tasks

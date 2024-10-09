@@ -1,0 +1,674 @@
+2024-07-30 00:00:04,925 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 00:00:15,007 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 00:00:25,080 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 00:00:35,158 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 00:00:45,226 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 00:00:55,297 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 00:01:05,370 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 00:01:15,440 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 00:01:25,517 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 00:01:35,592 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 00:01:45,662 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 00:01:55,728 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 00:02:05,796 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 00:02:15,867 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 00:02:25,964 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 00:02:36,036 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 00:02:46,107 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 00:03:15,605 [modules.machinery.physical] DEBUG: Machine not reachable yet after reset
+2024-07-30 00:03:18,608 [modules.machinery.physical] DEBUG: Machine not reachable yet after reset
+2024-07-30 00:03:21,614 [modules.machinery.physical] DEBUG: Machine not reachable yet after reset
+2024-07-30 00:03:24,633 [lib.cuckoo.core.resultserver] DEBUG: Task #61: Stopped tracking machine 192.168.2.42
+2024-07-30 00:03:24,656 [lib.cuckoo.core.scheduler] INFO: Disabled route 'internet'
+2024-07-30 00:03:24,685 [lib.cuckoo.core.scheduler] DEBUG: Task #61: Released database task with status True
+2024-07-30 00:03:24,688 [lib.cuckoo.core.scheduler] INFO: Task #61: analysis procedure completed
+2024-07-30 11:28:38,069 [lib.cuckoo.core.scheduler] DEBUG: Task #62: Processing task
+2024-07-30 11:28:38,989 [lib.cuckoo.core.scheduler] INFO: Task #62: File already exists at '/opt/CAPEv2/storage/binaries/b33810de1ba7b0383c7d35006a1691a6c27480516d30bf2ec4cdd173171071a3'
+2024-07-30 11:28:38,989 [lib.cuckoo.core.scheduler] INFO: Task #62: Starting analysis of FILE '/tmp/cuckoo-tmp/upload_c0lqgb1d/Themida.exe'
+2024-07-30 11:28:39,020 [lib.cuckoo.core.scheduler] INFO: Task #62: acquired machine win10clone15 (label=win10clone15, arch=x64, platform=windows)
+2024-07-30 11:28:39,041 [modules.machinery.physical] DEBUG: Checking if machine win10clone15 is running
+2024-07-30 11:28:39,042 [modules.machinery.physical] DEBUG: Getting status for machine: win10clone15
+2024-07-30 11:28:39,059 [modules.machinery.physical] DEBUG: Machine already running: win10clone15
+2024-07-30 11:28:39,901 [lib.cuckoo.core.resultserver] DEBUG: Task #62: The associated machine IP is 192.168.2.42
+2024-07-30 11:28:39,922 [lib.cuckoo.core.scheduler] INFO: Enabled route 'internet'.
+2024-07-30 11:28:39,933 [lib.cuckoo.core.plugins] DEBUG: Auxiliary module AzSniffer not found in configuration file
+2024-07-30 11:28:39,957 [modules.auxiliary.sniffer] INFO: Started sniffer with PID 252818 (interface=ens19, host=192.168.2.42, dump path=/opt/CAPEv2/storage/analyses/62/dump.pcap)
+2024-07-30 11:28:39,957 [lib.cuckoo.core.plugins] DEBUG: Started auxiliary module: Sniffer
+2024-07-30 11:28:39,975 [lib.cuckoo.core.guest] INFO: Task #62: Starting analysis on guest (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:28:39,997 [lib.cuckoo.core.guest] INFO: Task #62: Guest is running CAPE Agent 0.17 (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:28:40,224 [lib.cuckoo.core.guest] DEBUG: Task #62: Uploading analyzer to guest (id=win10clone15, ip=192.168.2.42, size=16883844)
+2024-07-30 11:28:41,310 [lib.cuckoo.core.guest] INFO: Task #62: Uploading script files to guest (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:28:41,949 [lib.cuckoo.core.resultserver] DEBUG: Task #62: live log analysis.log initialized
+2024-07-30 11:28:42,558 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file aux/DigiSig.json
+2024-07-30 11:28:42,744 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file aux/usage.log
+2024-07-30 11:28:43,675 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0001.jpg
+2024-07-30 11:28:46,399 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:28:51,450 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:28:52,144 [lib.cuckoo.core.resultserver] INFO: Task 62: Process 4064 (parent 6292): Themida.exe, path C:\Users\student4\AppData\Local\Temp\Themida.exe
+2024-07-30 11:28:56,496 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:29:01,545 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:29:06,624 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:29:11,663 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:29:16,706 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:29:21,758 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:29:26,798 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:29:31,844 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:29:36,888 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:29:41,935 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:29:46,980 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:29:52,020 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:29:54,367 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0002.jpg
+2024-07-30 11:29:54,633 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file CAPE/5cf3e90262baf7ad95b518fd132df8f0e482553ffeb3ec6365d49728d3ee3f64
+2024-07-30 11:29:57,069 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:30:02,116 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:30:07,161 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:30:12,203 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:30:17,250 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:30:22,294 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:30:27,338 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:30:32,379 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:30:37,430 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:30:42,477 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:30:45,005 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0003.jpg
+2024-07-30 11:30:47,533 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:30:48,157 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0004.jpg
+2024-07-30 11:30:52,575 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:30:57,620 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:31:02,670 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:31:07,715 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:31:12,762 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:31:17,809 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:31:22,849 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:31:27,891 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:31:32,936 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:31:37,984 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:31:43,034 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:31:48,080 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:31:53,150 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:31:58,191 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:32:03,237 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:32:08,283 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:32:13,330 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:32:18,377 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:32:23,425 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:32:28,469 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:32:33,515 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:32:38,564 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:32:43,616 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:32:48,664 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:32:53,710 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:32:58,761 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:33:03,816 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:33:08,858 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:33:13,909 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:33:18,956 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:33:24,006 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:33:29,051 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:33:34,101 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:33:39,146 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:33:44,191 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:33:49,249 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:33:54,300 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:33:59,350 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:34:04,399 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:34:09,451 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:34:14,503 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:34:19,564 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:34:24,612 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:34:29,665 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:34:34,722 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:34:39,769 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:34:44,826 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:34:49,878 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:34:54,929 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:34:59,978 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:35:05,026 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:35:10,079 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:35:15,126 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:35:20,176 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:35:25,231 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:35:30,281 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:35:35,328 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:35:40,377 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:35:45,423 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:35:50,467 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:35:55,517 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:36:00,561 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:36:05,615 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:36:10,657 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:36:15,711 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:36:20,758 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:36:25,806 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:36:30,856 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:36:35,901 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:36:40,945 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:36:45,994 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:36:51,040 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:36:56,098 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:37:01,144 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:37:06,190 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:37:11,240 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:37:16,287 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:37:21,339 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:37:26,385 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:37:31,436 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:37:36,495 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:37:41,534 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:37:46,572 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:37:51,613 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:37:56,658 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:38:01,709 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:38:06,755 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:38:11,796 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:38:16,845 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:38:21,889 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:38:26,933 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:38:31,984 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:38:37,048 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:38:42,107 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:38:47,162 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:38:52,212 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:38:57,260 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:39:02,302 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:39:07,360 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:39:12,423 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:39:17,487 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:39:22,527 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:39:27,579 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:39:32,631 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:39:37,680 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:39:42,723 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:39:47,769 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0005.jpg
+2024-07-30 11:39:47,785 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:39:52,836 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:39:56,300 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0006.jpg
+2024-07-30 11:39:57,892 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:40:02,942 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:40:04,738 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0007.jpg
+2024-07-30 11:40:05,800 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0008.jpg
+2024-07-30 11:40:06,862 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0009.jpg
+2024-07-30 11:40:07,988 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:40:08,987 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0010.jpg
+2024-07-30 11:40:11,145 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0011.jpg
+2024-07-30 11:40:11,146 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file CAPE/6901f434f6e0dfab2ad94a2547645f34f15b7acfdbe2ae725081119a8a98c5c3
+2024-07-30 11:40:12,213 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0012.jpg
+2024-07-30 11:40:13,023 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:40:18,150 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:40:23,228 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:40:24,170 [lib.cuckoo.core.resultserver] INFO: Task 62: Process 2940 (parent 4064): icsys.icn.exe, path C:\Windows\Resources\Themes\icsys.icn.exe
+2024-07-30 11:40:28,273 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:40:33,315 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:40:34,635 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0013.jpg
+2024-07-30 11:40:34,777 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file procdump/ab9b677c13a7e95212440f3c0d5a6be75aff3961263f0080882136e72d8be0ed
+2024-07-30 11:40:38,474 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:40:43,648 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:40:48,531 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0014.jpg
+2024-07-30 11:40:48,774 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:40:49,594 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0015.jpg
+2024-07-30 11:40:51,734 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0016.jpg
+2024-07-30 11:40:53,826 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0017.jpg
+2024-07-30 11:40:53,928 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:40:59,072 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:40:59,156 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0018.jpg
+2024-07-30 11:41:04,169 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:41:08,763 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0019.jpg
+2024-07-30 11:41:09,348 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:41:11,030 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0020.jpg
+2024-07-30 11:41:12,093 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0021.jpg
+2024-07-30 11:41:14,506 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:41:19,695 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:41:20,623 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0022.jpg
+2024-07-30 11:41:21,718 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0023.jpg
+2024-07-30 11:41:24,864 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:41:25,841 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file CAPE/4dc93b22e0fec885cff7a32e4c16826a31e5f930ef0b6bf22d041cc8635cdfe9
+2024-07-30 11:41:25,974 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0024.jpg
+2024-07-30 11:41:29,946 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:41:33,312 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0025.jpg
+2024-07-30 11:41:35,008 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:41:35,455 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0026.jpg
+2024-07-30 11:41:37,593 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0027.jpg
+2024-07-30 11:41:39,708 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0028.jpg
+2024-07-30 11:41:40,045 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:41:45,087 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:41:50,135 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:41:55,201 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:42:00,240 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:42:05,287 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:42:05,952 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0029.jpg
+2024-07-30 11:42:10,332 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:42:15,375 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:42:20,419 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:42:22,861 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0030.jpg
+2024-07-30 11:42:25,465 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:42:30,517 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:42:35,560 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:42:38,688 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0031.jpg
+2024-07-30 11:42:40,604 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:42:45,650 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:42:47,108 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0032.jpg
+2024-07-30 11:42:48,174 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0033.jpg
+2024-07-30 11:42:50,693 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:42:55,515 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0034.jpg
+2024-07-30 11:42:55,740 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:43:00,818 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:43:05,030 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0035.jpg
+2024-07-30 11:43:05,869 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:43:10,925 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:43:14,498 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0036.jpg
+2024-07-30 11:43:15,974 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:43:16,609 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0037.jpg
+2024-07-30 11:43:21,020 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:43:26,066 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:43:31,109 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:43:31,322 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0038.jpg
+2024-07-30 11:43:32,432 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file shots/0039.jpg
+2024-07-30 11:43:36,151 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:43:41,200 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:43:46,243 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:43:51,284 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:43:52,168 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file procdump/b93a5ab2c291dd3222e98b559545e103d29a11964539a69ffc4c15a6f0f15bc9
+2024-07-30 11:43:53,447 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file curtain/1722282228.4879572.curtain.log
+2024-07-30 11:43:56,316 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file files/e9683d0bfaf6aeef75ac70a3284b9c8b5abac2f67b21ca314154f49ee3703475
+2024-07-30 11:43:56,359 [lib.cuckoo.core.guest] DEBUG: Task #62: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:43:56,443 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file files/a487fdb86ddf424c6302c102a562e85957268664783beb9328dd84fc48181c07
+2024-07-30 11:43:56,538 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file files/890bf12cc36292de058c79fb4c54c7af16ad5e1cfc3613749536e91578d3ee38
+2024-07-30 11:43:56,542 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file files/4ff24f854ecef1913c7839553bcef20ea9f4d193406e897b5116afd95d8151a9
+2024-07-30 11:43:56,547 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file debugger/2940.log
+2024-07-30 11:43:56,559 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Trying to upload file debugger/4064.log
+2024-07-30 11:43:56,605 [lib.cuckoo.core.resultserver] DEBUG: Task #62 had connection reset by peer for <Context for b'BSON'>
+2024-07-30 11:43:56,607 [lib.cuckoo.core.resultserver] DEBUG: Task #62 had connection reset by peer for <Context for b'LOG'>
+2024-07-30 11:43:56,608 [lib.cuckoo.core.resultserver] DEBUG: Task #62 had connection reset by peer for <Context for None>
+2024-07-30 11:43:56,608 [lib.cuckoo.core.resultserver] DEBUG: Task #62 had connection reset by peer for <Context for b'BSON'>
+2024-07-30 11:43:57,365 [lib.cuckoo.core.guest] INFO: Task #completed successfully: Analysis 62 (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:43:57,459 [lib.cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Sniffer
+2024-07-30 11:43:57,460 [modules.machinery.physical] DEBUG: Getting status for machine: win10clone15
+2024-07-30 11:43:57,473 [modules.machinery.physical] DEBUG: Rebooting machine: win10clone15
+2024-07-30 11:43:58,065 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 11:44:08,134 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 11:44:18,200 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 11:44:28,271 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 11:44:38,348 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 11:44:48,423 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 11:44:58,492 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 11:45:08,563 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 11:45:18,632 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 11:45:28,719 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 11:45:38,793 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 11:45:48,884 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 11:45:58,966 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 11:46:09,038 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 11:46:19,114 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 11:46:29,184 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 11:46:39,261 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 11:46:49,343 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 11:46:59,412 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 11:47:09,489 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 11:47:19,582 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 11:47:29,651 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 11:47:39,728 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 11:47:49,802 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 11:47:59,868 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 11:48:09,937 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 11:48:20,010 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 11:48:30,081 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 11:48:59,541 [modules.machinery.physical] DEBUG: Machine not reachable yet after reset
+2024-07-30 11:49:02,559 [lib.cuckoo.core.resultserver] DEBUG: Task #62: Stopped tracking machine 192.168.2.42
+2024-07-30 11:49:02,597 [lib.cuckoo.core.scheduler] INFO: Disabled route 'internet'
+2024-07-30 11:49:02,632 [lib.cuckoo.core.scheduler] DEBUG: Task #62: Released database task with status True
+2024-07-30 11:49:02,634 [lib.cuckoo.core.scheduler] INFO: Task #62: analysis procedure completed
+2024-07-30 11:55:28,544 [lib.cuckoo.core.scheduler] DEBUG: Task #63: Processing task
+2024-07-30 11:55:28,638 [lib.cuckoo.core.scheduler] INFO: Task #63: File already exists at '/opt/CAPEv2/storage/binaries/131cee43a6f14bd9133246e87828275c30b2ad9d3036b4fcd4a08001903fa7e7'
+2024-07-30 11:55:28,639 [lib.cuckoo.core.scheduler] INFO: Task #63: Starting analysis of FILE '/tmp/cuckoo-tmp/upload_ca4tvduk/bumblebee.exe'
+2024-07-30 11:55:28,667 [lib.cuckoo.core.scheduler] INFO: Task #63: acquired machine win10clone15 (label=win10clone15, arch=x64, platform=windows)
+2024-07-30 11:55:28,686 [modules.machinery.physical] DEBUG: Checking if machine win10clone15 is running
+2024-07-30 11:55:28,686 [modules.machinery.physical] DEBUG: Getting status for machine: win10clone15
+2024-07-30 11:55:28,697 [modules.machinery.physical] DEBUG: Machine already running: win10clone15
+2024-07-30 11:55:28,843 [lib.cuckoo.core.resultserver] DEBUG: Task #63: The associated machine IP is 192.168.2.42
+2024-07-30 11:55:28,869 [lib.cuckoo.core.scheduler] INFO: Enabled route 'internet'.
+2024-07-30 11:55:28,882 [lib.cuckoo.core.plugins] DEBUG: Auxiliary module AzSniffer not found in configuration file
+2024-07-30 11:55:28,905 [modules.auxiliary.sniffer] INFO: Started sniffer with PID 254246 (interface=ens19, host=192.168.2.42, dump path=/opt/CAPEv2/storage/analyses/63/dump.pcap)
+2024-07-30 11:55:28,905 [lib.cuckoo.core.plugins] DEBUG: Started auxiliary module: Sniffer
+2024-07-30 11:55:28,930 [lib.cuckoo.core.guest] INFO: Task #63: Starting analysis on guest (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:55:28,966 [lib.cuckoo.core.guest] INFO: Task #63: Guest is running CAPE Agent 0.17 (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:55:29,180 [lib.cuckoo.core.guest] DEBUG: Task #63: Uploading analyzer to guest (id=win10clone15, ip=192.168.2.42, size=16883844)
+2024-07-30 11:55:29,985 [lib.cuckoo.core.guest] INFO: Task #63: Uploading script files to guest (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:55:30,623 [lib.cuckoo.core.resultserver] DEBUG: Task #63: live log analysis.log initialized
+2024-07-30 11:55:31,108 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file aux/DigiSig.json
+2024-07-30 11:55:31,308 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file aux/usage.log
+2024-07-30 11:55:32,228 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0001.jpg
+2024-07-30 11:55:35,085 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:55:35,396 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0002.jpg
+2024-07-30 11:55:40,149 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:55:41,459 [lib.cuckoo.core.resultserver] INFO: Task 63: Process 2472 (parent 4276): regsvr32.exe, path C:\Windows\System32\regsvr32.exe
+2024-07-30 11:55:45,191 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:55:45,817 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file CAPE/7860a7c0b881b6bad6eb73a949b1d4535b1cd6766295eec249248f7833352261
+2024-07-30 11:55:45,910 [lib.cuckoo.core.resultserver] INFO: Task 63: Process 740 (parent 612): svchost.exe, path C:\Windows\System32\svchost.exe
+2024-07-30 11:55:48,049 [lib.cuckoo.core.resultserver] INFO: Task 63: Process 5808 (parent 612): svchost.exe, path C:\Windows\System32\svchost.exe
+2024-07-30 11:55:50,233 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:55:50,607 [lib.cuckoo.core.resultserver] INFO: Task 63: Process 3568 (parent 740): WmiPrvSE.exe, path C:\Windows\System32\wbem\WmiPrvSE.exe
+2024-07-30 11:55:55,278 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:56:00,325 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:56:05,370 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:56:10,423 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:56:15,465 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:56:20,524 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:56:25,573 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:56:30,611 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:56:35,658 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:56:38,566 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0003.jpg
+2024-07-30 11:56:40,675 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0004.jpg
+2024-07-30 11:56:40,720 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:56:45,767 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:56:50,816 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:56:55,877 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:57:00,920 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:57:05,973 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:57:11,023 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:57:16,064 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:57:21,112 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:57:26,159 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:57:31,201 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:57:36,242 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:57:41,296 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:57:43,733 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0005.jpg
+2024-07-30 11:57:46,337 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:57:51,394 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:57:52,153 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0006.jpg
+2024-07-30 11:57:56,435 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:58:01,479 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:58:06,527 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:58:11,652 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:58:12,138 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0007.jpg
+2024-07-30 11:58:15,356 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0008.jpg
+2024-07-30 11:58:16,707 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:58:21,743 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:58:26,788 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:58:31,836 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:58:36,895 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:58:38,812 [lib.cuckoo.core.resultserver] INFO: Task 63: Process 4348 (parent 740): dllhost.exe, path C:\Windows\System32\dllhost.exe
+2024-07-30 11:58:41,964 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:58:47,038 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:58:52,090 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:58:56,370 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0009.jpg
+2024-07-30 11:58:57,177 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:58:59,570 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0010.jpg
+2024-07-30 11:59:02,264 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:59:07,327 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:59:07,979 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0011.jpg
+2024-07-30 11:59:12,396 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:59:17,466 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:59:22,541 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:59:26,822 [lib.cuckoo.core.resultserver] INFO: Task 63: Process 1308 (parent 740): smartscreen.exe, path C:\Windows\System32\smartscreen.exe
+2024-07-30 11:59:27,629 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:59:32,713 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:59:37,562 [lib.cuckoo.core.resultserver] INFO: Task 63: Process 3000 (parent 5808): WMIADAP.exe, path C:\Windows\System32\wbem\WMIADAP.exe
+2024-07-30 11:59:37,809 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:59:42,914 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:59:47,983 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:59:52,224 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0012.jpg
+2024-07-30 11:59:53,054 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 11:59:53,298 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0013.jpg
+2024-07-30 11:59:54,365 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0014.jpg
+2024-07-30 11:59:55,424 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0015.jpg
+2024-07-30 11:59:56,525 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0016.jpg
+2024-07-30 11:59:57,599 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0017.jpg
+2024-07-30 11:59:58,126 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:00:03,193 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:00:08,258 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:00:13,322 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:00:18,392 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:00:23,457 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:00:28,528 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:00:33,596 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:00:38,665 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:00:43,729 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:00:48,796 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:00:53,868 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:00:58,934 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:01:04,008 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:01:09,080 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:01:14,148 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:01:19,214 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:01:24,278 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:01:29,353 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:01:34,432 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:01:39,524 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:01:44,589 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:01:49,658 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:01:54,749 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:01:59,822 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:02:04,891 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:02:09,961 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:02:15,035 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:02:20,103 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:02:25,172 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:02:30,261 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:02:35,328 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:02:40,399 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:02:45,467 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:02:50,543 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:02:55,623 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:03:00,691 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:03:05,757 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:03:10,932 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:03:16,004 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:03:21,071 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:03:26,141 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:03:31,199 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:03:35,545 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0018.jpg
+2024-07-30 12:03:36,269 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:03:36,637 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0019.jpg
+2024-07-30 12:03:41,349 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:03:41,902 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0020.jpg
+2024-07-30 12:03:46,413 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:03:51,483 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:03:55,528 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0021.jpg
+2024-07-30 12:03:56,563 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:03:57,681 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0022.jpg
+2024-07-30 12:03:58,743 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0023.jpg
+2024-07-30 12:04:01,637 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:04:06,732 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:04:11,812 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:04:15,524 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0024.jpg
+2024-07-30 12:04:16,878 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:04:21,950 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:04:24,977 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0025.jpg
+2024-07-30 12:04:27,025 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:04:32,096 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:04:37,169 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:04:37,569 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0026.jpg
+2024-07-30 12:04:42,235 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:04:47,104 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0027.jpg
+2024-07-30 12:04:47,312 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:04:50,351 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0028.jpg
+2024-07-30 12:04:51,415 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0029.jpg
+2024-07-30 12:04:52,380 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:04:57,451 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:04:58,774 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0030.jpg
+2024-07-30 12:04:59,853 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0031.jpg
+2024-07-30 12:05:00,934 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0032.jpg
+2024-07-30 12:05:02,041 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0033.jpg
+2024-07-30 12:05:02,562 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:05:04,148 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0034.jpg
+2024-07-30 12:05:07,629 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:05:11,540 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0035.jpg
+2024-07-30 12:05:12,702 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:05:17,760 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:05:22,832 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:05:27,263 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0036.jpg
+2024-07-30 12:05:27,902 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:05:29,397 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0037.jpg
+2024-07-30 12:05:30,458 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0038.jpg
+2024-07-30 12:05:32,973 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:05:38,058 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:05:43,130 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:05:48,194 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:05:53,270 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:05:58,357 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:05:59,843 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0039.jpg
+2024-07-30 12:06:01,959 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0040.jpg
+2024-07-30 12:06:03,432 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:06:08,504 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:06:13,571 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:06:17,799 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0041.jpg
+2024-07-30 12:06:18,642 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:06:23,717 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:06:25,159 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0042.jpg
+2024-07-30 12:06:28,792 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:06:33,861 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:06:35,722 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0043.jpg
+2024-07-30 12:06:38,923 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0044.jpg
+2024-07-30 12:06:38,931 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:06:44,003 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:06:49,074 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:06:49,412 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0045.jpg
+2024-07-30 12:06:54,148 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:06:55,768 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0046.jpg
+2024-07-30 12:06:59,221 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:07:04,296 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:07:08,412 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0047.jpg
+2024-07-30 12:07:09,368 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:07:12,672 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0048.jpg
+2024-07-30 12:07:14,440 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:07:14,784 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0049.jpg
+2024-07-30 12:07:17,935 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0050.jpg
+2024-07-30 12:07:19,513 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:07:24,588 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:07:26,361 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0051.jpg
+2024-07-30 12:07:29,662 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:07:34,736 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:07:39,808 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:07:44,888 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:07:47,327 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0052.jpg
+2024-07-30 12:07:49,953 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:07:55,031 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:08:00,104 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:08:03,200 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0053.jpg
+2024-07-30 12:08:05,182 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:08:10,251 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:08:15,329 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:08:20,397 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:08:25,465 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:08:30,560 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:08:33,979 [lib.cuckoo.core.resultserver] INFO: Task 63: Process 5020 (parent 740): WmiPrvSE.exe, path C:\Windows\System32\wbem\WmiPrvSE.exe
+2024-07-30 12:08:35,626 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:08:40,114 [lib.cuckoo.core.resultserver] INFO: Task 63: Process 2244 (parent 740): WmiPrvSE.exe, path C:\Windows\System32\wbem\WmiPrvSE.exe
+2024-07-30 12:08:40,753 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:08:41,589 [lib.cuckoo.core.resultserver] INFO: Task 63: Process 1380 (parent 740): WmiPrvSE.exe, path C:\Windows\System32\wbem\WmiPrvSE.exe
+2024-07-30 12:08:42,462 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0054.jpg
+2024-07-30 12:08:45,892 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:08:51,045 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:08:56,113 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:09:01,234 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:09:06,305 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:09:11,379 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:09:16,494 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:09:21,761 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:09:24,485 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0055.jpg
+2024-07-30 12:09:26,867 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:09:31,936 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:09:35,462 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0056.jpg
+2024-07-30 12:09:37,134 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:09:38,921 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0057.jpg
+2024-07-30 12:09:42,215 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:09:47,297 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:09:52,383 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:09:53,132 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0058.jpg
+2024-07-30 12:09:55,148 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0059.jpg
+2024-07-30 12:09:57,458 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:09:57,751 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0060.jpg
+2024-07-30 12:10:00,825 [lib.cuckoo.core.resultserver] INFO: Task 63: Process 364 (parent 740): dllhost.exe, path C:\Windows\System32\dllhost.exe
+2024-07-30 12:10:02,531 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:10:07,613 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:10:10,588 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0061.jpg
+2024-07-30 12:10:12,682 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:10:17,753 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:10:22,830 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:10:27,899 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:10:28,170 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0062.jpg
+2024-07-30 12:10:32,972 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:10:33,689 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0063.jpg
+2024-07-30 12:10:38,057 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:10:43,134 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:10:44,048 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0064.jpg
+2024-07-30 12:10:45,756 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file shots/0065.jpg
+2024-07-30 12:10:48,203 [lib.cuckoo.core.guest] DEBUG: Task #63: Analysis is still running (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:10:49,443 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file curtain/1722283846.8261855.curtain.log
+2024-07-30 12:10:51,619 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file debugger/1308.log
+2024-07-30 12:10:51,661 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file debugger/1380.log
+2024-07-30 12:10:51,789 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file debugger/2244.log
+2024-07-30 12:10:51,802 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file debugger/2472.log
+2024-07-30 12:10:51,805 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file debugger/3000.log
+2024-07-30 12:10:51,809 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file debugger/3568.log
+2024-07-30 12:10:51,811 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file debugger/364.log
+2024-07-30 12:10:51,814 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file debugger/4348.log
+2024-07-30 12:10:51,831 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file debugger/5020.log
+2024-07-30 12:10:51,835 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file debugger/5808.log
+2024-07-30 12:10:51,850 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Trying to upload file debugger/740.log
+2024-07-30 12:10:52,302 [lib.cuckoo.core.resultserver] DEBUG: Task #63 had connection reset by peer for <Context for None>
+2024-07-30 12:10:52,302 [lib.cuckoo.core.resultserver] DEBUG: Task #63 had connection reset by peer for <Context for None>
+2024-07-30 12:10:52,303 [lib.cuckoo.core.resultserver] DEBUG: Task #63 had connection reset by peer for <Context for None>
+2024-07-30 12:10:52,304 [lib.cuckoo.core.resultserver] DEBUG: Task #63 had connection reset by peer for <Context for None>
+2024-07-30 12:10:52,305 [lib.cuckoo.core.resultserver] DEBUG: Task #63 had connection reset by peer for <Context for b'BSON'>
+2024-07-30 12:10:52,305 [lib.cuckoo.core.resultserver] DEBUG: Task #63 had connection reset by peer for <Context for None>
+2024-07-30 12:10:52,306 [lib.cuckoo.core.resultserver] DEBUG: Task #63 had connection reset by peer for <Context for b'BSON'>
+2024-07-30 12:10:52,307 [lib.cuckoo.core.resultserver] DEBUG: Task #63 had connection reset by peer for <Context for None>
+2024-07-30 12:10:52,308 [lib.cuckoo.core.resultserver] DEBUG: Task #63 had connection reset by peer for <Context for None>
+2024-07-30 12:10:52,308 [lib.cuckoo.core.resultserver] DEBUG: Task #63 had connection reset by peer for <Context for None>
+2024-07-30 12:10:52,309 [lib.cuckoo.core.resultserver] DEBUG: Task #63 had connection reset by peer for <Context for b'BSON'>
+2024-07-30 12:10:52,310 [lib.cuckoo.core.resultserver] DEBUG: Task #63 had connection reset by peer for <Context for None>
+2024-07-30 12:10:52,311 [lib.cuckoo.core.resultserver] DEBUG: Task #63 had connection reset by peer for <Context for None>
+2024-07-30 12:10:52,311 [lib.cuckoo.core.resultserver] DEBUG: Task #63 had connection reset by peer for <Context for b'BSON'>
+2024-07-30 12:10:52,312 [lib.cuckoo.core.resultserver] DEBUG: Task #63 had connection reset by peer for <Context for b'BSON'>
+2024-07-30 12:10:52,313 [lib.cuckoo.core.resultserver] DEBUG: Task #63 had connection reset by peer for <Context for b'LOG'>
+2024-07-30 12:10:52,315 [lib.cuckoo.core.resultserver] DEBUG: Task #63 had connection reset by peer for <Context for b'BSON'>
+2024-07-30 12:10:52,316 [lib.cuckoo.core.resultserver] DEBUG: Task #63 had connection reset by peer for <Context for b'BSON'>
+2024-07-30 12:10:52,317 [lib.cuckoo.core.resultserver] DEBUG: Task #63 had connection reset by peer for <Context for b'BSON'>
+2024-07-30 12:10:52,317 [lib.cuckoo.core.resultserver] DEBUG: Task #63 had connection reset by peer for <Context for None>
+2024-07-30 12:10:52,318 [lib.cuckoo.core.resultserver] DEBUG: Task #63 had connection reset by peer for <Context for None>
+2024-07-30 12:10:52,319 [lib.cuckoo.core.resultserver] DEBUG: Task #63 had connection reset by peer for <Context for b'BSON'>
+2024-07-30 12:10:52,320 [lib.cuckoo.core.resultserver] DEBUG: Task #63 had connection reset by peer for <Context for None>
+2024-07-30 12:10:52,321 [lib.cuckoo.core.resultserver] DEBUG: Task #63 had connection reset by peer for <Context for b'BSON'>
+2024-07-30 12:10:52,322 [lib.cuckoo.core.resultserver] DEBUG: Task #63 had connection reset by peer for <Context for None>
+2024-07-30 12:10:52,323 [lib.cuckoo.core.resultserver] DEBUG: Task #63 had connection reset by peer for <Context for None>
+2024-07-30 12:10:52,324 [lib.cuckoo.core.resultserver] DEBUG: Task #63 had connection reset by peer for <Context for b'BSON'>
+2024-07-30 12:10:53,258 [lib.cuckoo.core.guest] INFO: Task #completed successfully: Analysis 63 (id=win10clone15, ip=192.168.2.42)
+2024-07-30 12:10:53,340 [lib.cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Sniffer
+2024-07-30 12:10:53,341 [modules.machinery.physical] DEBUG: Getting status for machine: win10clone15
+2024-07-30 12:10:53,352 [modules.machinery.physical] DEBUG: Rebooting machine: win10clone15
+2024-07-30 12:10:53,987 [modules.machinery.physical] DEBUG: Socket killed from analysis machine due to reboot
+2024-07-30 12:10:54,048 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 12:11:04,117 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 12:11:14,194 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 12:11:24,292 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 12:11:34,363 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 12:11:44,441 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 12:11:54,516 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 12:12:04,610 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 12:12:14,682 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 12:12:24,754 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 12:12:34,825 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 12:12:44,895 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 12:12:54,960 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 12:13:05,029 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 12:13:15,103 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 12:13:25,173 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 12:13:35,235 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 12:13:45,308 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 12:13:55,375 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 12:14:05,449 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 12:14:15,520 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 12:14:25,586 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 12:14:35,652 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 12:14:45,721 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 12:14:55,788 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 12:15:05,855 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 12:15:15,926 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 12:15:26,003 [modules.machinery.physical] DEBUG: Restore operation for win10clone15 still running
+2024-07-30 12:15:55,413 [modules.machinery.physical] DEBUG: Machine not reachable yet after reset
+2024-07-30 12:15:58,418 [modules.machinery.physical] DEBUG: Machine not reachable yet after reset
+2024-07-30 12:16:01,424 [modules.machinery.physical] DEBUG: Machine not reachable yet after reset
+2024-07-30 12:16:04,444 [lib.cuckoo.core.resultserver] DEBUG: Task #63: Stopped tracking machine 192.168.2.42
+2024-07-30 12:16:04,478 [lib.cuckoo.core.scheduler] INFO: Disabled route 'internet'
+2024-07-30 12:16:04,512 [lib.cuckoo.core.scheduler] DEBUG: Task #63: Released database task with status True
+2024-07-30 12:16:04,513 [lib.cuckoo.core.scheduler] INFO: Task #63: analysis procedure completed

@@ -1,0 +1,944 @@
+2024-07-25 05:53:06,197 [root] INFO: Received keyboard interrupt, stopping.
+2024-07-25 05:55:19,981 [root] DEBUG: Importing modules...
+2024-07-25 05:55:21,274 [capa.rules] DEBUG: reading rules from directory /opt/CAPEv2/data/capa-rules
+2024-07-25 05:55:21,340 [capa.rules.cache] DEBUG: rule set cache does not exist: /home/cape/.cache/capa/capa-31be4e29.cache
+2024-07-25 05:55:21,341 [capa.rules] DEBUG: using libyaml CLoader.
+2024-07-25 05:55:21,344 [capa.rules] DEBUG: loaded rule: 'execute VBScript Javascript or JScript in memory' with scope: static-scope: function
+2024-07-25 05:55:21,346 [capa.rules] DEBUG: loaded rule: 'execute shellcode via Windows callback function' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,347 [capa.rules] DEBUG: loaded rule: 'execute shellcode via Windows fibers' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,348 [capa.rules] DEBUG: loaded rule: 'execute shellcode via CreateThreadpoolWait' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,348 [capa.rules] DEBUG: loaded rule: 'spawn thread to RWX shellcode' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,352 [capa.rules] DEBUG: loaded rule: 'execute shellcode via CopyFile2' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,354 [capa.rules] DEBUG: loaded rule: 'load Windows Common Language Runtime' with scope: static-scope: function
+2024-07-25 05:55:21,355 [capa.rules] DEBUG: loaded rule: 'run PowerShell expression' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,358 [capa.rules] DEBUG: loaded rule: 'parse PE header' with scope: static-scope: function
+2024-07-25 05:55:21,360 [capa.rules] DEBUG: loaded rule: 'inspect section memory permissions' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,362 [capa.rules] DEBUG: loaded rule: 'rebuild import table' with scope: static-scope: function
+2024-07-25 05:55:21,371 [capa.rules] DEBUG: loaded rule: 'inject DLL reflectively' with scope: static-scope: function
+2024-07-25 05:55:21,372 [capa.rules] DEBUG: loaded rule: 'access PE header' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,378 [capa.rules] DEBUG: loaded rule: 'enumerate PE sections' with scope: static-scope: function
+2024-07-25 05:55:21,380 [capa.rules] DEBUG: loaded rule: 'resolve function by parsing PE exports' with scope: static-scope: function
+2024-07-25 05:55:21,381 [capa.rules] DEBUG: loaded rule: 'persist via shell profile or rc file' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,381 [capa.rules] DEBUG: loaded rule: 'act as WinDbg extension' with scope: static-scope: file, dynamic-scope: file
+2024-07-25 05:55:21,382 [capa.rules] DEBUG: loaded rule: 'act as Share Provider DLL' with scope: static-scope: file, dynamic-scope: file
+2024-07-25 05:55:21,383 [capa.rules] DEBUG: loaded rule: 'persist via .desktop autostart' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,384 [capa.rules] DEBUG: loaded rule: 'act as DNS server plugin DLL' with scope: static-scope: file, dynamic-scope: file
+2024-07-25 05:55:21,385 [capa.rules] DEBUG: loaded rule: 'act as Time Provider DLL' with scope: static-scope: file, dynamic-scope: file
+2024-07-25 05:55:21,386 [capa.rules] DEBUG: loaded rule: 'create shortcut via IShellLink' with scope: static-scope: function
+2024-07-25 05:55:21,389 [capa.rules] DEBUG: loaded rule: 'act as DHCP server callout DLL' with scope: static-scope: file, dynamic-scope: file
+2024-07-25 05:55:21,390 [capa.rules] DEBUG: loaded rule: 'persist via Active Setup registry key' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,392 [capa.rules] DEBUG: loaded rule: 'persist via AppInit_DLLs registry key' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,393 [capa.rules] DEBUG: loaded rule: 'disable AppInit_DLLs code signature enforcement' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,394 [capa.rules] DEBUG: loaded rule: 'persist via GinaDLL registry key' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,401 [capa.rules] DEBUG: loaded rule: 'persist via Winlogon Helper DLL registry key' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,403 [capa.rules] DEBUG: loaded rule: 'persist via Run registry key' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,404 [capa.rules] DEBUG: loaded rule: 'act as password filter DLL' with scope: static-scope: file, dynamic-scope: file
+2024-07-25 05:55:21,405 [capa.rules] DEBUG: loaded rule: 'act as credential manager DLL' with scope: static-scope: file, dynamic-scope: file
+2024-07-25 05:55:21,406 [capa.rules] DEBUG: loaded rule: 'act as SubAuthentication Package DLL' with scope: static-scope: file, dynamic-scope: file
+2024-07-25 05:55:21,407 [capa.rules] DEBUG: loaded rule: 'act as Security Support Provider DLL' with scope: static-scope: file, dynamic-scope: file
+2024-07-25 05:55:21,408 [capa.rules] DEBUG: loaded rule: 'act as Office COM add-in' with scope: static-scope: file
+2024-07-25 05:55:21,408 [capa.rules] DEBUG: loaded rule: 'act as Word WLL add-in' with scope: static-scope: file, dynamic-scope: file
+2024-07-25 05:55:21,409 [capa.rules] DEBUG: loaded rule: 'act as Excel XLL add-in' with scope: static-scope: file, dynamic-scope: file
+2024-07-25 05:55:21,417 [capa.rules] DEBUG: loaded rule: 'persist via IIS module' with scope: static-scope: file, dynamic-scope: file
+2024-07-25 05:55:21,418 [capa.rules] DEBUG: loaded rule: 'persist via ISAPI extension' with scope: static-scope: file, dynamic-scope: file
+2024-07-25 05:55:21,420 [capa.rules] DEBUG: loaded rule: 'persist via Windows service' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,421 [capa.rules] DEBUG: loaded rule: 'persist via rc script' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,422 [capa.rules] DEBUG: loaded rule: 'get startup folder' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-25 05:55:21,422 [capa.rules] DEBUG: loaded rule: 'write file to startup folder' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,424 [capa.rules] DEBUG: loaded rule: 'schedule task via at' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,425 [capa.rules] DEBUG: loaded rule: 'schedule task via schtasks' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,426 [capa.rules] DEBUG: loaded rule: 'schedule task via ITaskScheduler' with scope: static-scope: function
+2024-07-25 05:55:21,427 [capa.rules] DEBUG: loaded rule: 'act as Exchange transport agent' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,433 [capa.rules] DEBUG: loaded rule: 'empty recycle bin quietly' with scope: static-scope: basic block
+2024-07-25 05:55:21,434 [capa.rules] DEBUG: loaded rule: 'set registry key via offline registry library' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,435 [capa.rules] DEBUG: loaded rule: 'query or enumerate registry key' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,436 [capa.rules] DEBUG: loaded rule: 'query registry key via offline registry library' with scope: static-scope: function, dynamic-scope: call
+2024-07-25 05:55:21,436 [capa.rules] DEBUG: loaded rule: 'open registry key via offline registry library' with scope: static-scope: function, dynamic-scope: call
+2024-07-25 05:55:21,438 [capa.rules] DEBUG: loaded rule: 'query or enumerate registry value' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,445 [capa.rules] DEBUG: loaded rule: 'create registry key via offline registry library' with scope: static-scope: function, dynamic-scope: call
+2024-07-25 05:55:21,446 [capa.rules] DEBUG: loaded rule: 'delete registry key' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,447 [capa.rules] DEBUG: loaded rule: 'delete registry value' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,449 [capa.rules] DEBUG: loaded rule: 'set registry value' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,450 [capa.rules] DEBUG: loaded rule: 'enumerate minifilter drivers' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,451 [capa.rules] DEBUG: loaded rule: 'register minifilter driver' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-25 05:55:21,451 [capa.rules] DEBUG: loaded rule: 'start minifilter driver' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-25 05:55:21,452 [capa.rules] DEBUG: loaded rule: 'enumerate gui resources' with scope: static-scope: function, dynamic-scope: call
+2024-07-25 05:55:21,453 [capa.rules] DEBUG: loaded rule: 'switch active desktop' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,454 [capa.rules] DEBUG: loaded rule: 'set application hook' with scope: static-scope: instruction, dynamic-scope: call
+2024-07-25 05:55:21,455 [capa.rules] DEBUG: loaded rule: 'find taskbar' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,455 [capa.rules] DEBUG: loaded rule: 'hide the Windows taskbar' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,456 [capa.rules] DEBUG: loaded rule: 'references logon banner' with scope: static-scope: basic block, dynamic-scope: thread
+2024-07-25 05:55:21,457 [capa.rules] DEBUG: loaded rule: 'set console window title' with scope: static-scope: function, dynamic-scope: call
+2024-07-25 05:55:21,465 [capa.rules] DEBUG: loaded rule: 'get graphical window text' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,466 [capa.rules] DEBUG: loaded rule: 'find graphical window' with scope: static-scope: function, dynamic-scope: call
+2024-07-25 05:55:21,467 [capa.rules] DEBUG: loaded rule: 'hide graphical window from taskbar' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-25 05:55:21,467 [capa.rules] DEBUG: loaded rule: 'hide graphical window' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-25 05:55:21,468 [capa.rules] DEBUG: loaded rule: 'change the wallpaper' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-25 05:55:21,469 [capa.rules] DEBUG: loaded rule: 'lock the desktop' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,473 [capa.rules] DEBUG: loaded rule: 'disable code signing' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,474 [capa.rules] DEBUG: loaded rule: 'get UEFI variable' with scope: static-scope: function, dynamic-scope: call
+2024-07-25 05:55:21,475 [capa.rules] DEBUG: loaded rule: 'set UEFI variable' with scope: static-scope: function, dynamic-scope: call
+2024-07-25 05:55:21,476 [capa.rules] DEBUG: loaded rule: 'manipulate safe mode programs' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,477 [capa.rules] DEBUG: loaded rule: 'manipulate boot configuration' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,478 [capa.rules] DEBUG: loaded rule: 'suspend thread' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-25 05:55:21,479 [capa.rules] DEBUG: loaded rule: 'allocate thread local storage' with scope: static-scope: function, dynamic-scope: call
+2024-07-25 05:55:21,479 [capa.rules] DEBUG: loaded rule: 'set thread local storage value' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,485 [capa.rules] DEBUG: loaded rule: 'resume thread' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-25 05:55:21,486 [capa.rules] DEBUG: loaded rule: 'enumerate threads' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,487 [capa.rules] DEBUG: loaded rule: 'create thread' with scope: static-scope: basic block, dynamic-scope: thread
+2024-07-25 05:55:21,488 [capa.rules] DEBUG: loaded rule: 'terminate thread' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-25 05:55:21,489 [capa.rules] DEBUG: loaded rule: 'create semaphore on Linux' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,490 [capa.rules] DEBUG: loaded rule: 'lock file' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-25 05:55:21,490 [capa.rules] DEBUG: loaded rule: 'unlock semaphore on Linux' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,491 [capa.rules] DEBUG: loaded rule: 'check mutex and exit' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,492 [capa.rules] DEBUG: loaded rule: 'create mutex' with scope: static-scope: function, dynamic-scope: call
+2024-07-25 05:55:21,497 [capa.rules] DEBUG: loaded rule: 'check mutex' with scope: static-scope: basic block, dynamic-scope: thread
+2024-07-25 05:55:21,498 [capa.rules] DEBUG: loaded rule: 'lock semaphore on Linux' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,498 [capa.rules] DEBUG: loaded rule: 'get installed programs' with scope: static-scope: function
+2024-07-25 05:55:21,504 [capa.rules] DEBUG: loaded rule: 'write clipboard data' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,505 [capa.rules] DEBUG: loaded rule: 'read clipboard data' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,506 [capa.rules] DEBUG: loaded rule: 'open clipboard' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,507 [capa.rules] DEBUG: loaded rule: 'shutdown system' with scope: static-scope: function, dynamic-scope: call
+2024-07-25 05:55:21,508 [capa.rules] DEBUG: loaded rule: 'get hostname' with scope: static-scope: function, dynamic-scope: call
+2024-07-25 05:55:21,508 [capa.rules] DEBUG: loaded rule: 'get kernel version' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,510 [capa.rules] DEBUG: loaded rule: 'check OS version' with scope: static-scope: function
+2024-07-25 05:55:21,511 [capa.rules] DEBUG: loaded rule: 'get Linux distribution' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,517 [capa.rules] DEBUG: loaded rule: 'get system information on Windows' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,519 [capa.rules] DEBUG: loaded rule: 'get common file path' with scope: static-scope: function, dynamic-scope: call
+2024-07-25 05:55:21,520 [capa.rules] DEBUG: loaded rule: 'create virtual file system in .NET' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,521 [capa.rules] DEBUG: loaded rule: 'reference absolute stream path on Windows' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-25 05:55:21,522 [capa.rules] DEBUG: loaded rule: 'bypass Mark of the Web' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,523 [capa.rules] DEBUG: loaded rule: 'change file permission on Linux' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-25 05:55:21,523 [capa.rules] DEBUG: loaded rule: 'get Windows directory from KUSER_SHARED_DATA' with scope: static-scope: basic block
+2024-07-25 05:55:21,524 [capa.rules] DEBUG: loaded rule: 'get file system object information' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-25 05:55:21,525 [capa.rules] DEBUG: loaded rule: 'get Program Files directory' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-25 05:55:21,526 [capa.rules] DEBUG: loaded rule: 'enumerate files on Linux' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,529 [capa.rules] DEBUG: loaded rule: 'enumerate files recursively' with scope: static-scope: function
+2024-07-25 05:55:21,531 [capa.rules] DEBUG: loaded rule: 'enumerate files on Windows' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,537 [capa.rules] DEBUG: loaded rule: 'move file' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,539 [capa.rules] DEBUG: loaded rule: 'set file attributes' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-25 05:55:21,539 [capa.rules] DEBUG: loaded rule: 'get file size' with scope: static-scope: function, dynamic-scope: call
+2024-07-25 05:55:21,541 [capa.rules] DEBUG: loaded rule: 'get file attributes' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-25 05:55:21,542 [capa.rules] DEBUG: loaded rule: 'get file version info' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,543 [capa.rules] DEBUG: loaded rule: 'copy file' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,544 [capa.rules] DEBUG: loaded rule: 'check if file exists' with scope: static-scope: function, dynamic-scope: call
+2024-07-25 05:55:21,546 [capa.rules] DEBUG: loaded rule: 'delete file' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,547 [capa.rules] DEBUG: loaded rule: 'delete directory' with scope: static-scope: function, dynamic-scope: call
+2024-07-25 05:55:21,549 [capa.rules] DEBUG: loaded rule: 'write file on Linux' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,551 [capa.rules] DEBUG: loaded rule: 'write file on Windows' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,553 [capa.rules] DEBUG: loaded rule: 'read file via mapping' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,554 [capa.rules] DEBUG: loaded rule: 'read file on Linux' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,555 [capa.rules] DEBUG: loaded rule: 'read file on Windows' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,556 [capa.rules] DEBUG: loaded rule: 'read .ini file' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,569 [capa.rules] DEBUG: loaded rule: 'read virtual disk' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,571 [capa.rules] DEBUG: loaded rule: 'create directory' with scope: static-scope: function, dynamic-scope: call
+2024-07-25 05:55:21,571 [capa.rules] DEBUG: loaded rule: 'bypass Windows File Protection' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,572 [capa.rules] DEBUG: loaded rule: 'create new application domain in .NET' with scope: static-scope: file
+2024-07-25 05:55:21,573 [capa.rules] DEBUG: loaded rule: 'resolve path using msvcrt' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-25 05:55:21,574 [capa.rules] DEBUG: loaded rule: 'accept command line arguments' with scope: static-scope: function, dynamic-scope: call
+2024-07-25 05:55:21,575 [capa.rules] DEBUG: loaded rule: 'run as service' with scope: static-scope: file, dynamic-scope: file
+2024-07-25 05:55:21,576 [capa.rules] DEBUG: loaded rule: 'query service status' with scope: static-scope: function, dynamic-scope: call
+2024-07-25 05:55:21,577 [capa.rules] DEBUG: loaded rule: 'pause service' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,578 [capa.rules] DEBUG: loaded rule: 'continue service' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,584 [capa.rules] DEBUG: loaded rule: 'query service configuration' with scope: static-scope: function, dynamic-scope: call
+2024-07-25 05:55:21,585 [capa.rules] DEBUG: loaded rule: 'modify service' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,586 [capa.rules] DEBUG: loaded rule: 'enumerate services' with scope: static-scope: function, dynamic-scope: call
+2024-07-25 05:55:21,587 [capa.rules] DEBUG: loaded rule: 'start service' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,587 [capa.rules] DEBUG: loaded rule: 'delete service' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,588 [capa.rules] DEBUG: loaded rule: 'create service' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,592 [capa.rules] DEBUG: loaded rule: 'stop service' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,594 [capa.rules] DEBUG: loaded rule: 'install driver' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-25 05:55:21,595 [capa.rules] DEBUG: loaded rule: 'create device object' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,596 [capa.rules] DEBUG: loaded rule: 'disable driver code integrity' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,597 [capa.rules] DEBUG: loaded rule: 'interact with driver via IOCTL' with scope: static-scope: basic block, dynamic-scope: thread
+2024-07-25 05:55:21,598 [capa.rules] DEBUG: loaded rule: 'unload driver' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-25 05:55:21,599 [capa.rules] DEBUG: loaded rule: 'get domain controller name' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,600 [capa.rules] DEBUG: loaded rule: 'enumerate domain computers via LDAP' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,602 [capa.rules] DEBUG: loaded rule: 'get domain information' with scope: static-scope: function, dynamic-scope: call
+2024-07-25 05:55:21,609 [capa.rules] DEBUG: loaded rule: 'set TCP connection state' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,610 [capa.rules] DEBUG: loaded rule: 'check Internet connectivity via WinINet' with scope: static-scope: basic block
+2024-07-25 05:55:21,611 [capa.rules] DEBUG: loaded rule: 'get local IPv4 addresses' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,612 [capa.rules] DEBUG: loaded rule: 'register network filter via WFP API' with scope: static-scope: function, dynamic-scope: call
+2024-07-25 05:55:21,613 [capa.rules] DEBUG: loaded rule: 'copy network traffic' with scope: static-scope: function, dynamic-scope: call
+2024-07-25 05:55:21,614 [capa.rules] DEBUG: loaded rule: 'get networking interfaces' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,676 [capa.rules] DEBUG: loaded rule: 'enumerate devices by category' with scope: static-scope: function
+2024-07-25 05:55:21,677 [capa.rules] DEBUG: loaded rule: 'get keyboard layout' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,679 [capa.rules] DEBUG: loaded rule: 'simulate CTRL ALT DEL' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,680 [capa.rules] DEBUG: loaded rule: 'get memory information' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,681 [capa.rules] DEBUG: loaded rule: 'get memory capacity' with scope: static-scope: function, dynamic-scope: call
+2024-07-25 05:55:21,682 [capa.rules] DEBUG: loaded rule: 'manipulate CD-ROM drive' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,682 [capa.rules] DEBUG: loaded rule: 'swap mouse buttons' with scope: static-scope: function, dynamic-scope: call
+2024-07-25 05:55:21,683 [capa.rules] DEBUG: loaded rule: 'get number of processors' with scope: static-scope: function
+2024-07-25 05:55:21,685 [capa.rules] DEBUG: loaded rule: 'get CPU information' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,685 [capa.rules] DEBUG: loaded rule: 'get number of processor cores' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,686 [capa.rules] DEBUG: loaded rule: 'enumerate disk properties' with scope: static-scope: function
+2024-07-25 05:55:21,689 [capa.rules] DEBUG: loaded rule: 'get disk information' with scope: static-scope: function, dynamic-scope: call
+2024-07-25 05:55:21,691 [capa.rules] DEBUG: loaded rule: 'get disk size' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,692 [capa.rules] DEBUG: loaded rule: 'manipulate console buffer' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,693 [capa.rules] DEBUG: loaded rule: 'query environment variable' with scope: static-scope: function, dynamic-scope: call
+2024-07-25 05:55:21,694 [capa.rules] DEBUG: loaded rule: 'get COMSPEC environment variable' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,695 [capa.rules] DEBUG: loaded rule: 'set environment variable' with scope: static-scope: function, dynamic-scope: call
+2024-07-25 05:55:21,696 [capa.rules] DEBUG: loaded rule: 'access the Windows event log' with scope: static-scope: function, dynamic-scope: call
+2024-07-25 05:55:21,697 [capa.rules] DEBUG: loaded rule: 'read data from CLFS log container' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,698 [capa.rules] DEBUG: loaded rule: 'print debug messages' with scope: static-scope: function, dynamic-scope: call
+2024-07-25 05:55:21,700 [capa.rules] DEBUG: loaded rule: 'connect to WMI namespace via WbemLocator' with scope: static-scope: function
+2024-07-25 05:55:21,702 [capa.rules] DEBUG: loaded rule: 'get process heap force flags' with scope: static-scope: basic block
+2024-07-25 05:55:21,702 [capa.rules] DEBUG: loaded rule: 'map section object' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,704 [capa.rules] DEBUG: loaded rule: 'get process heap flags' with scope: static-scope: basic block
+2024-07-25 05:55:21,705 [capa.rules] DEBUG: loaded rule: 'enumerate process modules' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,706 [capa.rules] DEBUG: loaded rule: 'attach user process memory' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,707 [capa.rules] DEBUG: loaded rule: 'allocate user process RWX memory' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,708 [capa.rules] DEBUG: loaded rule: 'allocate or change RWX memory' with scope: static-scope: basic block, dynamic-scope: thread
+2024-07-25 05:55:21,709 [capa.rules] DEBUG: loaded rule: 'inject dll' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,710 [capa.rules] DEBUG: loaded rule: 'process ghostly hollowing' with scope: static-scope: function, dynamic-scope: call
+2024-07-25 05:55:21,711 [capa.rules] DEBUG: loaded rule: 'use process Doppelgänging' with scope: static-scope: file, dynamic-scope: file
+2024-07-25 05:55:21,712 [capa.rules] DEBUG: loaded rule: 'free user process memory' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,713 [capa.rules] DEBUG: loaded rule: 'inject pe' with scope: static-scope: function
+2024-07-25 05:55:21,714 [capa.rules] DEBUG: loaded rule: 'use process replacement' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,715 [capa.rules] DEBUG: loaded rule: 'inject shellcode using extra window memory' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,716 [capa.rules] DEBUG: loaded rule: 'inject shellcode using window subclass procedure' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,717 [capa.rules] DEBUG: loaded rule: 'inject shellcode using a file mapping object' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,718 [capa.rules] DEBUG: loaded rule: 'inject thread' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,721 [capa.rules] DEBUG: loaded rule: 'inject APC' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,722 [capa.rules] DEBUG: loaded rule: 'hijack thread execution' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,722 [capa.rules] DEBUG: loaded rule: 'acquire debug privileges' with scope: static-scope: basic block, dynamic-scope: thread
+2024-07-25 05:55:21,723 [capa.rules] DEBUG: loaded rule: 'modify access privileges' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,724 [capa.rules] DEBUG: loaded rule: 'enumerate processes via NtQuerySystemInformation' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-25 05:55:21,725 [capa.rules] DEBUG: loaded rule: 'find process by PID' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,726 [capa.rules] DEBUG: loaded rule: 'get Explorer PID' with scope: static-scope: basic block, dynamic-scope: thread
+2024-07-25 05:55:21,727 [capa.rules] DEBUG: loaded rule: 'enumerate processes on remote desktop session host' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,731 [capa.rules] DEBUG: loaded rule: 'enumerate processes' with scope: static-scope: function, dynamic-scope: thread
+2024-07-25 05:55:21,732 [capa.rules] DEBUG: loaded rule: 'create process memory minidump' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-25 05:55:21,733 [capa.rules] DEBUG: loaded rule: 'create process on Windows' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-25 05:55:21,734 [capa.rules] DEBUG: loaded rule: 'create process suspended' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-25 05:55:21,737 [capa.loader] DEBUG: reading signatures from directory /opt/CAPEv2/data/flare-signatures
+2024-07-25 05:55:21,738 [capa.loader] DEBUG: found signature file: /opt/CAPEv2/data/flare-signatures/1_flare_msvc_rtf_32_64.sig
+2024-07-25 05:55:21,739 [capa.loader] DEBUG: found signature file: /opt/CAPEv2/data/flare-signatures/2_flare_msvc_atlmfc_32_64.sig
+2024-07-25 05:55:21,739 [capa.loader] DEBUG: found signature file: /opt/CAPEv2/data/flare-signatures/3_flare_common_libs.sig
+2024-07-25 05:55:21,807 [root] DEBUG: Imported "auxiliary" modules:
+2024-07-25 05:55:21,808 [root] DEBUG: 	 |-- AzSniffer
+2024-07-25 05:55:21,808 [root] DEBUG: 	 `-- Sniffer
+2024-07-25 05:55:21,809 [root] DEBUG: Imported "processing" modules:
+2024-07-25 05:55:21,809 [root] DEBUG: 	 |-- CAPE
+2024-07-25 05:55:21,809 [root] DEBUG: 	 |-- AnalysisInfo
+2024-07-25 05:55:21,810 [root] DEBUG: 	 |-- Autoruns
+2024-07-25 05:55:21,810 [root] DEBUG: 	 |-- BehaviorAnalysis
+2024-07-25 05:55:21,811 [root] DEBUG: 	 |-- Debug
+2024-07-25 05:55:21,811 [root] DEBUG: 	 |-- HollowsHunter
+2024-07-25 05:55:21,812 [root] DEBUG: 	 |-- NetworkAnalysis
+2024-07-25 05:55:21,812 [root] DEBUG: 	 |-- ProcessMemory
+2024-07-25 05:55:21,812 [root] DEBUG: 	 |-- script_log_processing
+2024-07-25 05:55:21,813 [root] DEBUG: 	 |-- Suricata
+2024-07-25 05:55:21,813 [root] DEBUG: 	 |-- TraceeAnalysis
+2024-07-25 05:55:21,813 [root] DEBUG: 	 `-- UrlAnalysis
+2024-07-25 05:55:21,814 [root] DEBUG: Imported "signatures" modules:
+2024-07-25 05:55:21,814 [root] DEBUG: 	 |-- ClamAV
+2024-07-25 05:55:21,814 [root] DEBUG: 	 |-- KnownVirustotal
+2024-07-25 05:55:21,815 [root] DEBUG: 	 |-- BadCerts
+2024-07-25 05:55:21,815 [root] DEBUG: 	 |-- BadSSLCerts
+2024-07-25 05:55:21,815 [root] DEBUG: 	 |-- ZeusP2P
+2024-07-25 05:55:21,816 [root] DEBUG: 	 |-- ZeusURL
+2024-07-25 05:55:21,816 [root] DEBUG: 	 |-- AthenaHttp
+2024-07-25 05:55:21,817 [root] DEBUG: 	 |-- DirtJumper
+2024-07-25 05:55:21,817 [root] DEBUG: 	 |-- Drive
+2024-07-25 05:55:21,817 [root] DEBUG: 	 |-- Drive2
+2024-07-25 05:55:21,818 [root] DEBUG: 	 |-- Madness
+2024-07-25 05:55:21,819 [root] DEBUG: 	 |-- FamilyProxyBack
+2024-07-25 05:55:21,820 [root] DEBUG: 	 |-- FlareCAPAAntiAnalysis
+2024-07-25 05:55:21,820 [root] DEBUG: 	 |-- FlareCAPACollection
+2024-07-25 05:55:21,821 [root] DEBUG: 	 |-- FlareCAPACompiler
+2024-07-25 05:55:21,821 [root] DEBUG: 	 |-- FlareCAPADataManipulation
+2024-07-25 05:55:21,821 [root] DEBUG: 	 |-- FlareCAPAExecutable
+2024-07-25 05:55:21,822 [root] DEBUG: 	 |-- FlareCAPAHostInteration
+2024-07-25 05:55:21,822 [root] DEBUG: 	 |-- FlareCAPAcommunication
+2024-07-25 05:55:21,822 [root] DEBUG: 	 |-- FlareCAPALib
+2024-07-25 05:55:21,823 [root] DEBUG: 	 |-- FlareCAPALinking
+2024-07-25 05:55:21,823 [root] DEBUG: 	 |-- FlareCAPALoadCode
+2024-07-25 05:55:21,823 [root] DEBUG: 	 |-- FlareCAPAMalwareFamily
+2024-07-25 05:55:21,824 [root] DEBUG: 	 |-- FlareCAPANursery
+2024-07-25 05:55:21,824 [root] DEBUG: 	 |-- FlareCAPAPersistence
+2024-07-25 05:55:21,825 [root] DEBUG: 	 |-- FlareCAPARuntime
+2024-07-25 05:55:21,825 [root] DEBUG: 	 |-- FlareCAPATargeting
+2024-07-25 05:55:21,825 [root] DEBUG: 	 |-- Log4j
+2024-07-25 05:55:21,826 [root] DEBUG: 	 |-- MimicsExtension
+2024-07-25 05:55:21,826 [root] DEBUG: 	 |-- NetworkCountryDistribution
+2024-07-25 05:55:21,826 [root] DEBUG: 	 |-- NetworkMultipleDirectIPConnections
+2024-07-25 05:55:21,827 [root] DEBUG: 	 |-- NetworkCnCHTTP
+2024-07-25 05:55:21,827 [root] DEBUG: 	 |-- NetworkHTTPPOST
+2024-07-25 05:55:21,827 [root] DEBUG: 	 |-- NetworkIPEXE
+2024-07-25 05:55:21,828 [root] DEBUG: 	 |-- NetworkDGA
+2024-07-25 05:55:21,828 [root] DEBUG: 	 |-- NetworkDGAFraunhofer
+2024-07-25 05:55:21,829 [root] DEBUG: 	 |-- NetworkDynDNS
+2024-07-25 05:55:21,829 [root] DEBUG: 	 |-- NetworkExcessiveUDP
+2024-07-25 05:55:21,830 [root] DEBUG: 	 |-- NetworkHTTP
+2024-07-25 05:55:21,830 [root] DEBUG: 	 |-- NetworkICMP
+2024-07-25 05:55:21,832 [root] DEBUG: 	 |-- NetworkIRC
+2024-07-25 05:55:21,832 [root] DEBUG: 	 |-- NetworkOpenProxy
+2024-07-25 05:55:21,832 [root] DEBUG: 	 |-- NetworkP2P
+2024-07-25 05:55:21,833 [root] DEBUG: 	 |-- NetworkQuestionableHost
+2024-07-25 05:55:21,834 [root] DEBUG: 	 |-- NetworkQuestionableHttpPath
+2024-07-25 05:55:21,835 [root] DEBUG: 	 |-- NetworkQuestionableHttpsPath
+2024-07-25 05:55:21,835 [root] DEBUG: 	 |-- NetworkSMTP
+2024-07-25 05:55:21,836 [root] DEBUG: 	 |-- TorGateway
+2024-07-25 05:55:21,836 [root] DEBUG: 	 |-- BuildLangID
+2024-07-25 05:55:21,836 [root] DEBUG: 	 |-- ResourceLangID
+2024-07-25 05:55:21,837 [root] DEBUG: 	 |-- overlay
+2024-07-25 05:55:21,837 [root] DEBUG: 	 |-- PackerUnknownPESectionName
+2024-07-25 05:55:21,837 [root] DEBUG: 	 |-- ASPackPacked
+2024-07-25 05:55:21,838 [root] DEBUG: 	 |-- AspireCryptPacked
+2024-07-25 05:55:21,838 [root] DEBUG: 	 |-- BedsProtectorPacked
+2024-07-25 05:55:21,838 [root] DEBUG: 	 |-- ConfuserPacked
+2024-07-25 05:55:21,839 [root] DEBUG: 	 |-- EnigmaPacked
+2024-07-25 05:55:21,839 [root] DEBUG: 	 |-- PackerEntropy
+2024-07-25 05:55:21,839 [root] DEBUG: 	 |-- MPressPacked
+2024-07-25 05:55:21,840 [root] DEBUG: 	 |-- NatePacked
+2024-07-25 05:55:21,840 [root] DEBUG: 	 |-- NsPacked
+2024-07-25 05:55:21,840 [root] DEBUG: 	 |-- SmartAssemblyPacked
+2024-07-25 05:55:21,841 [root] DEBUG: 	 |-- SpicesPacked
+2024-07-25 05:55:21,841 [root] DEBUG: 	 |-- ThemidaPacked
+2024-07-25 05:55:21,841 [root] DEBUG: 	 |-- ThemidaPackedSection
+2024-07-25 05:55:21,842 [root] DEBUG: 	 |-- TitanPacked
+2024-07-25 05:55:21,842 [root] DEBUG: 	 |-- UPXCompressed
+2024-07-25 05:55:21,842 [root] DEBUG: 	 |-- VMPPacked
+2024-07-25 05:55:21,843 [root] DEBUG: 	 |-- YodaPacked
+2024-07-25 05:55:21,843 [root] DEBUG: 	 |-- PDF_Annot_URLs
+2024-07-25 05:55:21,844 [root] DEBUG: 	 |-- Polymorphic
+2024-07-25 05:55:21,844 [root] DEBUG: 	 |-- PunchPlusPlusPCREs
+2024-07-25 05:55:21,844 [root] DEBUG: 	 |-- Procmem_Yara
+2024-07-25 05:55:21,845 [root] DEBUG: 	 |-- CheckIP
+2024-07-25 05:55:21,845 [root] DEBUG: 	 |-- Authenticode
+2024-07-25 05:55:21,845 [root] DEBUG: 	 |-- InvalidAuthenticodeSignature
+2024-07-25 05:55:21,846 [root] DEBUG: 	 |-- DotNetAnomaly
+2024-07-25 05:55:21,846 [root] DEBUG: 	 |-- Static_Java
+2024-07-25 05:55:21,846 [root] DEBUG: 	 |-- Static_PDF
+2024-07-25 05:55:21,847 [root] DEBUG: 	 |-- PEAnomaly
+2024-07-25 05:55:21,847 [root] DEBUG: 	 |-- PECompileTimeStomping
+2024-07-25 05:55:21,847 [root] DEBUG: 	 |-- StaticPEPDBPath
+2024-07-25 05:55:21,848 [root] DEBUG: 	 |-- RATConfig
+2024-07-25 05:55:21,848 [root] DEBUG: 	 |-- VersionInfoAnomaly
+2024-07-25 05:55:21,848 [root] DEBUG: 	 |-- StealthNetwork
+2024-07-25 05:55:21,849 [root] DEBUG: 	 |-- SuricataAlert
+2024-07-25 05:55:21,849 [root] DEBUG: 	 |-- VolDevicetree1
+2024-07-25 05:55:21,849 [root] DEBUG: 	 |-- VolHandles1
+2024-07-25 05:55:21,852 [root] DEBUG: 	 |-- VolLdrModules1
+2024-07-25 05:55:21,853 [root] DEBUG: 	 |-- VolLdrModules2
+2024-07-25 05:55:21,853 [root] DEBUG: 	 |-- VolMalfind1
+2024-07-25 05:55:21,853 [root] DEBUG: 	 |-- VolMalfind2
+2024-07-25 05:55:21,854 [root] DEBUG: 	 |-- VolModscan1
+2024-07-25 05:55:21,854 [root] DEBUG: 	 |-- VolSvcscan1
+2024-07-25 05:55:21,855 [root] DEBUG: 	 |-- VolSvcscan2
+2024-07-25 05:55:21,855 [root] DEBUG: 	 |-- VolSvcscan3
+2024-07-25 05:55:21,855 [root] DEBUG: 	 |-- WHOIS_Create
+2024-07-25 05:55:21,856 [root] DEBUG: 	 |-- AccessesMailslot
+2024-07-25 05:55:21,856 [root] DEBUG: 	 |-- AccessesNetlogonRegkey
+2024-07-25 05:55:21,857 [root] DEBUG: 	 |-- AccessesPublicFolder
+2024-07-25 05:55:21,857 [root] DEBUG: 	 |-- AccessesSysvol
+2024-07-25 05:55:21,857 [root] DEBUG: 	 |-- WritesSysvol
+2024-07-25 05:55:21,858 [root] DEBUG: 	 |-- AddsAdminUser
+2024-07-25 05:55:21,858 [root] DEBUG: 	 |-- AddsUser
+2024-07-25 05:55:21,859 [root] DEBUG: 	 |-- OverwritesAdminPassword
+2024-07-25 05:55:21,859 [root] DEBUG: 	 |-- anomalous_deletefile
+2024-07-25 05:55:21,859 [root] DEBUG: 	 |-- AntiAnalysisDetectFile
+2024-07-25 05:55:21,860 [root] DEBUG: 	 |-- AntiAnalysisDetectReg
+2024-07-25 05:55:21,860 [root] DEBUG: 	 |-- QihooDetectLibs
+2024-07-25 05:55:21,860 [root] DEBUG: 	 |-- AhnlabDetectLibs
+2024-07-25 05:55:21,861 [root] DEBUG: 	 |-- AvastDetectLibs
+2024-07-25 05:55:21,861 [root] DEBUG: 	 |-- BitdefenderDetectLibs
+2024-07-25 05:55:21,862 [root] DEBUG: 	 |-- BullguardDetectLibs
+2024-07-25 05:55:21,862 [root] DEBUG: 	 |-- ModifiesAttachmentManager
+2024-07-25 05:55:21,862 [root] DEBUG: 	 |-- AntiAVDetectFile
+2024-07-25 05:55:21,863 [root] DEBUG: 	 |-- AntiAVDetectReg
+2024-07-25 05:55:21,863 [root] DEBUG: 	 |-- EmsisoftDetectLibs
+2024-07-25 05:55:21,863 [root] DEBUG: 	 |-- QurbDetectLibs
+2024-07-25 05:55:21,864 [root] DEBUG: 	 |-- AntiAVServiceStop
+2024-07-25 05:55:21,864 [root] DEBUG: 	 |-- AntiAVSRP
+2024-07-25 05:55:21,866 [root] DEBUG: 	 |-- AntiAVWhitespace
+2024-07-25 05:55:21,866 [root] DEBUG: 	 |-- antidebug_addvectoredexceptionhandler
+2024-07-25 05:55:21,867 [root] DEBUG: 	 |-- APIOverrideDetectLibs
+2024-07-25 05:55:21,867 [root] DEBUG: 	 |-- antidebug_checkremotedebuggerpresent
+2024-07-25 05:55:21,868 [root] DEBUG: 	 |-- antidebug_debugactiveprocess
+2024-07-25 05:55:21,868 [root] DEBUG: 	 |-- AntiDBGDevices
+2024-07-25 05:55:21,868 [root] DEBUG: 	 |-- antidebug_gettickcount
+2024-07-25 05:55:21,869 [root] DEBUG: 	 |-- antidebug_guardpages
+2024-07-25 05:55:21,869 [root] DEBUG: 	 |-- antidebug_ntcreatethreadex
+2024-07-25 05:55:21,869 [root] DEBUG: 	 |-- BullguardDetectLibs
+2024-07-25 05:55:21,870 [root] DEBUG: 	 |-- antidebug_ntsetinformationthread
+2024-07-25 05:55:21,870 [root] DEBUG: 	 |-- antidebug_outputdebugstring
+2024-07-25 05:55:21,870 [root] DEBUG: 	 |-- antidebug_setunhandledexceptionfilter
+2024-07-25 05:55:21,871 [root] DEBUG: 	 |-- AntiDBGWindows
+2024-07-25 05:55:21,871 [root] DEBUG: 	 |-- AntiEmuWinDefend
+2024-07-25 05:55:21,872 [root] DEBUG: 	 |-- WineDetectReg
+2024-07-25 05:55:21,872 [root] DEBUG: 	 |-- WineDetectFunc
+2024-07-25 05:55:21,872 [root] DEBUG: 	 |-- AntiSandboxCheckUserdomain
+2024-07-25 05:55:21,873 [root] DEBUG: 	 |-- AntiCuckoo
+2024-07-25 05:55:21,873 [root] DEBUG: 	 |-- CuckooDetectFiles
+2024-07-25 05:55:21,873 [root] DEBUG: 	 |-- CuckooCrash
+2024-07-25 05:55:21,874 [root] DEBUG: 	 |-- AntiSandboxForegroundWindow
+2024-07-25 05:55:21,874 [root] DEBUG: 	 |-- FortinetDetectFiles
+2024-07-25 05:55:21,875 [root] DEBUG: 	 |-- SandboxJoeAnubisDetectFiles
+2024-07-25 05:55:21,875 [root] DEBUG: 	 |-- HookMouse
+2024-07-25 05:55:21,875 [root] DEBUG: 	 |-- AntiSandboxRestart
+2024-07-25 05:55:21,876 [root] DEBUG: 	 |-- SandboxieDetectLibs
+2024-07-25 05:55:21,876 [root] DEBUG: 	 |-- AntisandboxSboxieMutex
+2024-07-25 05:55:21,877 [root] DEBUG: 	 |-- AntiSandboxSboxieObjects
+2024-07-25 05:55:21,877 [root] DEBUG: 	 |-- AntiSandboxScriptTimer
+2024-07-25 05:55:21,877 [root] DEBUG: 	 |-- AntiSandboxSleep
+2024-07-25 05:55:21,878 [root] DEBUG: 	 |-- SunbeltDetectFiles
+2024-07-25 05:55:21,878 [root] DEBUG: 	 |-- SunbeltDetectLibs
+2024-07-25 05:55:21,878 [root] DEBUG: 	 |-- AntiSandboxSuspend
+2024-07-25 05:55:21,879 [root] DEBUG: 	 |-- ThreatTrackDetectFiles
+2024-07-25 05:55:21,879 [root] DEBUG: 	 |-- Unhook
+2024-07-25 05:55:21,880 [root] DEBUG: 	 |-- BochsDetectKeys
+2024-07-25 05:55:21,880 [root] DEBUG: 	 |-- AntiVMDirectoryObjects
+2024-07-25 05:55:21,880 [root] DEBUG: 	 |-- AntiVMBios
+2024-07-25 05:55:21,881 [root] DEBUG: 	 |-- AntiVMCPU
+2024-07-25 05:55:21,881 [root] DEBUG: 	 |-- DiskInformation
+2024-07-25 05:55:21,881 [root] DEBUG: 	 |-- SetupAPIDiskInformation
+2024-07-25 05:55:21,882 [root] DEBUG: 	 |-- AntiVMDiskReg
+2024-07-25 05:55:21,882 [root] DEBUG: 	 |-- AntiVMSCSI
+2024-07-25 05:55:21,882 [root] DEBUG: 	 |-- AntiVMServices
+2024-07-25 05:55:21,883 [root] DEBUG: 	 |-- AntiVMSystem
+2024-07-25 05:55:21,883 [root] DEBUG: 	 |-- HyperVDetectKeys
+2024-07-25 05:55:21,884 [root] DEBUG: 	 |-- AntiVMChecksAvailableMemory
+2024-07-25 05:55:21,884 [root] DEBUG: 	 |-- NetworkAdapters
+2024-07-25 05:55:21,885 [root] DEBUG: 	 |-- ParallelsDetectKeys
+2024-07-25 05:55:21,885 [root] DEBUG: 	 |-- VBoxDetectDevices
+2024-07-25 05:55:21,885 [root] DEBUG: 	 |-- VBoxDetectFiles
+2024-07-25 05:55:21,886 [root] DEBUG: 	 |-- VBoxDetectKeys
+2024-07-25 05:55:21,886 [root] DEBUG: 	 |-- VBoxDetectLibs
+2024-07-25 05:55:21,886 [root] DEBUG: 	 |-- VBoxDetectProvname
+2024-07-25 05:55:21,887 [root] DEBUG: 	 |-- VBoxDetectWindow
+2024-07-25 05:55:21,887 [root] DEBUG: 	 |-- VMwareDetectDevices
+2024-07-25 05:55:21,888 [root] DEBUG: 	 |-- VMwareDetectEvent
+2024-07-25 05:55:21,888 [root] DEBUG: 	 |-- VMwareDetectFiles
+2024-07-25 05:55:21,888 [root] DEBUG: 	 |-- VMwareDetectKeys
+2024-07-25 05:55:21,889 [root] DEBUG: 	 |-- VMwareDetectLibs
+2024-07-25 05:55:21,889 [root] DEBUG: 	 |-- VMwareDetectMutexes
+2024-07-25 05:55:21,890 [root] DEBUG: 	 |-- VPCDetectFiles
+2024-07-25 05:55:21,890 [root] DEBUG: 	 |-- VPCDetectKeys
+2024-07-25 05:55:21,890 [root] DEBUG: 	 |-- VPCDetectMutex
+2024-07-25 05:55:21,891 [root] DEBUG: 	 |-- XenDetectKeys
+2024-07-25 05:55:21,891 [root] DEBUG: 	 |-- APISpamming
+2024-07-25 05:55:21,891 [root] DEBUG: 	 |-- api_uuidfromstringa
+2024-07-25 05:55:21,892 [root] DEBUG: 	 |-- AsyncRatMutex
+2024-07-25 05:55:21,892 [root] DEBUG: 	 |-- GulpixBehavior
+2024-07-25 05:55:21,892 [root] DEBUG: 	 |-- KetricanRegkeys
+2024-07-25 05:55:21,893 [root] DEBUG: 	 |-- OkrumMutexes
+2024-07-25 05:55:21,893 [root] DEBUG: 	 |-- Cridex
+2024-07-25 05:55:21,894 [root] DEBUG: 	 |-- Geodo
+2024-07-25 05:55:21,894 [root] DEBUG: 	 |-- Prinimalka
+2024-07-25 05:55:21,894 [root] DEBUG: 	 |-- SpyEyeMutexes
+2024-07-25 05:55:21,895 [root] DEBUG: 	 |-- ZeusMutexes
+2024-07-25 05:55:21,895 [root] DEBUG: 	 |-- BCDEditCommand
+2024-07-25 05:55:21,896 [root] DEBUG: 	 |-- BitcoinOpenCL
+2024-07-25 05:55:21,897 [root] DEBUG: 	 |-- AccessesPrimaryPartition
+2024-07-25 05:55:21,898 [root] DEBUG: 	 |-- Bootkit
+2024-07-25 05:55:21,898 [root] DEBUG: 	 |-- DirectHDDAccess
+2024-07-25 05:55:21,899 [root] DEBUG: 	 |-- EnumeratesPhysicalDrives
+2024-07-25 05:55:21,899 [root] DEBUG: 	 |-- PhysicalDriveAccess
+2024-07-25 05:55:21,899 [root] DEBUG: 	 |-- PotentialOverWriteMBR
+2024-07-25 05:55:21,900 [root] DEBUG: 	 |-- SuspiciousIoctlSCSIPassthough
+2024-07-25 05:55:21,900 [root] DEBUG: 	 |-- Ruskill
+2024-07-25 05:55:21,900 [root] DEBUG: 	 |-- BrowserAddon
+2024-07-25 05:55:21,901 [root] DEBUG: 	 |-- ChromiumBrowserExtensionDirectory
+2024-07-25 05:55:21,901 [root] DEBUG: 	 |-- BrowserHelperObject
+2024-07-25 05:55:21,902 [root] DEBUG: 	 |-- BrowserNeeded
+2024-07-25 05:55:21,902 [root] DEBUG: 	 |-- ModifyProxy
+2024-07-25 05:55:21,902 [root] DEBUG: 	 |-- BrowserScanbox
+2024-07-25 05:55:21,903 [root] DEBUG: 	 |-- BrowserSecurity
+2024-07-25 05:55:21,903 [root] DEBUG: 	 |-- browser_startpage
+2024-07-25 05:55:21,904 [root] DEBUG: 	 |-- FirefoxDisablesProcessPerTab
+2024-07-25 05:55:21,904 [root] DEBUG: 	 |-- IEDisablesProcessPerTab
+2024-07-25 05:55:21,904 [root] DEBUG: 	 |-- OdbcconfBypass
+2024-07-25 05:55:21,905 [root] DEBUG: 	 |-- RegSrv32SquiblydooDLLLoad
+2024-07-25 05:55:21,905 [root] DEBUG: 	 |-- SquiblydooBypass
+2024-07-25 05:55:21,905 [root] DEBUG: 	 |-- SquiblytwoBypass
+2024-07-25 05:55:21,906 [root] DEBUG: 	 |-- BypassFirewall
+2024-07-25 05:55:21,906 [root] DEBUG: 	 |-- UACBypassCMSTP
+2024-07-25 05:55:21,907 [root] DEBUG: 	 |-- UACBypassCMSTPCOM
+2024-07-25 05:55:21,907 [root] DEBUG: 	 |-- UACBypassDelegateExecuteSdclt
+2024-07-25 05:55:21,907 [root] DEBUG: 	 |-- UACBypassEventvwr
+2024-07-25 05:55:21,908 [root] DEBUG: 	 |-- UACBypassFodhelper
+2024-07-25 05:55:21,908 [root] DEBUG: 	 |-- CAPEExtractedContent
+2024-07-25 05:55:21,908 [root] DEBUG: 	 |-- CarberpMutexes
+2024-07-25 05:55:21,909 [root] DEBUG: 	 |-- ClearsLogs
+2024-07-25 05:55:21,909 [root] DEBUG: 	 |-- ClickfraudCookies
+2024-07-25 05:55:21,909 [root] DEBUG: 	 |-- ClickfraudVolume
+2024-07-25 05:55:21,910 [root] DEBUG: 	 |-- CmdlineObfuscation
+2024-07-25 05:55:21,910 [root] DEBUG: 	 |-- CmdlineSwitches
+2024-07-25 05:55:21,911 [root] DEBUG: 	 |-- CmdlineTerminate
+2024-07-25 05:55:21,911 [root] DEBUG: 	 |-- CommandLineForFilesWildCard
+2024-07-25 05:55:21,911 [root] DEBUG: 	 |-- CommandLineHTTPLink
+2024-07-25 05:55:21,912 [root] DEBUG: 	 |-- CommandLineLongString
+2024-07-25 05:55:21,913 [root] DEBUG: 	 |-- CommandLineReversedHTTPLink
+2024-07-25 05:55:21,913 [root] DEBUG: 	 |-- LongCommandline
+2024-07-25 05:55:21,913 [root] DEBUG: 	 |-- PowershellRenamedCommandLine
+2024-07-25 05:55:21,913 [root] DEBUG: 	 |-- SystemAccountDiscoveryCMD
+2024-07-25 05:55:21,913 [root] DEBUG: 	 |-- SystemCurrentlyLoggedinUserCMD
+2024-07-25 05:55:21,913 [root] DEBUG: 	 |-- SystemInfoDiscoveryCMD
+2024-07-25 05:55:21,913 [root] DEBUG: 	 |-- SystemInfoDiscoveryPWSH
+2024-07-25 05:55:21,914 [root] DEBUG: 	 |-- SystemNetworkDiscoveryCMD
+2024-07-25 05:55:21,914 [root] DEBUG: 	 |-- SystemNetworkDiscoveryPWSH
+2024-07-25 05:55:21,914 [root] DEBUG: 	 |-- SystemUserDiscoveryCMD
+2024-07-25 05:55:21,914 [root] DEBUG: 	 |-- CompilesDotNetCode
+2024-07-25 05:55:21,914 [root] DEBUG: 	 |-- CopiesSelf
+2024-07-25 05:55:21,914 [root] DEBUG: 	 |-- CreatesExe
+2024-07-25 05:55:21,914 [root] DEBUG: 	 |-- CreatesLargeKey
+2024-07-25 05:55:21,914 [root] DEBUG: 	 |-- CreatesNullValue
+2024-07-25 05:55:21,915 [root] DEBUG: 	 |-- CredWiz
+2024-07-25 05:55:21,915 [root] DEBUG: 	 |-- EnablesWDigest
+2024-07-25 05:55:21,915 [root] DEBUG: 	 |-- VaultCmd
+2024-07-25 05:55:21,915 [root] DEBUG: 	 |-- FileCredentialStoreAccess
+2024-07-25 05:55:21,915 [root] DEBUG: 	 |-- FileCredentialStoreWrite
+2024-07-25 05:55:21,915 [root] DEBUG: 	 |-- LsassCredentialDumping
+2024-07-25 05:55:21,915 [root] DEBUG: 	 |-- RegistryCredentialDumping
+2024-07-25 05:55:21,915 [root] DEBUG: 	 |-- RegistryCredentialStoreAccess
+2024-07-25 05:55:21,916 [root] DEBUG: 	 |-- RegistryLSASecretsAccess
+2024-07-25 05:55:21,916 [root] DEBUG: 	 |-- ComsvcsCredentialDump
+2024-07-25 05:55:21,916 [root] DEBUG: 	 |-- CriticalProcess
+2024-07-25 05:55:21,916 [root] DEBUG: 	 |-- CryptGenKey
+2024-07-25 05:55:21,916 [root] DEBUG: 	 |-- CryptominingStratumCommand
+2024-07-25 05:55:21,916 [root] DEBUG: 	 |-- MINERS
+2024-07-25 05:55:21,916 [root] DEBUG: 	 |-- CVE_2014_6332
+2024-07-25 05:55:21,916 [root] DEBUG: 	 |-- CVE2015_2419_JS
+2024-07-25 05:55:21,916 [root] DEBUG: 	 |-- CVE_2016_0189
+2024-07-25 05:55:21,917 [root] DEBUG: 	 |-- CVE_2016_7200
+2024-07-25 05:55:21,917 [root] DEBUG: 	 |-- CypherITMutexes
+2024-07-25 05:55:21,917 [root] DEBUG: 	 |-- DarkCometRegkeys
+2024-07-25 05:55:21,917 [root] DEBUG: 	 |-- DatopLoader
+2024-07-25 05:55:21,917 [root] DEBUG: 	 |-- DeadConnect
+2024-07-25 05:55:21,917 [root] DEBUG: 	 |-- DeadLink
+2024-07-25 05:55:21,917 [root] DEBUG: 	 |-- DebugsSelf
+2024-07-25 05:55:21,917 [root] DEBUG: 	 |-- DecoyDocument
+2024-07-25 05:55:21,918 [root] DEBUG: 	 |-- DecoyImage
+2024-07-25 05:55:21,918 [root] DEBUG: 	 |-- DeepFreezeMutex
+2024-07-25 05:55:21,918 [root] DEBUG: 	 |-- DeletesExecutedFiles
+2024-07-25 05:55:21,918 [root] DEBUG: 	 |-- DeletesSelf
+2024-07-25 05:55:21,918 [root] DEBUG: 	 |-- DeletesShadowCopies
+2024-07-25 05:55:21,918 [root] DEBUG: 	 |-- DeletesSystemStateBackup
+2024-07-25 05:55:21,918 [root] DEBUG: 	 |-- DEPBypass
+2024-07-25 05:55:21,919 [root] DEBUG: 	 |-- DEPDisable
+2024-07-25 05:55:21,919 [root] DEBUG: 	 |-- DisablesAppLaunch
+2024-07-25 05:55:21,919 [root] DEBUG: 	 |-- DisablesAutomaticAppTermination
+2024-07-25 05:55:21,919 [root] DEBUG: 	 |-- DisablesAppVirtualiztion
+2024-07-25 05:55:21,919 [root] DEBUG: 	 |-- DisablesBackups
+2024-07-25 05:55:21,919 [root] DEBUG: 	 |-- DisablesBrowserWarn
+2024-07-25 05:55:21,919 [root] DEBUG: 	 |-- DisablesContextMenus
+2024-07-25 05:55:21,920 [root] DEBUG: 	 |-- DisablesCPLDisplay
+2024-07-25 05:55:21,920 [root] DEBUG: 	 |-- DisablesCrashdumps
+2024-07-25 05:55:21,920 [root] DEBUG: 	 |-- DisablesMappedDrivesAutodisconnect
+2024-07-25 05:55:21,920 [root] DEBUG: 	 |-- DisablesEventLogging
+2024-07-25 05:55:21,920 [root] DEBUG: 	 |-- DisableFolderOptions
+2024-07-25 05:55:21,920 [root] DEBUG: 	 |-- DisablesNotificationCenter
+2024-07-25 05:55:21,920 [root] DEBUG: 	 |-- DisablesPowerOptions
+2024-07-25 05:55:21,920 [root] DEBUG: 	 |-- DisablesRestoreDefaultState
+2024-07-25 05:55:21,921 [root] DEBUG: 	 |-- DisableRunCommand
+2024-07-25 05:55:21,921 [root] DEBUG: 	 |-- DisablesSecurity
+2024-07-25 05:55:21,921 [root] DEBUG: 	 |-- DisablesSmartScreen
+2024-07-25 05:55:21,921 [root] DEBUG: 	 |-- DisablesSPDY
+2024-07-25 05:55:21,921 [root] DEBUG: 	 |-- DisablesStartMenuSearch
+2024-07-25 05:55:21,921 [root] DEBUG: 	 |-- DisablesSystemRestore
+2024-07-25 05:55:21,921 [root] DEBUG: 	 |-- DisablesUAC
+2024-07-25 05:55:21,921 [root] DEBUG: 	 |-- DisablesWER
+2024-07-25 05:55:21,922 [root] DEBUG: 	 |-- DisablesWFP
+2024-07-25 05:55:21,922 [root] DEBUG: 	 |-- DisablesWindowsDefender
+2024-07-25 05:55:21,922 [root] DEBUG: 	 |-- DisablesWindowsDefenderDISM
+2024-07-25 05:55:21,922 [root] DEBUG: 	 |-- DisablesWindowsDefenderLogging
+2024-07-25 05:55:21,922 [root] DEBUG: 	 |-- RemovesWindowsDefenderContextMenu
+2024-07-25 05:55:21,922 [root] DEBUG: 	 |-- WindowsDefenderPowerShell
+2024-07-25 05:55:21,922 [root] DEBUG: 	 |-- DisablesWindowsFileProtection
+2024-07-25 05:55:21,922 [root] DEBUG: 	 |-- DisablesWindowsUpdate
+2024-07-25 05:55:21,923 [root] DEBUG: 	 |-- DisablesWindowsFirewall
+2024-07-25 05:55:21,923 [root] DEBUG: 	 |-- DllLoadUncommonFileTypes
+2024-07-25 05:55:21,923 [root] DEBUG: 	 |-- DocScriptEXEDrop
+2024-07-25 05:55:21,923 [root] DEBUG: 	 |-- AdfindDomainEnumeration
+2024-07-25 05:55:21,923 [root] DEBUG: 	 |-- DomainEnumerationCommands
+2024-07-25 05:55:21,923 [root] DEBUG: 	 |-- AndromutMutexes
+2024-07-25 05:55:21,923 [root] DEBUG: 	 |-- DownloaderCabby
+2024-07-25 05:55:21,923 [root] DEBUG: 	 |-- GuLoaderAPIs
+2024-07-25 05:55:21,924 [root] DEBUG: 	 |-- PhorpiexMutexes
+2024-07-25 05:55:21,924 [root] DEBUG: 	 |-- ProtonBotMutexes
+2024-07-25 05:55:21,924 [root] DEBUG: 	 |-- DriverFilterManager
+2024-07-25 05:55:21,924 [root] DEBUG: 	 |-- DriverLoad
+2024-07-25 05:55:21,924 [root] DEBUG: 	 |-- Dropper
+2024-07-25 05:55:21,924 [root] DEBUG: 	 |-- EXEDropper_JS
+2024-07-25 05:55:21,924 [root] DEBUG: 	 |-- dynamic_function_loading
+2024-07-25 05:55:21,924 [root] DEBUG: 	 |-- DLLArchiveExecution
+2024-07-25 05:55:21,925 [root] DEBUG: 	 |-- LNKArchiveExecution
+2024-07-25 05:55:21,925 [root] DEBUG: 	 |-- ScriptArchiveExecution
+2024-07-25 05:55:21,925 [root] DEBUG: 	 |-- EncryptedIOC
+2024-07-25 05:55:21,925 [root] DEBUG: 	 |-- Excel4MacroUrls
+2024-07-25 05:55:21,925 [root] DEBUG: 	 |-- Crash
+2024-07-25 05:55:21,925 [root] DEBUG: 	 |-- ProcessCreationSuspiciousLocation
+2024-07-25 05:55:21,925 [root] DEBUG: 	 |-- exploit_getbasekerneladdress
+2024-07-25 05:55:21,925 [root] DEBUG: 	 |-- exploit_gethaldispatchtable
+2024-07-25 05:55:21,926 [root] DEBUG: 	 |-- ExploitHeapspray
+2024-07-25 05:55:21,926 [root] DEBUG: 	 |-- SpoolerAccess
+2024-07-25 05:55:21,926 [root] DEBUG: 	 |-- SpoolerSvcStart
+2024-07-25 05:55:21,926 [root] DEBUG: 	 |-- KoadicAPIs
+2024-07-25 05:55:21,926 [root] DEBUG: 	 |-- KoadicNetworkActivity
+2024-07-25 05:55:21,926 [root] DEBUG: 	 |-- Modiloader_APIs
+2024-07-25 05:55:21,926 [root] DEBUG: 	 |-- MappedDrivesUAC
+2024-07-25 05:55:21,926 [root] DEBUG: 	 |-- SystemMetrics
+2024-07-25 05:55:21,926 [root] DEBUG: 	 |-- Generic_Phish
+2024-07-25 05:55:21,927 [root] DEBUG: 	 |-- HidesRecycleBinIcon
+2024-07-25 05:55:21,927 [root] DEBUG: 	 |-- HTTP_Request
+2024-07-25 05:55:21,927 [root] DEBUG: 	 |-- ApocalypseStealerFileBehavior
+2024-07-25 05:55:21,927 [root] DEBUG: 	 |-- ArkeiFiles
+2024-07-25 05:55:21,927 [root] DEBUG: 	 |-- AzorultMutexes
+2024-07-25 05:55:21,927 [root] DEBUG: 	 |-- BitcoinWallet
+2024-07-25 05:55:21,927 [root] DEBUG: 	 |-- BrowserStealer
+2024-07-25 05:55:21,927 [root] DEBUG: 	 |-- InfostealerBrowserPassword
+2024-07-25 05:55:21,928 [root] DEBUG: 	 |-- CookiesStealer
+2024-07-25 05:55:21,928 [root] DEBUG: 	 |-- CryptBotFiles
+2024-07-25 05:55:21,928 [root] DEBUG: 	 |-- CryptBotNetwork
+2024-07-25 05:55:21,928 [root] DEBUG: 	 |-- EchelonFiles
+2024-07-25 05:55:21,928 [root] DEBUG: 	 |-- FTPStealer
+2024-07-25 05:55:21,928 [root] DEBUG: 	 |-- IMStealer
+2024-07-25 05:55:21,928 [root] DEBUG: 	 |-- KeyLogger
+2024-07-25 05:55:21,928 [root] DEBUG: 	 |-- EmailStealer
+2024-07-25 05:55:21,928 [root] DEBUG: 	 |-- MassLoggerArtifacts
+2024-07-25 05:55:21,929 [root] DEBUG: 	 |-- MassLoggerFiles
+2024-07-25 05:55:21,929 [root] DEBUG: 	 |-- MassLoggerVersion
+2024-07-25 05:55:21,929 [root] DEBUG: 	 |-- PoullightFiles
+2024-07-25 05:55:21,929 [root] DEBUG: 	 |-- PurpleWaveMutexes
+2024-07-25 05:55:21,929 [root] DEBUG: 	 |-- PurpleWaveNetworkAcivity
+2024-07-25 05:55:21,929 [root] DEBUG: 	 |-- QuilClipperMutexes
+2024-07-25 05:55:21,929 [root] DEBUG: 	 |-- QuilClipperNetworkBehavior
+2024-07-25 05:55:21,929 [root] DEBUG: 	 |-- QulabFiles
+2024-07-25 05:55:21,930 [root] DEBUG: 	 |-- QulabMutexes
+2024-07-25 05:55:21,930 [root] DEBUG: 	 |-- RaccoonInfoStealerMutex
+2024-07-25 05:55:21,930 [root] DEBUG: 	 |-- raccoon
+2024-07-25 05:55:21,930 [root] DEBUG: 	 |-- CapturesScreenshot
+2024-07-25 05:55:21,930 [root] DEBUG: 	 |-- vidar
+2024-07-25 05:55:21,930 [root] DEBUG: 	 |-- InjectionCRT
+2024-07-25 05:55:21,930 [root] DEBUG: 	 |-- InjectionExplorer
+2024-07-25 05:55:21,930 [root] DEBUG: 	 |-- InjectionExtension
+2024-07-25 05:55:21,931 [root] DEBUG: 	 |-- InjectionNetworkTraffic
+2024-07-25 05:55:21,931 [root] DEBUG: 	 |-- InjectionRUNPE
+2024-07-25 05:55:21,931 [root] DEBUG: 	 |-- InjectionRWX
+2024-07-25 05:55:21,931 [root] DEBUG: 	 |-- injection_themeinitapihook
+2024-07-25 05:55:21,931 [root] DEBUG: 	 |-- Internet_Dropper
+2024-07-25 05:55:21,931 [root] DEBUG: 	 |-- IPC_NamedPipe
+2024-07-25 05:55:21,931 [root] DEBUG: 	 |-- JS_Phish
+2024-07-25 05:55:21,931 [root] DEBUG: 	 |-- JS_SuspiciousRedirect
+2024-07-25 05:55:21,931 [root] DEBUG: 	 |-- malicious_dynamic_function_loading
+2024-07-25 05:55:21,932 [root] DEBUG: 	 |-- EncryptPCInfo
+2024-07-25 05:55:21,932 [root] DEBUG: 	 |-- EnryptDataAgentTeslaHTTP
+2024-07-25 05:55:21,932 [root] DEBUG: 	 |-- EnryptDataAgentTeslaHTTPT2
+2024-07-25 05:55:21,932 [root] DEBUG: 	 |-- EnryptDataNanoCore
+2024-07-25 05:55:21,932 [root] DEBUG: 	 |-- MartiansIE
+2024-07-25 05:55:21,932 [root] DEBUG: 	 |-- MartiansOffice
+2024-07-25 05:55:21,932 [root] DEBUG: 	 |-- MimicsAgent
+2024-07-25 05:55:21,933 [root] DEBUG: 	 |-- MimicsFiletime
+2024-07-25 05:55:21,933 [root] DEBUG: 	 |-- MimicsIcon
+2024-07-25 05:55:21,933 [root] DEBUG: 	 |-- MasqueradesProcessName
+2024-07-25 05:55:21,933 [root] DEBUG: 	 |-- MimikatzModules
+2024-07-25 05:55:21,933 [root] DEBUG: 	 |-- QuilMinerNetworkBehavior
+2024-07-25 05:55:21,933 [root] DEBUG: 	 |-- ModifiesCerts
+2024-07-25 05:55:21,933 [root] DEBUG: 	 |-- DotNetCLRUsageLogKnob
+2024-07-25 05:55:21,933 [root] DEBUG: 	 |-- Modifies_HostFile
+2024-07-25 05:55:21,933 [root] DEBUG: 	 |-- ModifiesOEMInformation
+2024-07-25 05:55:21,934 [root] DEBUG: 	 |-- ModifySecurityCenterWarnings
+2024-07-25 05:55:21,934 [root] DEBUG: 	 |-- ModifiesUACNotify
+2024-07-25 05:55:21,934 [root] DEBUG: 	 |-- ModifiesDesktopWallpaper
+2024-07-25 05:55:21,934 [root] DEBUG: 	 |-- ZoneID
+2024-07-25 05:55:21,934 [root] DEBUG: 	 |-- move_file_on_reboot
+2024-07-25 05:55:21,934 [root] DEBUG: 	 |-- Multiple_UA
+2024-07-25 05:55:21,934 [root] DEBUG: 	 |-- NetworkAnomaly
+2024-07-25 05:55:21,934 [root] DEBUG: 	 |-- NetworkBIND
+2024-07-25 05:55:21,935 [root] DEBUG: 	 |-- NetworkCnCHTTPSArchive
+2024-07-25 05:55:21,935 [root] DEBUG: 	 |-- NetworkCnCHTTPSFreeWebHosting
+2024-07-25 05:55:21,935 [root] DEBUG: 	 |-- NetworkCnCHTTPSGeneric
+2024-07-25 05:55:21,935 [root] DEBUG: 	 |-- NetworkCnCHTTPSInteractsh
+2024-07-25 05:55:21,935 [root] DEBUG: 	 |-- NetworkCnCHTTPSOpenSource
+2024-07-25 05:55:21,935 [root] DEBUG: 	 |-- NetworkCnCHTTPSPasteSite
+2024-07-25 05:55:21,935 [root] DEBUG: 	 |-- NetworkCnCHTTPSPayload
+2024-07-25 05:55:21,935 [root] DEBUG: 	 |-- NetworkCnCHTTPSServiceInterface
+2024-07-25 05:55:21,936 [root] DEBUG: 	 |-- NetworkCnCHTTPSSocialMedia
+2024-07-25 05:55:21,936 [root] DEBUG: 	 |-- NetworkCnCHTTPSTelegram
+2024-07-25 05:55:21,936 [root] DEBUG: 	 |-- NetworkCnCHTTPSTempStorageSite
+2024-07-25 05:55:21,936 [root] DEBUG: 	 |-- NetworkCnCHTTPSTempURLDNS
+2024-07-25 05:55:21,936 [root] DEBUG: 	 |-- NetworkCnCHTTPSURLShortenerSite
+2024-07-25 05:55:21,936 [root] DEBUG: 	 |-- NetworkCnCHTTPSUserAgent
+2024-07-25 05:55:21,936 [root] DEBUG: 	 |-- NetworkCnCSMTPSExfil
+2024-07-25 05:55:21,936 [root] DEBUG: 	 |-- NetworkCnCSMTPSGeneric
+2024-07-25 05:55:21,937 [root] DEBUG: 	 |-- NetworkDNSBlockChain
+2024-07-25 05:55:21,937 [root] DEBUG: 	 |-- NetworkDNSIDN
+2024-07-25 05:55:21,937 [root] DEBUG: 	 |-- NetworkDNSOpenNIC
+2024-07-25 05:55:21,937 [root] DEBUG: 	 |-- NetworkDNSPasteSite
+2024-07-25 05:55:21,937 [root] DEBUG: 	 |-- NetworkDNSReverseProxy
+2024-07-25 05:55:21,937 [root] DEBUG: 	 |-- NetworkDNSSuspiciousQueryType
+2024-07-25 05:55:21,937 [root] DEBUG: 	 |-- NetworkDNSTempFileService
+2024-07-25 05:55:21,937 [root] DEBUG: 	 |-- NetworkDNSTempURLDNS
+2024-07-25 05:55:21,938 [root] DEBUG: 	 |-- NetworkDNSTunnelingRequest
+2024-07-25 05:55:21,938 [root] DEBUG: 	 |-- NetworkDNSURLShortener
+2024-07-25 05:55:21,938 [root] DEBUG: 	 |-- NetworkDOHTLS
+2024-07-25 05:55:21,938 [root] DEBUG: 	 |-- Suspicious_TLD
+2024-07-25 05:55:21,938 [root] DEBUG: 	 |-- NetworkDocumentHTTP
+2024-07-25 05:55:21,938 [root] DEBUG: 	 |-- ExplorerHTTP
+2024-07-25 05:55:21,938 [root] DEBUG: 	 |-- NetworkFakeUserAgent
+2024-07-25 05:55:21,938 [root] DEBUG: 	 |-- NetworkDocumentFile
+2024-07-25 05:55:21,939 [root] DEBUG: 	 |-- NetworkEXE
+2024-07-25 05:55:21,939 [root] DEBUG: 	 |-- Tor
+2024-07-25 05:55:21,939 [root] DEBUG: 	 |-- TorHiddenService
+2024-07-25 05:55:21,939 [root] DEBUG: 	 |-- Office_Code_Page
+2024-07-25 05:55:21,939 [root] DEBUG: 	 |-- OfficeAddinLoading
+2024-07-25 05:55:21,939 [root] DEBUG: 	 |-- OfficeCOMLoad
+2024-07-25 05:55:21,939 [root] DEBUG: 	 |-- OfficeDotNetLoad
+2024-07-25 05:55:21,939 [root] DEBUG: 	 |-- OfficeMSHTMLLoad
+2024-07-25 05:55:21,940 [root] DEBUG: 	 |-- OfficePerfKey
+2024-07-25 05:55:21,940 [root] DEBUG: 	 |-- OfficeVBLLoad
+2024-07-25 05:55:21,940 [root] DEBUG: 	 |-- OfficeWMILoad
+2024-07-25 05:55:21,940 [root] DEBUG: 	 |-- OfficeCVE201711882
+2024-07-25 05:55:21,940 [root] DEBUG: 	 |-- OfficeCVE201711882Network
+2024-07-25 05:55:21,940 [root] DEBUG: 	 |-- OfficeCVE202140444
+2024-07-25 05:55:21,940 [root] DEBUG: 	 |-- OfficeCVE202140444M2
+2024-07-25 05:55:21,940 [root] DEBUG: 	 |-- OfficeFlashLoad
+2024-07-25 05:55:21,941 [root] DEBUG: 	 |-- OfficePostScript
+2024-07-25 05:55:21,941 [root] DEBUG: 	 |-- Office_Macro
+2024-07-25 05:55:21,941 [root] DEBUG: 	 |-- ChangesTrustCenter_settings
+2024-07-25 05:55:21,941 [root] DEBUG: 	 |-- DisablesVBATrustAccess
+2024-07-25 05:55:21,941 [root] DEBUG: 	 |-- OfficeMacroAutoExecution
+2024-07-25 05:55:21,941 [root] DEBUG: 	 |-- OfficeMacroIOC
+2024-07-25 05:55:21,941 [root] DEBUG: 	 |-- OfficeMacroMaliciousPredition
+2024-07-25 05:55:21,941 [root] DEBUG: 	 |-- OfficeMacroSuspicious
+2024-07-25 05:55:21,942 [root] DEBUG: 	 |-- RTFASLRBypass
+2024-07-25 05:55:21,942 [root] DEBUG: 	 |-- RTFAnomalyCharacterSet
+2024-07-25 05:55:21,942 [root] DEBUG: 	 |-- RTFAnomalyVersion
+2024-07-25 05:55:21,942 [root] DEBUG: 	 |-- RTFEmbeddedContent
+2024-07-25 05:55:21,942 [root] DEBUG: 	 |-- RTFEmbeddedOfficeFile
+2024-07-25 05:55:21,942 [root] DEBUG: 	 |-- RTFExploitStatic
+2024-07-25 05:55:21,942 [root] DEBUG: 	 |-- OfficeSecurity
+2024-07-25 05:55:21,943 [root] DEBUG: 	 |-- OfficeAnamalousFeature
+2024-07-25 05:55:21,943 [root] DEBUG: 	 |-- OfficeDDECommand
+2024-07-25 05:55:21,943 [root] DEBUG: 	 |-- OfficeSuspiciousProcesses
+2024-07-25 05:55:21,943 [root] DEBUG: 	 |-- OfficeWriteEXE
+2024-07-25 05:55:21,943 [root] DEBUG: 	 |-- ArmadilloMutex
+2024-07-25 05:55:21,943 [root] DEBUG: 	 |-- ArmadilloRegKey
+2024-07-25 05:55:21,943 [root] DEBUG: 	 |-- ADS
+2024-07-25 05:55:21,943 [root] DEBUG: 	 |-- Autorun
+2024-07-25 05:55:21,944 [root] DEBUG: 	 |-- Autorun_scheduler
+2024-07-25 05:55:21,944 [root] DEBUG: 	 |-- PersistenceSafeBoot
+2024-07-25 05:55:21,944 [root] DEBUG: 	 |-- PersistenceBootexecute
+2024-07-25 05:55:21,944 [root] DEBUG: 	 |-- PersistenceRegistryScript
+2024-07-25 05:55:21,944 [root] DEBUG: 	 |-- PersistenceIFEO
+2024-07-25 05:55:21,944 [root] DEBUG: 	 |-- PersistenceSilentProcessExit
+2024-07-25 05:55:21,944 [root] DEBUG: 	 |-- PersistenceRDPRegistry
+2024-07-25 05:55:21,945 [root] DEBUG: 	 |-- PersistenceRDPShadowing
+2024-07-25 05:55:21,945 [root] DEBUG: 	 |-- PersistenceService
+2024-07-25 05:55:21,945 [root] DEBUG: 	 |-- PersistenceShimDatabase
+2024-07-25 05:55:21,945 [root] DEBUG: 	 |-- PowerpoolMutexes
+2024-07-25 05:55:21,945 [root] DEBUG: 	 |-- PowerShellNetworkConnection
+2024-07-25 05:55:21,945 [root] DEBUG: 	 |-- PowerShellScriptBlockLogging
+2024-07-25 05:55:21,945 [root] DEBUG: 	 |-- PowershellCommandSuspicious
+2024-07-25 05:55:21,945 [root] DEBUG: 	 |-- PowershellDownload
+2024-07-25 05:55:21,946 [root] DEBUG: 	 |-- PowershellRenamed
+2024-07-25 05:55:21,946 [root] DEBUG: 	 |-- PowershellRequest
+2024-07-25 05:55:21,946 [root] DEBUG: 	 |-- PowershellReversed
+2024-07-25 05:55:21,946 [root] DEBUG: 	 |-- PowershellVariableObfuscation
+2024-07-25 05:55:21,946 [root] DEBUG: 	 |-- PreventsSafeboot
+2024-07-25 05:55:21,946 [root] DEBUG: 	 |-- CmdlineProcessDiscovery
+2024-07-25 05:55:21,946 [root] DEBUG: 	 |-- CreateToolhelp32SnapshotProcessModuleEnumeration
+2024-07-25 05:55:21,947 [root] DEBUG: 	 |-- EnumeratesRunningProcesses
+2024-07-25 05:55:21,947 [root] DEBUG: 	 |-- ProcessInterest
+2024-07-25 05:55:21,947 [root] DEBUG: 	 |-- ProcessNeeded
+2024-07-25 05:55:21,947 [root] DEBUG: 	 |-- MassDataEncryption
+2024-07-25 05:55:21,947 [root] DEBUG: 	 |-- CryptoMixMutexes
+2024-07-25 05:55:21,947 [root] DEBUG: 	 |-- DharmaMutexes
+2024-07-25 05:55:21,947 [root] DEBUG: 	 |-- RansomwareDMALocker
+2024-07-25 05:55:21,947 [root] DEBUG: 	 |-- RansomwareExtensions
+2024-07-25 05:55:21,947 [root] DEBUG: 	 |-- RansomwareFileModifications
+2024-07-25 05:55:21,948 [root] DEBUG: 	 |-- RansomwareFiles
+2024-07-25 05:55:21,948 [root] DEBUG: 	 |-- FonixMutexes
+2024-07-25 05:55:21,948 [root] DEBUG: 	 |-- GandCrabMutexes
+2024-07-25 05:55:21,948 [root] DEBUG: 	 |-- GermanWiperMutexes
+2024-07-25 05:55:21,948 [root] DEBUG: 	 |-- MedusaLockerMutexes
+2024-07-25 05:55:21,948 [root] DEBUG: 	 |-- MedusaLockerRegkeys
+2024-07-25 05:55:21,948 [root] DEBUG: 	 |-- RansomwareMessage
+2024-07-25 05:55:21,948 [root] DEBUG: 	 |-- NemtyMutexes
+2024-07-25 05:55:21,949 [root] DEBUG: 	 |-- NemtyNetworkActivity
+2024-07-25 05:55:21,949 [root] DEBUG: 	 |-- NemtyNote
+2024-07-25 05:55:21,949 [root] DEBUG: 	 |-- NemtyRegkeys
+2024-07-25 05:55:21,949 [root] DEBUG: 	 |-- PYSAMutexes
+2024-07-25 05:55:21,949 [root] DEBUG: 	 |-- RansomwareRadamant
+2024-07-25 05:55:21,949 [root] DEBUG: 	 |-- RansomwareRecyclebin
+2024-07-25 05:55:21,949 [root] DEBUG: 	 |-- RevilMutexes
+2024-07-25 05:55:21,949 [root] DEBUG: 	 |-- RevilRegkey
+2024-07-25 05:55:21,950 [root] DEBUG: 	 |-- SatanMutexes
+2024-07-25 05:55:21,950 [root] DEBUG: 	 |-- SnakeRansomMutexes
+2024-07-25 05:55:21,950 [root] DEBUG: 	 |-- sodinokibi
+2024-07-25 05:55:21,950 [root] DEBUG: 	 |-- StopRansomMutexes
+2024-07-25 05:55:21,950 [root] DEBUG: 	 |-- StopRansomwareCMD
+2024-07-25 05:55:21,950 [root] DEBUG: 	 |-- StopRansomwareRegistry
+2024-07-25 05:55:21,950 [root] DEBUG: 	 |-- BeebusMutexes
+2024-07-25 05:55:21,950 [root] DEBUG: 	 |-- BlackNETMutexes
+2024-07-25 05:55:21,951 [root] DEBUG: 	 |-- BlackRATAPIs
+2024-07-25 05:55:21,951 [root] DEBUG: 	 |-- BlackRATMutexes
+2024-07-25 05:55:21,951 [root] DEBUG: 	 |-- BlackRATNetworkActivity
+2024-07-25 05:55:21,951 [root] DEBUG: 	 |-- BlackRATRegistryKeys
+2024-07-25 05:55:21,951 [root] DEBUG: 	 |-- CRATMutexes
+2024-07-25 05:55:21,951 [root] DEBUG: 	 |-- DCRatAPIs
+2024-07-25 05:55:21,951 [root] DEBUG: 	 |-- DCRatFiles
+2024-07-25 05:55:21,951 [root] DEBUG: 	 |-- DCRatMutex
+2024-07-25 05:55:21,952 [root] DEBUG: 	 |-- FynloskiMutexes
+2024-07-25 05:55:21,952 [root] DEBUG: 	 |-- KaraganyEventObjects
+2024-07-25 05:55:21,952 [root] DEBUG: 	 |-- KaraganyFiles
+2024-07-25 05:55:21,952 [root] DEBUG: 	 |-- LimeRATMutexes
+2024-07-25 05:55:21,952 [root] DEBUG: 	 |-- LimeRATRegkeys
+2024-07-25 05:55:21,952 [root] DEBUG: 	 |-- LodaRATFileBehavior
+2024-07-25 05:55:21,953 [root] DEBUG: 	 |-- LuminosityRAT
+2024-07-25 05:55:21,953 [root] DEBUG: 	 |-- ModiRATBehavior
+2024-07-25 05:55:21,953 [root] DEBUG: 	 |-- NanocoreRAT
+2024-07-25 05:55:21,953 [root] DEBUG: 	 |-- netwire
+2024-07-25 05:55:21,953 [root] DEBUG: 	 |-- NjratRegkeys
+2024-07-25 05:55:21,953 [root] DEBUG: 	 |-- ObliquekRATFiles
+2024-07-25 05:55:21,954 [root] DEBUG: 	 |-- ObliquekRATMutexes
+2024-07-25 05:55:21,954 [root] DEBUG: 	 |-- ObliquekRATNetworkActivity
+2024-07-25 05:55:21,954 [root] DEBUG: 	 |-- OrcusRAT
+2024-07-25 05:55:21,954 [root] DEBUG: 	 |-- ParallaxMutexes
+2024-07-25 05:55:21,954 [root] DEBUG: 	 |-- PcClientMutexes
+2024-07-25 05:55:21,955 [root] DEBUG: 	 |-- PlugxMutexes
+2024-07-25 05:55:21,955 [root] DEBUG: 	 |-- PoisonIvyMutexes
+2024-07-25 05:55:21,955 [root] DEBUG: 	 |-- QuasarMutexes
+2024-07-25 05:55:21,955 [root] DEBUG: 	 |-- RatsnifMutexes
+2024-07-25 05:55:21,955 [root] DEBUG: 	 |-- SennaMutexes
+2024-07-25 05:55:21,955 [root] DEBUG: 	 |-- SpynetRat
+2024-07-25 05:55:21,956 [root] DEBUG: 	 |-- TrochilusRATAPIs
+2024-07-25 05:55:21,956 [root] DEBUG: 	 |-- VenomRAT
+2024-07-25 05:55:21,956 [root] DEBUG: 	 |-- WarzoneRATFiles
+2024-07-25 05:55:21,956 [root] DEBUG: 	 |-- WarzoneRATRegkeys
+2024-07-25 05:55:21,957 [root] DEBUG: 	 |-- XpertRATFiles
+2024-07-25 05:55:21,957 [root] DEBUG: 	 |-- XpertRATMutexes
+2024-07-25 05:55:21,957 [root] DEBUG: 	 |-- XtremeMutexes
+2024-07-25 05:55:21,957 [root] DEBUG: 	 |-- ReadsSelf
+2024-07-25 05:55:21,957 [root] DEBUG: 	 |-- Recon_Beacon
+2024-07-25 05:55:21,957 [root] DEBUG: 	 |-- Fingerprint
+2024-07-25 05:55:21,958 [root] DEBUG: 	 |-- InstalledApps
+2024-07-25 05:55:21,958 [root] DEBUG: 	 |-- SystemInfo
+2024-07-25 05:55:21,958 [root] DEBUG: 	 |-- Accesses_RecycleBin
+2024-07-25 05:55:21,958 [root] DEBUG: 	 |-- RemcosFiles
+2024-07-25 05:55:21,958 [root] DEBUG: 	 |-- RemcosMutexes
+2024-07-25 05:55:21,959 [root] DEBUG: 	 |-- RemcosRegkeys
+2024-07-25 05:55:21,959 [root] DEBUG: 	 |-- RDPTCPKey
+2024-07-25 05:55:21,959 [root] DEBUG: 	 |-- UsesRDPClip
+2024-07-25 05:55:21,959 [root] DEBUG: 	 |-- UsesRemoteDesktopSession
+2024-07-25 05:55:21,959 [root] DEBUG: 	 |-- RemovesNetworkingIcon
+2024-07-25 05:55:21,960 [root] DEBUG: 	 |-- RemovesPinnedPrograms
+2024-07-25 05:55:21,960 [root] DEBUG: 	 |-- RemovesSecurityAndMaintenanceIcon
+2024-07-25 05:55:21,960 [root] DEBUG: 	 |-- RemovesStartMenuDefaults
+2024-07-25 05:55:21,960 [root] DEBUG: 	 |-- RemovesUsernameStartMenu
+2024-07-25 05:55:21,960 [root] DEBUG: 	 |-- RemovesZoneIdADS
+2024-07-25 05:55:21,960 [root] DEBUG: 	 |-- SpicyHotPotBehavior
+2024-07-25 05:55:21,961 [root] DEBUG: 	 |-- ScriptCreatedProcess
+2024-07-25 05:55:21,961 [root] DEBUG: 	 |-- ScriptNetworkActvity
+2024-07-25 05:55:21,961 [root] DEBUG: 	 |-- SuspiciousJSScript
+2024-07-25 05:55:21,961 [root] DEBUG: 	 |-- JavaScriptTimer
+2024-07-25 05:55:21,961 [root] DEBUG: 	 |-- Secure_Login_Phish
+2024-07-25 05:55:21,962 [root] DEBUG: 	 |-- SecurityXploded_Modules
+2024-07-25 05:55:21,962 [root] DEBUG: 	 |-- GetClipboardData
+2024-07-25 05:55:21,962 [root] DEBUG: 	 |-- SetsAutoconfigURL
+2024-07-25 05:55:21,962 [root] DEBUG: 	 |-- InstallsWinpcap
+2024-07-25 05:55:21,963 [root] DEBUG: 	 |-- SpoofsProcname
+2024-07-25 05:55:21,963 [root] DEBUG: 	 |-- CreatesAutorunInf
+2024-07-25 05:55:21,963 [root] DEBUG: 	 |-- StackPivot
+2024-07-25 05:55:21,963 [root] DEBUG: 	 |-- StackPivotFileCreated
+2024-07-25 05:55:21,964 [root] DEBUG: 	 |-- StackPivotProcessCreate
+2024-07-25 05:55:21,964 [root] DEBUG: 	 |-- StealingClipboardData
+2024-07-25 05:55:21,964 [root] DEBUG: 	 |-- StealthChildProc
+2024-07-25 05:55:21,964 [root] DEBUG: 	 |-- StealthFile
+2024-07-25 05:55:21,964 [root] DEBUG: 	 |-- StealthHiddenExtension
+2024-07-25 05:55:21,965 [root] DEBUG: 	 |-- StealthHiddenReg
+2024-07-25 05:55:21,965 [root] DEBUG: 	 |-- StealthHideNotifications
+2024-07-25 05:55:21,965 [root] DEBUG: 	 |-- StealthSystemProcName
+2024-07-25 05:55:21,965 [root] DEBUG: 	 |-- StealthTimeout
+2024-07-25 05:55:21,965 [root] DEBUG: 	 |-- StealthWebHistory
+2024-07-25 05:55:21,965 [root] DEBUG: 	 |-- Hidden_Window
+2024-07-25 05:55:21,966 [root] DEBUG: 	 |-- sysinternals_psexec
+2024-07-25 05:55:21,966 [root] DEBUG: 	 |-- sysinternals_tools
+2024-07-25 05:55:21,966 [root] DEBUG: 	 |-- QueriesKeyboardLayout
+2024-07-25 05:55:21,966 [root] DEBUG: 	 |-- TampersETW
+2024-07-25 05:55:21,966 [root] DEBUG: 	 |-- LSATampering
+2024-07-25 05:55:21,967 [root] DEBUG: 	 |-- TampersPowerShellLogging
+2024-07-25 05:55:21,967 [root] DEBUG: 	 |-- Flame
+2024-07-25 05:55:21,967 [root] DEBUG: 	 |-- TerminatesRemoteProcess
+2024-07-25 05:55:21,967 [root] DEBUG: 	 |-- TerritorialDisputeSIGs
+2024-07-25 05:55:21,967 [root] DEBUG: 	 |-- TrickBotTaskDelete
+2024-07-25 05:55:21,968 [root] DEBUG: 	 |-- TrickBotMutexes
+2024-07-25 05:55:21,968 [root] DEBUG: 	 |-- FleerCivetMutexes
+2024-07-25 05:55:21,968 [root] DEBUG: 	 |-- LokibotMutexes
+2024-07-25 05:55:21,968 [root] DEBUG: 	 |-- UrsnifBehavior
+2024-07-25 05:55:21,968 [root] DEBUG: 	 |-- UpatreFiles
+2024-07-25 05:55:21,968 [root] DEBUG: 	 |-- UpatreMutexes
+2024-07-25 05:55:21,969 [root] DEBUG: 	 |-- UserEnum
+2024-07-25 05:55:21,969 [root] DEBUG: 	 |-- ADFind
+2024-07-25 05:55:21,969 [root] DEBUG: 	 |-- UsesMSProtocol
+2024-07-25 05:55:21,969 [root] DEBUG: 	 |-- Virus
+2024-07-25 05:55:21,969 [root] DEBUG: 	 |-- NeshtaFiles
+2024-07-25 05:55:21,970 [root] DEBUG: 	 |-- NeshtaMutexes
+2024-07-25 05:55:21,970 [root] DEBUG: 	 |-- NeshtaRegKeys
+2024-07-25 05:55:21,970 [root] DEBUG: 	 |-- RenamerMutexes
+2024-07-25 05:55:21,970 [root] DEBUG: 	 |-- Webmail_Phish
+2024-07-25 05:55:21,970 [root] DEBUG: 	 |-- OWAWebShellFiles
+2024-07-25 05:55:21,970 [root] DEBUG: 	 |-- WebShellFiles
+2024-07-25 05:55:21,971 [root] DEBUG: 	 |-- WebShellProcesses
+2024-07-25 05:55:21,971 [root] DEBUG: 	 |-- PersistsDotNetDevUtility
+2024-07-25 05:55:21,971 [root] DEBUG: 	 |-- SpwansDotNetDevUtiliy
+2024-07-25 05:55:21,971 [root] DEBUG: 	 |-- AltersWindowsUtility
+2024-07-25 05:55:21,972 [root] DEBUG: 	 |-- DotNETCSCBuild
+2024-07-25 05:55:21,972 [root] DEBUG: 	 |-- MultipleExplorerInstances
+2024-07-25 05:55:21,972 [root] DEBUG: 	 |-- OverwritesAccessibilityUtility
+2024-07-25 05:55:21,972 [root] DEBUG: 	 |-- ScriptToolExecuted
+2024-07-25 05:55:21,972 [root] DEBUG: 	 |-- SuspiciousCertutilUse
+2024-07-25 05:55:21,973 [root] DEBUG: 	 |-- SuspiciousCommandTools
+2024-07-25 05:55:21,973 [root] DEBUG: 	 |-- SuspiciousMpCmdRunUse
+2024-07-25 05:55:21,973 [root] DEBUG: 	 |-- SuspiciousPingUse
+2024-07-25 05:55:21,973 [root] DEBUG: 	 |-- UsesPowerShellCopyItem
+2024-07-25 05:55:21,974 [root] DEBUG: 	 |-- UsesWindowsUtilities
+2024-07-25 05:55:21,974 [root] DEBUG: 	 |-- UsesWindowsUtilitiesAppCmd
+2024-07-25 05:55:21,974 [root] DEBUG: 	 |-- UsesWindowsUtilitiesCSVDELDFIDE
+2024-07-25 05:55:21,974 [root] DEBUG: 	 |-- UsesWindowsUtilitiesCipher
+2024-07-25 05:55:21,974 [root] DEBUG: 	 |-- UsesWindowsUtilitiesClickOnce
+2024-07-25 05:55:21,975 [root] DEBUG: 	 |-- UsesWindowsUtilitiesCurl
+2024-07-25 05:55:21,975 [root] DEBUG: 	 |-- UsesWindowsUtilitiesDSQuery
+2024-07-25 05:55:21,975 [root] DEBUG: 	 |-- UsesWindowsUtilitiesEsentutl
+2024-07-25 05:55:21,975 [root] DEBUG: 	 |-- UsesWindowsUtilitiesFinger
+2024-07-25 05:55:21,975 [root] DEBUG: 	 |-- UsesWindowsUtilitiesMode
+2024-07-25 05:55:21,976 [root] DEBUG: 	 |-- UsesWindowsUtilitiesNTDSutil
+2024-07-25 05:55:21,976 [root] DEBUG: 	 |-- UsesWindowsUtilitiesNltest
+2024-07-25 05:55:21,976 [root] DEBUG: 	 |-- UsesWindowsUtilitiesScheduler
+2024-07-25 05:55:21,976 [root] DEBUG: 	 |-- UsesWindowsUtilitiesXcopy
+2024-07-25 05:55:21,976 [root] DEBUG: 	 |-- WMICCommandSuspicious
+2024-07-25 05:55:21,976 [root] DEBUG: 	 |-- WiperZeroedBytes
+2024-07-25 05:55:21,977 [root] DEBUG: 	 |-- ScrconsWMIScriptConsumer
+2024-07-25 05:55:21,977 [root] DEBUG: 	 |-- WMICreateProcess
+2024-07-25 05:55:21,977 [root] DEBUG: 	 |-- WMIScriptProcess
+2024-07-25 05:55:21,977 [root] DEBUG: 	 |-- Win32ProcessCreate
+2024-07-25 05:55:21,978 [root] DEBUG: 	 |-- AllapleMutexes
+2024-07-25 05:55:21,978 [root] DEBUG: 	 |-- LinuxDeletesFiles
+2024-07-25 05:55:21,978 [root] DEBUG: 	 |-- LinuxDropsFiles
+2024-07-25 05:55:21,978 [root] DEBUG: 	 |-- LinuxReadsFiles
+2024-07-25 05:55:21,978 [root] DEBUG: 	 `-- LinuxWritesFiles
+2024-07-25 05:55:21,979 [root] DEBUG: Imported "reporting" modules:
+2024-07-25 05:55:21,979 [root] DEBUG: 	 |-- BinGraph
+2024-07-25 05:55:21,979 [root] DEBUG: 	 |-- CAPASummary
+2024-07-25 05:55:21,979 [root] DEBUG: 	 |-- JsonDump
+2024-07-25 05:55:21,980 [root] DEBUG: 	 |-- MITRE_TTPS
+2024-07-25 05:55:21,980 [root] DEBUG: 	 |-- MongoDB
+2024-07-25 05:55:21,980 [root] DEBUG: 	 |-- PCAP2CERT
+2024-07-25 05:55:21,980 [root] DEBUG: 	 |-- ReportHTML
+2024-07-25 05:55:21,980 [root] DEBUG: 	 |-- ReportHTMLSummary
+2024-07-25 05:55:21,981 [root] DEBUG: 	 `-- ReportPDF
+2024-07-25 05:55:21,981 [root] DEBUG: Imported "feeds" modules:
+2024-07-25 05:55:21,981 [root] DEBUG: 	 `-- AbuseCH_SSL
+2024-07-25 05:55:21,981 [root] DEBUG: Imported "machinery" modules:
+2024-07-25 05:55:21,981 [root] DEBUG: 	 `-- Physical
+2024-07-25 05:55:21,982 [root] DEBUG: Checking for locked tasks...
+2024-07-25 05:55:22,795 [modules.machinery.physical] DEBUG: Getting status for machine: win10clone2with
+2024-07-25 05:55:25,942 [modules.machinery.physical] DEBUG: Sending Wake on Lan message for win10clone2with (bc:24:11:79:d7:9c) to Broadcast IP 192.168.2.255
+2024-07-25 05:55:25,942 [modules.machinery.physical] DEBUG: Getting status for machine: win7clone
+2024-07-25 05:55:25,950 [modules.machinery.physical] DEBUG: Getting status for machine: win10clone4
+2024-07-25 05:55:25,958 [lib.cuckoo.core.scheduler] INFO: Using "physical" machine manager with max_analysis_count=0, max_machines_count=10, and max_vmstartup_count=5
+2024-07-25 05:55:25,963 [lib.cuckoo.core.scheduler] INFO: Loaded 3 machine/s
+2024-07-25 05:55:25,996 [lib.cuckoo.core.scheduler] INFO: Waiting for analysis tasks
+2024-07-25 06:52:27,284 [root] INFO: Received keyboard interrupt, stopping.

@@ -1,0 +1,7 @@
+2024-07-29 22:33:34,487 [Task 56] [lib.cuckoo.core.plugins] ERROR: Failed to run the reporting module "CAPASummary": 'NoneType' object has no attribute 'enabled'
+Traceback (most recent call last):
+  File "/opt/CAPEv2/utils/../lib/cuckoo/core/plugins.py", line 738, in process
+    current.run(self.results)
+  File "/opt/CAPEv2/utils/../modules/reporting/flare_capa_summary.py", line 26, in run
+    if HAVE_FLARE_CAPA and self.options.flare_capa_summary.enabled and not self.options.flare_capa_summary.on_demand:
+AttributeError: 'NoneType' object has no attribute 'enabled'

@@ -1,0 +1,1739 @@
+2024-07-31 10:48:20,894 [root] INFO: Received keyboard interrupt, stopping.
+2024-07-31 10:48:25,835 [root] DEBUG: Importing modules...
+2024-07-31 10:48:27,066 [capa.rules] DEBUG: reading rules from directory /opt/CAPEv2/data/capa-rules
+2024-07-31 10:48:27,137 [capa.rules.cache] DEBUG: rule set cache does not exist: /home/cape/.cache/capa/capa-31be4e29.cache
+2024-07-31 10:48:27,137 [capa.rules] DEBUG: using libyaml CLoader.
+2024-07-31 10:48:27,140 [capa.rules] DEBUG: loaded rule: 'execute VBScript Javascript or JScript in memory' with scope: static-scope: function
+2024-07-31 10:48:27,142 [capa.rules] DEBUG: loaded rule: 'execute shellcode via Windows callback function' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,143 [capa.rules] DEBUG: loaded rule: 'execute shellcode via Windows fibers' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,144 [capa.rules] DEBUG: loaded rule: 'execute shellcode via CreateThreadpoolWait' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,144 [capa.rules] DEBUG: loaded rule: 'spawn thread to RWX shellcode' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,145 [capa.rules] DEBUG: loaded rule: 'execute shellcode via CopyFile2' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,146 [capa.rules] DEBUG: loaded rule: 'load Windows Common Language Runtime' with scope: static-scope: function
+2024-07-31 10:48:27,148 [capa.rules] DEBUG: loaded rule: 'run PowerShell expression' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,150 [capa.rules] DEBUG: loaded rule: 'parse PE header' with scope: static-scope: function
+2024-07-31 10:48:27,152 [capa.rules] DEBUG: loaded rule: 'inspect section memory permissions' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,153 [capa.rules] DEBUG: loaded rule: 'rebuild import table' with scope: static-scope: function
+2024-07-31 10:48:27,154 [capa.rules] DEBUG: loaded rule: 'inject DLL reflectively' with scope: static-scope: function
+2024-07-31 10:48:27,154 [capa.rules] DEBUG: loaded rule: 'access PE header' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,156 [capa.rules] DEBUG: loaded rule: 'enumerate PE sections' with scope: static-scope: function
+2024-07-31 10:48:27,157 [capa.rules] DEBUG: loaded rule: 'resolve function by parsing PE exports' with scope: static-scope: function
+2024-07-31 10:48:27,158 [capa.rules] DEBUG: loaded rule: 'persist via shell profile or rc file' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,159 [capa.rules] DEBUG: loaded rule: 'act as WinDbg extension' with scope: static-scope: file, dynamic-scope: file
+2024-07-31 10:48:27,159 [capa.rules] DEBUG: loaded rule: 'act as Share Provider DLL' with scope: static-scope: file, dynamic-scope: file
+2024-07-31 10:48:27,160 [capa.rules] DEBUG: loaded rule: 'persist via .desktop autostart' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,161 [capa.rules] DEBUG: loaded rule: 'act as DNS server plugin DLL' with scope: static-scope: file, dynamic-scope: file
+2024-07-31 10:48:27,162 [capa.rules] DEBUG: loaded rule: 'act as Time Provider DLL' with scope: static-scope: file, dynamic-scope: file
+2024-07-31 10:48:27,162 [capa.rules] DEBUG: loaded rule: 'create shortcut via IShellLink' with scope: static-scope: function
+2024-07-31 10:48:27,163 [capa.rules] DEBUG: loaded rule: 'act as DHCP server callout DLL' with scope: static-scope: file, dynamic-scope: file
+2024-07-31 10:48:27,164 [capa.rules] DEBUG: loaded rule: 'persist via Active Setup registry key' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,166 [capa.rules] DEBUG: loaded rule: 'persist via AppInit_DLLs registry key' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,167 [capa.rules] DEBUG: loaded rule: 'disable AppInit_DLLs code signature enforcement' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,168 [capa.rules] DEBUG: loaded rule: 'persist via GinaDLL registry key' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,169 [capa.rules] DEBUG: loaded rule: 'persist via Winlogon Helper DLL registry key' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,171 [capa.rules] DEBUG: loaded rule: 'persist via Run registry key' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,171 [capa.rules] DEBUG: loaded rule: 'act as password filter DLL' with scope: static-scope: file, dynamic-scope: file
+2024-07-31 10:48:27,172 [capa.rules] DEBUG: loaded rule: 'act as credential manager DLL' with scope: static-scope: file, dynamic-scope: file
+2024-07-31 10:48:27,173 [capa.rules] DEBUG: loaded rule: 'act as SubAuthentication Package DLL' with scope: static-scope: file, dynamic-scope: file
+2024-07-31 10:48:27,173 [capa.rules] DEBUG: loaded rule: 'act as Security Support Provider DLL' with scope: static-scope: file, dynamic-scope: file
+2024-07-31 10:48:27,174 [capa.rules] DEBUG: loaded rule: 'act as Office COM add-in' with scope: static-scope: file
+2024-07-31 10:48:27,175 [capa.rules] DEBUG: loaded rule: 'act as Word WLL add-in' with scope: static-scope: file, dynamic-scope: file
+2024-07-31 10:48:27,175 [capa.rules] DEBUG: loaded rule: 'act as Excel XLL add-in' with scope: static-scope: file, dynamic-scope: file
+2024-07-31 10:48:27,176 [capa.rules] DEBUG: loaded rule: 'persist via IIS module' with scope: static-scope: file, dynamic-scope: file
+2024-07-31 10:48:27,185 [capa.rules] DEBUG: loaded rule: 'persist via ISAPI extension' with scope: static-scope: file, dynamic-scope: file
+2024-07-31 10:48:27,187 [capa.rules] DEBUG: loaded rule: 'persist via Windows service' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,188 [capa.rules] DEBUG: loaded rule: 'persist via rc script' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,189 [capa.rules] DEBUG: loaded rule: 'get startup folder' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-31 10:48:27,189 [capa.rules] DEBUG: loaded rule: 'write file to startup folder' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,190 [capa.rules] DEBUG: loaded rule: 'schedule task via at' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,192 [capa.rules] DEBUG: loaded rule: 'schedule task via schtasks' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,193 [capa.rules] DEBUG: loaded rule: 'schedule task via ITaskScheduler' with scope: static-scope: function
+2024-07-31 10:48:27,195 [capa.rules] DEBUG: loaded rule: 'act as Exchange transport agent' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,195 [capa.rules] DEBUG: loaded rule: 'empty recycle bin quietly' with scope: static-scope: basic block
+2024-07-31 10:48:27,196 [capa.rules] DEBUG: loaded rule: 'set registry key via offline registry library' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,197 [capa.rules] DEBUG: loaded rule: 'query or enumerate registry key' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,198 [capa.rules] DEBUG: loaded rule: 'query registry key via offline registry library' with scope: static-scope: function, dynamic-scope: call
+2024-07-31 10:48:27,205 [capa.rules] DEBUG: loaded rule: 'open registry key via offline registry library' with scope: static-scope: function, dynamic-scope: call
+2024-07-31 10:48:27,206 [capa.rules] DEBUG: loaded rule: 'query or enumerate registry value' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,209 [capa.rules] DEBUG: loaded rule: 'create registry key via offline registry library' with scope: static-scope: function, dynamic-scope: call
+2024-07-31 10:48:27,210 [capa.rules] DEBUG: loaded rule: 'delete registry key' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,211 [capa.rules] DEBUG: loaded rule: 'delete registry value' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,220 [capa.rules] DEBUG: loaded rule: 'set registry value' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,221 [capa.rules] DEBUG: loaded rule: 'enumerate minifilter drivers' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,221 [capa.rules] DEBUG: loaded rule: 'register minifilter driver' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-31 10:48:27,222 [capa.rules] DEBUG: loaded rule: 'start minifilter driver' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-31 10:48:27,223 [capa.rules] DEBUG: loaded rule: 'enumerate gui resources' with scope: static-scope: function, dynamic-scope: call
+2024-07-31 10:48:27,224 [capa.rules] DEBUG: loaded rule: 'switch active desktop' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,224 [capa.rules] DEBUG: loaded rule: 'set application hook' with scope: static-scope: instruction, dynamic-scope: call
+2024-07-31 10:48:27,225 [capa.rules] DEBUG: loaded rule: 'find taskbar' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,225 [capa.rules] DEBUG: loaded rule: 'hide the Windows taskbar' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,226 [capa.rules] DEBUG: loaded rule: 'references logon banner' with scope: static-scope: basic block, dynamic-scope: thread
+2024-07-31 10:48:27,227 [capa.rules] DEBUG: loaded rule: 'set console window title' with scope: static-scope: function, dynamic-scope: call
+2024-07-31 10:48:27,228 [capa.rules] DEBUG: loaded rule: 'get graphical window text' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,228 [capa.rules] DEBUG: loaded rule: 'find graphical window' with scope: static-scope: function, dynamic-scope: call
+2024-07-31 10:48:27,229 [capa.rules] DEBUG: loaded rule: 'hide graphical window from taskbar' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-31 10:48:27,230 [capa.rules] DEBUG: loaded rule: 'hide graphical window' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-31 10:48:27,231 [capa.rules] DEBUG: loaded rule: 'change the wallpaper' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-31 10:48:27,231 [capa.rules] DEBUG: loaded rule: 'lock the desktop' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,232 [capa.rules] DEBUG: loaded rule: 'disable code signing' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,233 [capa.rules] DEBUG: loaded rule: 'get UEFI variable' with scope: static-scope: function, dynamic-scope: call
+2024-07-31 10:48:27,234 [capa.rules] DEBUG: loaded rule: 'set UEFI variable' with scope: static-scope: function, dynamic-scope: call
+2024-07-31 10:48:27,234 [capa.rules] DEBUG: loaded rule: 'manipulate safe mode programs' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,236 [capa.rules] DEBUG: loaded rule: 'manipulate boot configuration' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,236 [capa.rules] DEBUG: loaded rule: 'suspend thread' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-31 10:48:27,237 [capa.rules] DEBUG: loaded rule: 'allocate thread local storage' with scope: static-scope: function, dynamic-scope: call
+2024-07-31 10:48:27,238 [capa.rules] DEBUG: loaded rule: 'set thread local storage value' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,238 [capa.rules] DEBUG: loaded rule: 'resume thread' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-31 10:48:27,239 [capa.rules] DEBUG: loaded rule: 'enumerate threads' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,241 [capa.rules] DEBUG: loaded rule: 'create thread' with scope: static-scope: basic block, dynamic-scope: thread
+2024-07-31 10:48:27,242 [capa.rules] DEBUG: loaded rule: 'terminate thread' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-31 10:48:27,242 [capa.rules] DEBUG: loaded rule: 'create semaphore on Linux' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,243 [capa.rules] DEBUG: loaded rule: 'lock file' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-31 10:48:27,244 [capa.rules] DEBUG: loaded rule: 'unlock semaphore on Linux' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,245 [capa.rules] DEBUG: loaded rule: 'check mutex and exit' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,246 [capa.rules] DEBUG: loaded rule: 'create mutex' with scope: static-scope: function, dynamic-scope: call
+2024-07-31 10:48:27,246 [capa.rules] DEBUG: loaded rule: 'check mutex' with scope: static-scope: basic block, dynamic-scope: thread
+2024-07-31 10:48:27,247 [capa.rules] DEBUG: loaded rule: 'lock semaphore on Linux' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,248 [capa.rules] DEBUG: loaded rule: 'get installed programs' with scope: static-scope: function
+2024-07-31 10:48:27,249 [capa.rules] DEBUG: loaded rule: 'write clipboard data' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,251 [capa.rules] DEBUG: loaded rule: 'read clipboard data' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,251 [capa.rules] DEBUG: loaded rule: 'open clipboard' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,252 [capa.rules] DEBUG: loaded rule: 'shutdown system' with scope: static-scope: function, dynamic-scope: call
+2024-07-31 10:48:27,253 [capa.rules] DEBUG: loaded rule: 'get hostname' with scope: static-scope: function, dynamic-scope: call
+2024-07-31 10:48:27,254 [capa.rules] DEBUG: loaded rule: 'get kernel version' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,255 [capa.rules] DEBUG: loaded rule: 'check OS version' with scope: static-scope: function
+2024-07-31 10:48:27,256 [capa.rules] DEBUG: loaded rule: 'get Linux distribution' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,257 [capa.rules] DEBUG: loaded rule: 'get system information on Windows' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,259 [capa.rules] DEBUG: loaded rule: 'get common file path' with scope: static-scope: function, dynamic-scope: call
+2024-07-31 10:48:27,259 [capa.rules] DEBUG: loaded rule: 'create virtual file system in .NET' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,260 [capa.rules] DEBUG: loaded rule: 'reference absolute stream path on Windows' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-31 10:48:27,261 [capa.rules] DEBUG: loaded rule: 'bypass Mark of the Web' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,262 [capa.rules] DEBUG: loaded rule: 'change file permission on Linux' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-31 10:48:27,263 [capa.rules] DEBUG: loaded rule: 'get Windows directory from KUSER_SHARED_DATA' with scope: static-scope: basic block
+2024-07-31 10:48:27,263 [capa.rules] DEBUG: loaded rule: 'get file system object information' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-31 10:48:27,264 [capa.rules] DEBUG: loaded rule: 'get Program Files directory' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-31 10:48:27,265 [capa.rules] DEBUG: loaded rule: 'enumerate files on Linux' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,266 [capa.rules] DEBUG: loaded rule: 'enumerate files recursively' with scope: static-scope: function
+2024-07-31 10:48:27,267 [capa.rules] DEBUG: loaded rule: 'enumerate files on Windows' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,268 [capa.rules] DEBUG: loaded rule: 'move file' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,269 [capa.rules] DEBUG: loaded rule: 'set file attributes' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-31 10:48:27,270 [capa.rules] DEBUG: loaded rule: 'get file size' with scope: static-scope: function, dynamic-scope: call
+2024-07-31 10:48:27,271 [capa.rules] DEBUG: loaded rule: 'get file attributes' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-31 10:48:27,272 [capa.rules] DEBUG: loaded rule: 'get file version info' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,273 [capa.rules] DEBUG: loaded rule: 'copy file' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,274 [capa.rules] DEBUG: loaded rule: 'check if file exists' with scope: static-scope: function, dynamic-scope: call
+2024-07-31 10:48:27,276 [capa.rules] DEBUG: loaded rule: 'delete file' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,276 [capa.rules] DEBUG: loaded rule: 'delete directory' with scope: static-scope: function, dynamic-scope: call
+2024-07-31 10:48:27,278 [capa.rules] DEBUG: loaded rule: 'write file on Linux' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,279 [capa.rules] DEBUG: loaded rule: 'write file on Windows' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,281 [capa.rules] DEBUG: loaded rule: 'read file via mapping' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,282 [capa.rules] DEBUG: loaded rule: 'read file on Linux' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,283 [capa.rules] DEBUG: loaded rule: 'read file on Windows' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,284 [capa.rules] DEBUG: loaded rule: 'read .ini file' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,285 [capa.rules] DEBUG: loaded rule: 'read virtual disk' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,286 [capa.rules] DEBUG: loaded rule: 'create directory' with scope: static-scope: function, dynamic-scope: call
+2024-07-31 10:48:27,287 [capa.rules] DEBUG: loaded rule: 'bypass Windows File Protection' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,288 [capa.rules] DEBUG: loaded rule: 'create new application domain in .NET' with scope: static-scope: file
+2024-07-31 10:48:27,288 [capa.rules] DEBUG: loaded rule: 'resolve path using msvcrt' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-31 10:48:27,289 [capa.rules] DEBUG: loaded rule: 'accept command line arguments' with scope: static-scope: function, dynamic-scope: call
+2024-07-31 10:48:27,290 [capa.rules] DEBUG: loaded rule: 'run as service' with scope: static-scope: file, dynamic-scope: file
+2024-07-31 10:48:27,291 [capa.rules] DEBUG: loaded rule: 'query service status' with scope: static-scope: function, dynamic-scope: call
+2024-07-31 10:48:27,292 [capa.rules] DEBUG: loaded rule: 'pause service' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,293 [capa.rules] DEBUG: loaded rule: 'continue service' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,293 [capa.rules] DEBUG: loaded rule: 'query service configuration' with scope: static-scope: function, dynamic-scope: call
+2024-07-31 10:48:27,294 [capa.rules] DEBUG: loaded rule: 'modify service' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,295 [capa.rules] DEBUG: loaded rule: 'enumerate services' with scope: static-scope: function, dynamic-scope: call
+2024-07-31 10:48:27,296 [capa.rules] DEBUG: loaded rule: 'start service' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,296 [capa.rules] DEBUG: loaded rule: 'delete service' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,297 [capa.rules] DEBUG: loaded rule: 'create service' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,298 [capa.rules] DEBUG: loaded rule: 'stop service' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,299 [capa.rules] DEBUG: loaded rule: 'install driver' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-31 10:48:27,299 [capa.rules] DEBUG: loaded rule: 'create device object' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,300 [capa.rules] DEBUG: loaded rule: 'disable driver code integrity' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,301 [capa.rules] DEBUG: loaded rule: 'interact with driver via IOCTL' with scope: static-scope: basic block, dynamic-scope: thread
+2024-07-31 10:48:27,301 [capa.rules] DEBUG: loaded rule: 'unload driver' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-31 10:48:27,302 [capa.rules] DEBUG: loaded rule: 'get domain controller name' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,303 [capa.rules] DEBUG: loaded rule: 'enumerate domain computers via LDAP' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,304 [capa.rules] DEBUG: loaded rule: 'get domain information' with scope: static-scope: function, dynamic-scope: call
+2024-07-31 10:48:27,304 [capa.rules] DEBUG: loaded rule: 'set TCP connection state' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,305 [capa.rules] DEBUG: loaded rule: 'check Internet connectivity via WinINet' with scope: static-scope: basic block
+2024-07-31 10:48:27,306 [capa.rules] DEBUG: loaded rule: 'get local IPv4 addresses' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,307 [capa.rules] DEBUG: loaded rule: 'register network filter via WFP API' with scope: static-scope: function, dynamic-scope: call
+2024-07-31 10:48:27,307 [capa.rules] DEBUG: loaded rule: 'copy network traffic' with scope: static-scope: function, dynamic-scope: call
+2024-07-31 10:48:27,309 [capa.rules] DEBUG: loaded rule: 'get networking interfaces' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,362 [capa.rules] DEBUG: loaded rule: 'enumerate devices by category' with scope: static-scope: function
+2024-07-31 10:48:27,363 [capa.rules] DEBUG: loaded rule: 'get keyboard layout' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,365 [capa.rules] DEBUG: loaded rule: 'simulate CTRL ALT DEL' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,366 [capa.rules] DEBUG: loaded rule: 'get memory information' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,366 [capa.rules] DEBUG: loaded rule: 'get memory capacity' with scope: static-scope: function, dynamic-scope: call
+2024-07-31 10:48:27,367 [capa.rules] DEBUG: loaded rule: 'manipulate CD-ROM drive' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,368 [capa.rules] DEBUG: loaded rule: 'swap mouse buttons' with scope: static-scope: function, dynamic-scope: call
+2024-07-31 10:48:27,369 [capa.rules] DEBUG: loaded rule: 'get number of processors' with scope: static-scope: function
+2024-07-31 10:48:27,370 [capa.rules] DEBUG: loaded rule: 'get CPU information' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,371 [capa.rules] DEBUG: loaded rule: 'get number of processor cores' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,372 [capa.rules] DEBUG: loaded rule: 'enumerate disk properties' with scope: static-scope: function
+2024-07-31 10:48:27,373 [capa.rules] DEBUG: loaded rule: 'get disk information' with scope: static-scope: function, dynamic-scope: call
+2024-07-31 10:48:27,375 [capa.rules] DEBUG: loaded rule: 'get disk size' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,376 [capa.rules] DEBUG: loaded rule: 'manipulate console buffer' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,377 [capa.rules] DEBUG: loaded rule: 'query environment variable' with scope: static-scope: function, dynamic-scope: call
+2024-07-31 10:48:27,378 [capa.rules] DEBUG: loaded rule: 'get COMSPEC environment variable' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,378 [capa.rules] DEBUG: loaded rule: 'set environment variable' with scope: static-scope: function, dynamic-scope: call
+2024-07-31 10:48:27,379 [capa.rules] DEBUG: loaded rule: 'access the Windows event log' with scope: static-scope: function, dynamic-scope: call
+2024-07-31 10:48:27,380 [capa.rules] DEBUG: loaded rule: 'read data from CLFS log container' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,381 [capa.rules] DEBUG: loaded rule: 'print debug messages' with scope: static-scope: function, dynamic-scope: call
+2024-07-31 10:48:27,382 [capa.rules] DEBUG: loaded rule: 'connect to WMI namespace via WbemLocator' with scope: static-scope: function
+2024-07-31 10:48:27,383 [capa.rules] DEBUG: loaded rule: 'get process heap force flags' with scope: static-scope: basic block
+2024-07-31 10:48:27,384 [capa.rules] DEBUG: loaded rule: 'map section object' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,385 [capa.rules] DEBUG: loaded rule: 'get process heap flags' with scope: static-scope: basic block
+2024-07-31 10:48:27,386 [capa.rules] DEBUG: loaded rule: 'enumerate process modules' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,387 [capa.rules] DEBUG: loaded rule: 'attach user process memory' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,388 [capa.rules] DEBUG: loaded rule: 'allocate user process RWX memory' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,389 [capa.rules] DEBUG: loaded rule: 'allocate or change RWX memory' with scope: static-scope: basic block, dynamic-scope: thread
+2024-07-31 10:48:27,390 [capa.rules] DEBUG: loaded rule: 'inject dll' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,391 [capa.rules] DEBUG: loaded rule: 'process ghostly hollowing' with scope: static-scope: function, dynamic-scope: call
+2024-07-31 10:48:27,391 [capa.rules] DEBUG: loaded rule: 'use process Doppelgänging' with scope: static-scope: file, dynamic-scope: file
+2024-07-31 10:48:27,392 [capa.rules] DEBUG: loaded rule: 'free user process memory' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,393 [capa.rules] DEBUG: loaded rule: 'inject pe' with scope: static-scope: function
+2024-07-31 10:48:27,394 [capa.rules] DEBUG: loaded rule: 'use process replacement' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,395 [capa.rules] DEBUG: loaded rule: 'inject shellcode using extra window memory' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,396 [capa.rules] DEBUG: loaded rule: 'inject shellcode using window subclass procedure' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,397 [capa.rules] DEBUG: loaded rule: 'inject shellcode using a file mapping object' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,398 [capa.rules] DEBUG: loaded rule: 'inject thread' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,399 [capa.rules] DEBUG: loaded rule: 'inject APC' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,400 [capa.rules] DEBUG: loaded rule: 'hijack thread execution' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,400 [capa.rules] DEBUG: loaded rule: 'acquire debug privileges' with scope: static-scope: basic block, dynamic-scope: thread
+2024-07-31 10:48:27,401 [capa.rules] DEBUG: loaded rule: 'modify access privileges' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,402 [capa.rules] DEBUG: loaded rule: 'enumerate processes via NtQuerySystemInformation' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-31 10:48:27,402 [capa.rules] DEBUG: loaded rule: 'find process by PID' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,403 [capa.rules] DEBUG: loaded rule: 'get Explorer PID' with scope: static-scope: basic block, dynamic-scope: thread
+2024-07-31 10:48:27,404 [capa.rules] DEBUG: loaded rule: 'enumerate processes on remote desktop session host' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,405 [capa.rules] DEBUG: loaded rule: 'enumerate processes' with scope: static-scope: function, dynamic-scope: thread
+2024-07-31 10:48:27,406 [capa.rules] DEBUG: loaded rule: 'create process memory minidump' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-31 10:48:27,407 [capa.rules] DEBUG: loaded rule: 'create process on Windows' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-31 10:48:27,407 [capa.rules] DEBUG: loaded rule: 'create process suspended' with scope: static-scope: basic block, dynamic-scope: call
+2024-07-31 10:48:27,410 [capa.loader] DEBUG: reading signatures from directory /opt/CAPEv2/data/flare-signatures
+2024-07-31 10:48:27,411 [capa.loader] DEBUG: found signature file: /opt/CAPEv2/data/flare-signatures/1_flare_msvc_rtf_32_64.sig
+2024-07-31 10:48:27,411 [capa.loader] DEBUG: found signature file: /opt/CAPEv2/data/flare-signatures/2_flare_msvc_atlmfc_32_64.sig
+2024-07-31 10:48:27,411 [capa.loader] DEBUG: found signature file: /opt/CAPEv2/data/flare-signatures/3_flare_common_libs.sig
+2024-07-31 10:48:27,474 [root] DEBUG: Imported "auxiliary" modules:
+2024-07-31 10:48:27,475 [root] DEBUG: 	 |-- AzSniffer
+2024-07-31 10:48:27,475 [root] DEBUG: 	 `-- Sniffer
+2024-07-31 10:48:27,475 [root] DEBUG: Imported "processing" modules:
+2024-07-31 10:48:27,475 [root] DEBUG: 	 |-- CAPE
+2024-07-31 10:48:27,475 [root] DEBUG: 	 |-- AnalysisInfo
+2024-07-31 10:48:27,476 [root] DEBUG: 	 |-- Autoruns
+2024-07-31 10:48:27,476 [root] DEBUG: 	 |-- BehaviorAnalysis
+2024-07-31 10:48:27,476 [root] DEBUG: 	 |-- Debug
+2024-07-31 10:48:27,476 [root] DEBUG: 	 |-- HollowsHunter
+2024-07-31 10:48:27,476 [root] DEBUG: 	 |-- NetworkAnalysis
+2024-07-31 10:48:27,476 [root] DEBUG: 	 |-- ProcessMemory
+2024-07-31 10:48:27,476 [root] DEBUG: 	 |-- script_log_processing
+2024-07-31 10:48:27,477 [root] DEBUG: 	 |-- Suricata
+2024-07-31 10:48:27,477 [root] DEBUG: 	 |-- TraceeAnalysis
+2024-07-31 10:48:27,477 [root] DEBUG: 	 `-- UrlAnalysis
+2024-07-31 10:48:27,477 [root] DEBUG: Imported "signatures" modules:
+2024-07-31 10:48:27,477 [root] DEBUG: 	 |-- ClamAV
+2024-07-31 10:48:27,477 [root] DEBUG: 	 |-- KnownVirustotal
+2024-07-31 10:48:27,477 [root] DEBUG: 	 |-- BadCerts
+2024-07-31 10:48:27,477 [root] DEBUG: 	 |-- BadSSLCerts
+2024-07-31 10:48:27,478 [root] DEBUG: 	 |-- ZeusP2P
+2024-07-31 10:48:27,478 [root] DEBUG: 	 |-- ZeusURL
+2024-07-31 10:48:27,478 [root] DEBUG: 	 |-- AthenaHttp
+2024-07-31 10:48:27,478 [root] DEBUG: 	 |-- DirtJumper
+2024-07-31 10:48:27,478 [root] DEBUG: 	 |-- Drive
+2024-07-31 10:48:27,478 [root] DEBUG: 	 |-- Drive2
+2024-07-31 10:48:27,478 [root] DEBUG: 	 |-- Madness
+2024-07-31 10:48:27,479 [root] DEBUG: 	 |-- FamilyProxyBack
+2024-07-31 10:48:27,479 [root] DEBUG: 	 |-- FlareCAPAAntiAnalysis
+2024-07-31 10:48:27,479 [root] DEBUG: 	 |-- FlareCAPACollection
+2024-07-31 10:48:27,479 [root] DEBUG: 	 |-- FlareCAPACompiler
+2024-07-31 10:48:27,479 [root] DEBUG: 	 |-- FlareCAPADataManipulation
+2024-07-31 10:48:27,479 [root] DEBUG: 	 |-- FlareCAPAExecutable
+2024-07-31 10:48:27,479 [root] DEBUG: 	 |-- FlareCAPAHostInteration
+2024-07-31 10:48:27,479 [root] DEBUG: 	 |-- FlareCAPAcommunication
+2024-07-31 10:48:27,480 [root] DEBUG: 	 |-- FlareCAPALib
+2024-07-31 10:48:27,480 [root] DEBUG: 	 |-- FlareCAPALinking
+2024-07-31 10:48:27,480 [root] DEBUG: 	 |-- FlareCAPALoadCode
+2024-07-31 10:48:27,480 [root] DEBUG: 	 |-- FlareCAPAMalwareFamily
+2024-07-31 10:48:27,480 [root] DEBUG: 	 |-- FlareCAPANursery
+2024-07-31 10:48:27,480 [root] DEBUG: 	 |-- FlareCAPAPersistence
+2024-07-31 10:48:27,480 [root] DEBUG: 	 |-- FlareCAPARuntime
+2024-07-31 10:48:27,481 [root] DEBUG: 	 |-- FlareCAPATargeting
+2024-07-31 10:48:27,481 [root] DEBUG: 	 |-- Log4j
+2024-07-31 10:48:27,481 [root] DEBUG: 	 |-- MimicsExtension
+2024-07-31 10:48:27,481 [root] DEBUG: 	 |-- NetworkCountryDistribution
+2024-07-31 10:48:27,481 [root] DEBUG: 	 |-- NetworkMultipleDirectIPConnections
+2024-07-31 10:48:27,481 [root] DEBUG: 	 |-- NetworkCnCHTTP
+2024-07-31 10:48:27,481 [root] DEBUG: 	 |-- NetworkHTTPPOST
+2024-07-31 10:48:27,481 [root] DEBUG: 	 |-- NetworkIPEXE
+2024-07-31 10:48:27,482 [root] DEBUG: 	 |-- NetworkDGA
+2024-07-31 10:48:27,482 [root] DEBUG: 	 |-- NetworkDGAFraunhofer
+2024-07-31 10:48:27,482 [root] DEBUG: 	 |-- NetworkDynDNS
+2024-07-31 10:48:27,482 [root] DEBUG: 	 |-- NetworkExcessiveUDP
+2024-07-31 10:48:27,482 [root] DEBUG: 	 |-- NetworkHTTP
+2024-07-31 10:48:27,482 [root] DEBUG: 	 |-- NetworkICMP
+2024-07-31 10:48:27,482 [root] DEBUG: 	 |-- NetworkIRC
+2024-07-31 10:48:27,483 [root] DEBUG: 	 |-- NetworkOpenProxy
+2024-07-31 10:48:27,483 [root] DEBUG: 	 |-- NetworkP2P
+2024-07-31 10:48:27,483 [root] DEBUG: 	 |-- NetworkQuestionableHost
+2024-07-31 10:48:27,483 [root] DEBUG: 	 |-- NetworkQuestionableHttpPath
+2024-07-31 10:48:27,483 [root] DEBUG: 	 |-- NetworkQuestionableHttpsPath
+2024-07-31 10:48:27,483 [root] DEBUG: 	 |-- NetworkSMTP
+2024-07-31 10:48:27,483 [root] DEBUG: 	 |-- TorGateway
+2024-07-31 10:48:27,483 [root] DEBUG: 	 |-- BuildLangID
+2024-07-31 10:48:27,484 [root] DEBUG: 	 |-- ResourceLangID
+2024-07-31 10:48:27,484 [root] DEBUG: 	 |-- overlay
+2024-07-31 10:48:27,484 [root] DEBUG: 	 |-- PackerUnknownPESectionName
+2024-07-31 10:48:27,484 [root] DEBUG: 	 |-- ASPackPacked
+2024-07-31 10:48:27,484 [root] DEBUG: 	 |-- AspireCryptPacked
+2024-07-31 10:48:27,484 [root] DEBUG: 	 |-- BedsProtectorPacked
+2024-07-31 10:48:27,484 [root] DEBUG: 	 |-- ConfuserPacked
+2024-07-31 10:48:27,485 [root] DEBUG: 	 |-- EnigmaPacked
+2024-07-31 10:48:27,485 [root] DEBUG: 	 |-- PackerEntropy
+2024-07-31 10:48:27,485 [root] DEBUG: 	 |-- MPressPacked
+2024-07-31 10:48:27,485 [root] DEBUG: 	 |-- NatePacked
+2024-07-31 10:48:27,485 [root] DEBUG: 	 |-- NsPacked
+2024-07-31 10:48:27,485 [root] DEBUG: 	 |-- SmartAssemblyPacked
+2024-07-31 10:48:27,485 [root] DEBUG: 	 |-- SpicesPacked
+2024-07-31 10:48:27,485 [root] DEBUG: 	 |-- ThemidaPacked
+2024-07-31 10:48:27,486 [root] DEBUG: 	 |-- ThemidaPackedSection
+2024-07-31 10:48:27,486 [root] DEBUG: 	 |-- TitanPacked
+2024-07-31 10:48:27,486 [root] DEBUG: 	 |-- UPXCompressed
+2024-07-31 10:48:27,486 [root] DEBUG: 	 |-- VMPPacked
+2024-07-31 10:48:27,486 [root] DEBUG: 	 |-- YodaPacked
+2024-07-31 10:48:27,486 [root] DEBUG: 	 |-- PDF_Annot_URLs
+2024-07-31 10:48:27,486 [root] DEBUG: 	 |-- Polymorphic
+2024-07-31 10:48:27,486 [root] DEBUG: 	 |-- PunchPlusPlusPCREs
+2024-07-31 10:48:27,487 [root] DEBUG: 	 |-- Procmem_Yara
+2024-07-31 10:48:27,487 [root] DEBUG: 	 |-- CheckIP
+2024-07-31 10:48:27,487 [root] DEBUG: 	 |-- Authenticode
+2024-07-31 10:48:27,487 [root] DEBUG: 	 |-- InvalidAuthenticodeSignature
+2024-07-31 10:48:27,487 [root] DEBUG: 	 |-- DotNetAnomaly
+2024-07-31 10:48:27,487 [root] DEBUG: 	 |-- Static_Java
+2024-07-31 10:48:27,487 [root] DEBUG: 	 |-- Static_PDF
+2024-07-31 10:48:27,488 [root] DEBUG: 	 |-- PEAnomaly
+2024-07-31 10:48:27,488 [root] DEBUG: 	 |-- PECompileTimeStomping
+2024-07-31 10:48:27,488 [root] DEBUG: 	 |-- StaticPEPDBPath
+2024-07-31 10:48:27,488 [root] DEBUG: 	 |-- RATConfig
+2024-07-31 10:48:27,488 [root] DEBUG: 	 |-- VersionInfoAnomaly
+2024-07-31 10:48:27,488 [root] DEBUG: 	 |-- StealthNetwork
+2024-07-31 10:48:27,488 [root] DEBUG: 	 |-- SuricataAlert
+2024-07-31 10:48:27,488 [root] DEBUG: 	 |-- VolDevicetree1
+2024-07-31 10:48:27,489 [root] DEBUG: 	 |-- VolHandles1
+2024-07-31 10:48:27,489 [root] DEBUG: 	 |-- VolLdrModules1
+2024-07-31 10:48:27,489 [root] DEBUG: 	 |-- VolLdrModules2
+2024-07-31 10:48:27,489 [root] DEBUG: 	 |-- VolMalfind1
+2024-07-31 10:48:27,489 [root] DEBUG: 	 |-- VolMalfind2
+2024-07-31 10:48:27,489 [root] DEBUG: 	 |-- VolModscan1
+2024-07-31 10:48:27,489 [root] DEBUG: 	 |-- VolSvcscan1
+2024-07-31 10:48:27,490 [root] DEBUG: 	 |-- VolSvcscan2
+2024-07-31 10:48:27,490 [root] DEBUG: 	 |-- VolSvcscan3
+2024-07-31 10:48:27,490 [root] DEBUG: 	 |-- WHOIS_Create
+2024-07-31 10:48:27,490 [root] DEBUG: 	 |-- AccessesMailslot
+2024-07-31 10:48:27,490 [root] DEBUG: 	 |-- AccessesNetlogonRegkey
+2024-07-31 10:48:27,490 [root] DEBUG: 	 |-- AccessesPublicFolder
+2024-07-31 10:48:27,490 [root] DEBUG: 	 |-- AccessesSysvol
+2024-07-31 10:48:27,490 [root] DEBUG: 	 |-- WritesSysvol
+2024-07-31 10:48:27,491 [root] DEBUG: 	 |-- AddsAdminUser
+2024-07-31 10:48:27,491 [root] DEBUG: 	 |-- AddsUser
+2024-07-31 10:48:27,491 [root] DEBUG: 	 |-- OverwritesAdminPassword
+2024-07-31 10:48:27,491 [root] DEBUG: 	 |-- anomalous_deletefile
+2024-07-31 10:48:27,491 [root] DEBUG: 	 |-- AntiAnalysisDetectFile
+2024-07-31 10:48:27,491 [root] DEBUG: 	 |-- AntiAnalysisDetectReg
+2024-07-31 10:48:27,491 [root] DEBUG: 	 |-- QihooDetectLibs
+2024-07-31 10:48:27,492 [root] DEBUG: 	 |-- AhnlabDetectLibs
+2024-07-31 10:48:27,492 [root] DEBUG: 	 |-- AvastDetectLibs
+2024-07-31 10:48:27,492 [root] DEBUG: 	 |-- BitdefenderDetectLibs
+2024-07-31 10:48:27,492 [root] DEBUG: 	 |-- BullguardDetectLibs
+2024-07-31 10:48:27,492 [root] DEBUG: 	 |-- ModifiesAttachmentManager
+2024-07-31 10:48:27,492 [root] DEBUG: 	 |-- AntiAVDetectFile
+2024-07-31 10:48:27,492 [root] DEBUG: 	 |-- AntiAVDetectReg
+2024-07-31 10:48:27,493 [root] DEBUG: 	 |-- EmsisoftDetectLibs
+2024-07-31 10:48:27,493 [root] DEBUG: 	 |-- QurbDetectLibs
+2024-07-31 10:48:27,493 [root] DEBUG: 	 |-- AntiAVServiceStop
+2024-07-31 10:48:27,493 [root] DEBUG: 	 |-- AntiAVSRP
+2024-07-31 10:48:27,493 [root] DEBUG: 	 |-- AntiAVWhitespace
+2024-07-31 10:48:27,493 [root] DEBUG: 	 |-- antidebug_addvectoredexceptionhandler
+2024-07-31 10:48:27,493 [root] DEBUG: 	 |-- APIOverrideDetectLibs
+2024-07-31 10:48:27,493 [root] DEBUG: 	 |-- antidebug_checkremotedebuggerpresent
+2024-07-31 10:48:27,494 [root] DEBUG: 	 |-- antidebug_debugactiveprocess
+2024-07-31 10:48:27,494 [root] DEBUG: 	 |-- AntiDBGDevices
+2024-07-31 10:48:27,494 [root] DEBUG: 	 |-- antidebug_gettickcount
+2024-07-31 10:48:27,494 [root] DEBUG: 	 |-- antidebug_guardpages
+2024-07-31 10:48:27,494 [root] DEBUG: 	 |-- antidebug_ntcreatethreadex
+2024-07-31 10:48:27,494 [root] DEBUG: 	 |-- BullguardDetectLibs
+2024-07-31 10:48:27,494 [root] DEBUG: 	 |-- antidebug_ntsetinformationthread
+2024-07-31 10:48:27,495 [root] DEBUG: 	 |-- antidebug_outputdebugstring
+2024-07-31 10:48:27,495 [root] DEBUG: 	 |-- antidebug_setunhandledexceptionfilter
+2024-07-31 10:48:27,495 [root] DEBUG: 	 |-- AntiDBGWindows
+2024-07-31 10:48:27,495 [root] DEBUG: 	 |-- AntiEmuWinDefend
+2024-07-31 10:48:27,495 [root] DEBUG: 	 |-- WineDetectReg
+2024-07-31 10:48:27,495 [root] DEBUG: 	 |-- WineDetectFunc
+2024-07-31 10:48:27,495 [root] DEBUG: 	 |-- AntiSandboxCheckUserdomain
+2024-07-31 10:48:27,495 [root] DEBUG: 	 |-- AntiCuckoo
+2024-07-31 10:48:27,496 [root] DEBUG: 	 |-- CuckooDetectFiles
+2024-07-31 10:48:27,496 [root] DEBUG: 	 |-- CuckooCrash
+2024-07-31 10:48:27,496 [root] DEBUG: 	 |-- AntiSandboxForegroundWindow
+2024-07-31 10:48:27,496 [root] DEBUG: 	 |-- FortinetDetectFiles
+2024-07-31 10:48:27,496 [root] DEBUG: 	 |-- SandboxJoeAnubisDetectFiles
+2024-07-31 10:48:27,496 [root] DEBUG: 	 |-- HookMouse
+2024-07-31 10:48:27,496 [root] DEBUG: 	 |-- AntiSandboxRestart
+2024-07-31 10:48:27,497 [root] DEBUG: 	 |-- SandboxieDetectLibs
+2024-07-31 10:48:27,497 [root] DEBUG: 	 |-- AntisandboxSboxieMutex
+2024-07-31 10:48:27,497 [root] DEBUG: 	 |-- AntiSandboxSboxieObjects
+2024-07-31 10:48:27,497 [root] DEBUG: 	 |-- AntiSandboxScriptTimer
+2024-07-31 10:48:27,497 [root] DEBUG: 	 |-- AntiSandboxSleep
+2024-07-31 10:48:27,497 [root] DEBUG: 	 |-- SunbeltDetectFiles
+2024-07-31 10:48:27,498 [root] DEBUG: 	 |-- SunbeltDetectLibs
+2024-07-31 10:48:27,498 [root] DEBUG: 	 |-- AntiSandboxSuspend
+2024-07-31 10:48:27,498 [root] DEBUG: 	 |-- ThreatTrackDetectFiles
+2024-07-31 10:48:27,498 [root] DEBUG: 	 |-- Unhook
+2024-07-31 10:48:27,498 [root] DEBUG: 	 |-- BochsDetectKeys
+2024-07-31 10:48:27,499 [root] DEBUG: 	 |-- AntiVMDirectoryObjects
+2024-07-31 10:48:27,499 [root] DEBUG: 	 |-- AntiVMBios
+2024-07-31 10:48:27,499 [root] DEBUG: 	 |-- AntiVMCPU
+2024-07-31 10:48:27,499 [root] DEBUG: 	 |-- DiskInformation
+2024-07-31 10:48:27,499 [root] DEBUG: 	 |-- SetupAPIDiskInformation
+2024-07-31 10:48:27,499 [root] DEBUG: 	 |-- AntiVMDiskReg
+2024-07-31 10:48:27,500 [root] DEBUG: 	 |-- AntiVMSCSI
+2024-07-31 10:48:27,500 [root] DEBUG: 	 |-- AntiVMServices
+2024-07-31 10:48:27,500 [root] DEBUG: 	 |-- AntiVMSystem
+2024-07-31 10:48:27,500 [root] DEBUG: 	 |-- HyperVDetectKeys
+2024-07-31 10:48:27,500 [root] DEBUG: 	 |-- AntiVMChecksAvailableMemory
+2024-07-31 10:48:27,500 [root] DEBUG: 	 |-- NetworkAdapters
+2024-07-31 10:48:27,501 [root] DEBUG: 	 |-- ParallelsDetectKeys
+2024-07-31 10:48:27,501 [root] DEBUG: 	 |-- VBoxDetectDevices
+2024-07-31 10:48:27,501 [root] DEBUG: 	 |-- VBoxDetectFiles
+2024-07-31 10:48:27,501 [root] DEBUG: 	 |-- VBoxDetectKeys
+2024-07-31 10:48:27,501 [root] DEBUG: 	 |-- VBoxDetectLibs
+2024-07-31 10:48:27,501 [root] DEBUG: 	 |-- VBoxDetectProvname
+2024-07-31 10:48:27,501 [root] DEBUG: 	 |-- VBoxDetectWindow
+2024-07-31 10:48:27,502 [root] DEBUG: 	 |-- VMwareDetectDevices
+2024-07-31 10:48:27,502 [root] DEBUG: 	 |-- VMwareDetectEvent
+2024-07-31 10:48:27,502 [root] DEBUG: 	 |-- VMwareDetectFiles
+2024-07-31 10:48:27,502 [root] DEBUG: 	 |-- VMwareDetectKeys
+2024-07-31 10:48:27,502 [root] DEBUG: 	 |-- VMwareDetectLibs
+2024-07-31 10:48:27,502 [root] DEBUG: 	 |-- VMwareDetectMutexes
+2024-07-31 10:48:27,502 [root] DEBUG: 	 |-- VPCDetectFiles
+2024-07-31 10:48:27,503 [root] DEBUG: 	 |-- VPCDetectKeys
+2024-07-31 10:48:27,503 [root] DEBUG: 	 |-- VPCDetectMutex
+2024-07-31 10:48:27,503 [root] DEBUG: 	 |-- XenDetectKeys
+2024-07-31 10:48:27,503 [root] DEBUG: 	 |-- APISpamming
+2024-07-31 10:48:27,503 [root] DEBUG: 	 |-- api_uuidfromstringa
+2024-07-31 10:48:27,503 [root] DEBUG: 	 |-- AsyncRatMutex
+2024-07-31 10:48:27,504 [root] DEBUG: 	 |-- GulpixBehavior
+2024-07-31 10:48:27,504 [root] DEBUG: 	 |-- KetricanRegkeys
+2024-07-31 10:48:27,504 [root] DEBUG: 	 |-- OkrumMutexes
+2024-07-31 10:48:27,504 [root] DEBUG: 	 |-- Cridex
+2024-07-31 10:48:27,504 [root] DEBUG: 	 |-- Geodo
+2024-07-31 10:48:27,504 [root] DEBUG: 	 |-- Prinimalka
+2024-07-31 10:48:27,504 [root] DEBUG: 	 |-- SpyEyeMutexes
+2024-07-31 10:48:27,505 [root] DEBUG: 	 |-- ZeusMutexes
+2024-07-31 10:48:27,505 [root] DEBUG: 	 |-- BCDEditCommand
+2024-07-31 10:48:27,505 [root] DEBUG: 	 |-- BitcoinOpenCL
+2024-07-31 10:48:27,505 [root] DEBUG: 	 |-- AccessesPrimaryPartition
+2024-07-31 10:48:27,505 [root] DEBUG: 	 |-- Bootkit
+2024-07-31 10:48:27,505 [root] DEBUG: 	 |-- DirectHDDAccess
+2024-07-31 10:48:27,506 [root] DEBUG: 	 |-- EnumeratesPhysicalDrives
+2024-07-31 10:48:27,506 [root] DEBUG: 	 |-- PhysicalDriveAccess
+2024-07-31 10:48:27,506 [root] DEBUG: 	 |-- PotentialOverWriteMBR
+2024-07-31 10:48:27,506 [root] DEBUG: 	 |-- SuspiciousIoctlSCSIPassthough
+2024-07-31 10:48:27,506 [root] DEBUG: 	 |-- Ruskill
+2024-07-31 10:48:27,506 [root] DEBUG: 	 |-- BrowserAddon
+2024-07-31 10:48:27,507 [root] DEBUG: 	 |-- ChromiumBrowserExtensionDirectory
+2024-07-31 10:48:27,507 [root] DEBUG: 	 |-- BrowserHelperObject
+2024-07-31 10:48:27,507 [root] DEBUG: 	 |-- BrowserNeeded
+2024-07-31 10:48:27,507 [root] DEBUG: 	 |-- ModifyProxy
+2024-07-31 10:48:27,507 [root] DEBUG: 	 |-- BrowserScanbox
+2024-07-31 10:48:27,507 [root] DEBUG: 	 |-- BrowserSecurity
+2024-07-31 10:48:27,508 [root] DEBUG: 	 |-- browser_startpage
+2024-07-31 10:48:27,508 [root] DEBUG: 	 |-- FirefoxDisablesProcessPerTab
+2024-07-31 10:48:27,508 [root] DEBUG: 	 |-- IEDisablesProcessPerTab
+2024-07-31 10:48:27,508 [root] DEBUG: 	 |-- OdbcconfBypass
+2024-07-31 10:48:27,508 [root] DEBUG: 	 |-- RegSrv32SquiblydooDLLLoad
+2024-07-31 10:48:27,508 [root] DEBUG: 	 |-- SquiblydooBypass
+2024-07-31 10:48:27,509 [root] DEBUG: 	 |-- SquiblytwoBypass
+2024-07-31 10:48:27,509 [root] DEBUG: 	 |-- BypassFirewall
+2024-07-31 10:48:27,509 [root] DEBUG: 	 |-- UACBypassCMSTP
+2024-07-31 10:48:27,509 [root] DEBUG: 	 |-- UACBypassCMSTPCOM
+2024-07-31 10:48:27,509 [root] DEBUG: 	 |-- UACBypassDelegateExecuteSdclt
+2024-07-31 10:48:27,509 [root] DEBUG: 	 |-- UACBypassEventvwr
+2024-07-31 10:48:27,510 [root] DEBUG: 	 |-- UACBypassFodhelper
+2024-07-31 10:48:27,510 [root] DEBUG: 	 |-- CAPEExtractedContent
+2024-07-31 10:48:27,510 [root] DEBUG: 	 |-- CarberpMutexes
+2024-07-31 10:48:27,510 [root] DEBUG: 	 |-- ClearsLogs
+2024-07-31 10:48:27,510 [root] DEBUG: 	 |-- ClickfraudCookies
+2024-07-31 10:48:27,510 [root] DEBUG: 	 |-- ClickfraudVolume
+2024-07-31 10:48:27,511 [root] DEBUG: 	 |-- CmdlineObfuscation
+2024-07-31 10:48:27,511 [root] DEBUG: 	 |-- CmdlineSwitches
+2024-07-31 10:48:27,511 [root] DEBUG: 	 |-- CmdlineTerminate
+2024-07-31 10:48:27,511 [root] DEBUG: 	 |-- CommandLineForFilesWildCard
+2024-07-31 10:48:27,511 [root] DEBUG: 	 |-- CommandLineHTTPLink
+2024-07-31 10:48:27,511 [root] DEBUG: 	 |-- CommandLineLongString
+2024-07-31 10:48:27,512 [root] DEBUG: 	 |-- CommandLineReversedHTTPLink
+2024-07-31 10:48:27,512 [root] DEBUG: 	 |-- LongCommandline
+2024-07-31 10:48:27,512 [root] DEBUG: 	 |-- PowershellRenamedCommandLine
+2024-07-31 10:48:27,512 [root] DEBUG: 	 |-- SystemAccountDiscoveryCMD
+2024-07-31 10:48:27,512 [root] DEBUG: 	 |-- SystemCurrentlyLoggedinUserCMD
+2024-07-31 10:48:27,513 [root] DEBUG: 	 |-- SystemInfoDiscoveryCMD
+2024-07-31 10:48:27,513 [root] DEBUG: 	 |-- SystemInfoDiscoveryPWSH
+2024-07-31 10:48:27,513 [root] DEBUG: 	 |-- SystemNetworkDiscoveryCMD
+2024-07-31 10:48:27,513 [root] DEBUG: 	 |-- SystemNetworkDiscoveryPWSH
+2024-07-31 10:48:27,513 [root] DEBUG: 	 |-- SystemUserDiscoveryCMD
+2024-07-31 10:48:27,513 [root] DEBUG: 	 |-- CompilesDotNetCode
+2024-07-31 10:48:27,514 [root] DEBUG: 	 |-- CopiesSelf
+2024-07-31 10:48:27,514 [root] DEBUG: 	 |-- CreatesExe
+2024-07-31 10:48:27,514 [root] DEBUG: 	 |-- CreatesLargeKey
+2024-07-31 10:48:27,514 [root] DEBUG: 	 |-- CreatesNullValue
+2024-07-31 10:48:27,514 [root] DEBUG: 	 |-- CredWiz
+2024-07-31 10:48:27,514 [root] DEBUG: 	 |-- EnablesWDigest
+2024-07-31 10:48:27,514 [root] DEBUG: 	 |-- VaultCmd
+2024-07-31 10:48:27,515 [root] DEBUG: 	 |-- FileCredentialStoreAccess
+2024-07-31 10:48:27,515 [root] DEBUG: 	 |-- FileCredentialStoreWrite
+2024-07-31 10:48:27,515 [root] DEBUG: 	 |-- LsassCredentialDumping
+2024-07-31 10:48:27,515 [root] DEBUG: 	 |-- RegistryCredentialDumping
+2024-07-31 10:48:27,515 [root] DEBUG: 	 |-- RegistryCredentialStoreAccess
+2024-07-31 10:48:27,515 [root] DEBUG: 	 |-- RegistryLSASecretsAccess
+2024-07-31 10:48:27,515 [root] DEBUG: 	 |-- ComsvcsCredentialDump
+2024-07-31 10:48:27,515 [root] DEBUG: 	 |-- CriticalProcess
+2024-07-31 10:48:27,516 [root] DEBUG: 	 |-- CryptGenKey
+2024-07-31 10:48:27,516 [root] DEBUG: 	 |-- CryptominingStratumCommand
+2024-07-31 10:48:27,516 [root] DEBUG: 	 |-- MINERS
+2024-07-31 10:48:27,516 [root] DEBUG: 	 |-- CVE_2014_6332
+2024-07-31 10:48:27,516 [root] DEBUG: 	 |-- CVE2015_2419_JS
+2024-07-31 10:48:27,516 [root] DEBUG: 	 |-- CVE_2016_0189
+2024-07-31 10:48:27,516 [root] DEBUG: 	 |-- CVE_2016_7200
+2024-07-31 10:48:27,517 [root] DEBUG: 	 |-- CypherITMutexes
+2024-07-31 10:48:27,517 [root] DEBUG: 	 |-- DarkCometRegkeys
+2024-07-31 10:48:27,517 [root] DEBUG: 	 |-- DatopLoader
+2024-07-31 10:48:27,517 [root] DEBUG: 	 |-- DeadConnect
+2024-07-31 10:48:27,517 [root] DEBUG: 	 |-- DeadLink
+2024-07-31 10:48:27,517 [root] DEBUG: 	 |-- DebugsSelf
+2024-07-31 10:48:27,517 [root] DEBUG: 	 |-- DecoyDocument
+2024-07-31 10:48:27,518 [root] DEBUG: 	 |-- DecoyImage
+2024-07-31 10:48:27,518 [root] DEBUG: 	 |-- DeepFreezeMutex
+2024-07-31 10:48:27,518 [root] DEBUG: 	 |-- DeletesExecutedFiles
+2024-07-31 10:48:27,518 [root] DEBUG: 	 |-- DeletesSelf
+2024-07-31 10:48:27,518 [root] DEBUG: 	 |-- DeletesShadowCopies
+2024-07-31 10:48:27,518 [root] DEBUG: 	 |-- DeletesSystemStateBackup
+2024-07-31 10:48:27,518 [root] DEBUG: 	 |-- DEPBypass
+2024-07-31 10:48:27,519 [root] DEBUG: 	 |-- DEPDisable
+2024-07-31 10:48:27,519 [root] DEBUG: 	 |-- DisablesAppLaunch
+2024-07-31 10:48:27,519 [root] DEBUG: 	 |-- DisablesAutomaticAppTermination
+2024-07-31 10:48:27,519 [root] DEBUG: 	 |-- DisablesAppVirtualiztion
+2024-07-31 10:48:27,519 [root] DEBUG: 	 |-- DisablesBackups
+2024-07-31 10:48:27,519 [root] DEBUG: 	 |-- DisablesBrowserWarn
+2024-07-31 10:48:27,519 [root] DEBUG: 	 |-- DisablesContextMenus
+2024-07-31 10:48:27,519 [root] DEBUG: 	 |-- DisablesCPLDisplay
+2024-07-31 10:48:27,520 [root] DEBUG: 	 |-- DisablesCrashdumps
+2024-07-31 10:48:27,520 [root] DEBUG: 	 |-- DisablesMappedDrivesAutodisconnect
+2024-07-31 10:48:27,520 [root] DEBUG: 	 |-- DisablesEventLogging
+2024-07-31 10:48:27,520 [root] DEBUG: 	 |-- DisableFolderOptions
+2024-07-31 10:48:27,520 [root] DEBUG: 	 |-- DisablesNotificationCenter
+2024-07-31 10:48:27,520 [root] DEBUG: 	 |-- DisablesPowerOptions
+2024-07-31 10:48:27,521 [root] DEBUG: 	 |-- DisablesRestoreDefaultState
+2024-07-31 10:48:27,521 [root] DEBUG: 	 |-- DisableRunCommand
+2024-07-31 10:48:27,521 [root] DEBUG: 	 |-- DisablesSecurity
+2024-07-31 10:48:27,521 [root] DEBUG: 	 |-- DisablesSmartScreen
+2024-07-31 10:48:27,521 [root] DEBUG: 	 |-- DisablesSPDY
+2024-07-31 10:48:27,521 [root] DEBUG: 	 |-- DisablesStartMenuSearch
+2024-07-31 10:48:27,521 [root] DEBUG: 	 |-- DisablesSystemRestore
+2024-07-31 10:48:27,521 [root] DEBUG: 	 |-- DisablesUAC
+2024-07-31 10:48:27,522 [root] DEBUG: 	 |-- DisablesWER
+2024-07-31 10:48:27,522 [root] DEBUG: 	 |-- DisablesWFP
+2024-07-31 10:48:27,522 [root] DEBUG: 	 |-- DisablesWindowsDefender
+2024-07-31 10:48:27,522 [root] DEBUG: 	 |-- DisablesWindowsDefenderDISM
+2024-07-31 10:48:27,522 [root] DEBUG: 	 |-- DisablesWindowsDefenderLogging
+2024-07-31 10:48:27,522 [root] DEBUG: 	 |-- RemovesWindowsDefenderContextMenu
+2024-07-31 10:48:27,522 [root] DEBUG: 	 |-- WindowsDefenderPowerShell
+2024-07-31 10:48:27,523 [root] DEBUG: 	 |-- DisablesWindowsFileProtection
+2024-07-31 10:48:27,523 [root] DEBUG: 	 |-- DisablesWindowsUpdate
+2024-07-31 10:48:27,523 [root] DEBUG: 	 |-- DisablesWindowsFirewall
+2024-07-31 10:48:27,523 [root] DEBUG: 	 |-- DllLoadUncommonFileTypes
+2024-07-31 10:48:27,523 [root] DEBUG: 	 |-- DocScriptEXEDrop
+2024-07-31 10:48:27,523 [root] DEBUG: 	 |-- AdfindDomainEnumeration
+2024-07-31 10:48:27,523 [root] DEBUG: 	 |-- DomainEnumerationCommands
+2024-07-31 10:48:27,524 [root] DEBUG: 	 |-- AndromutMutexes
+2024-07-31 10:48:27,524 [root] DEBUG: 	 |-- DownloaderCabby
+2024-07-31 10:48:27,524 [root] DEBUG: 	 |-- GuLoaderAPIs
+2024-07-31 10:48:27,524 [root] DEBUG: 	 |-- PhorpiexMutexes
+2024-07-31 10:48:27,524 [root] DEBUG: 	 |-- ProtonBotMutexes
+2024-07-31 10:48:27,524 [root] DEBUG: 	 |-- DriverFilterManager
+2024-07-31 10:48:27,524 [root] DEBUG: 	 |-- DriverLoad
+2024-07-31 10:48:27,525 [root] DEBUG: 	 |-- Dropper
+2024-07-31 10:48:27,525 [root] DEBUG: 	 |-- EXEDropper_JS
+2024-07-31 10:48:27,525 [root] DEBUG: 	 |-- dynamic_function_loading
+2024-07-31 10:48:27,525 [root] DEBUG: 	 |-- DLLArchiveExecution
+2024-07-31 10:48:27,525 [root] DEBUG: 	 |-- LNKArchiveExecution
+2024-07-31 10:48:27,525 [root] DEBUG: 	 |-- ScriptArchiveExecution
+2024-07-31 10:48:27,525 [root] DEBUG: 	 |-- EncryptedIOC
+2024-07-31 10:48:27,525 [root] DEBUG: 	 |-- Excel4MacroUrls
+2024-07-31 10:48:27,526 [root] DEBUG: 	 |-- Crash
+2024-07-31 10:48:27,526 [root] DEBUG: 	 |-- ProcessCreationSuspiciousLocation
+2024-07-31 10:48:27,526 [root] DEBUG: 	 |-- exploit_getbasekerneladdress
+2024-07-31 10:48:27,526 [root] DEBUG: 	 |-- exploit_gethaldispatchtable
+2024-07-31 10:48:27,526 [root] DEBUG: 	 |-- ExploitHeapspray
+2024-07-31 10:48:27,526 [root] DEBUG: 	 |-- SpoolerAccess
+2024-07-31 10:48:27,526 [root] DEBUG: 	 |-- SpoolerSvcStart
+2024-07-31 10:48:27,526 [root] DEBUG: 	 |-- KoadicAPIs
+2024-07-31 10:48:27,527 [root] DEBUG: 	 |-- KoadicNetworkActivity
+2024-07-31 10:48:27,527 [root] DEBUG: 	 |-- Modiloader_APIs
+2024-07-31 10:48:27,527 [root] DEBUG: 	 |-- MappedDrivesUAC
+2024-07-31 10:48:27,527 [root] DEBUG: 	 |-- SystemMetrics
+2024-07-31 10:48:27,527 [root] DEBUG: 	 |-- Generic_Phish
+2024-07-31 10:48:27,527 [root] DEBUG: 	 |-- HidesRecycleBinIcon
+2024-07-31 10:48:27,527 [root] DEBUG: 	 |-- HTTP_Request
+2024-07-31 10:48:27,528 [root] DEBUG: 	 |-- ApocalypseStealerFileBehavior
+2024-07-31 10:48:27,528 [root] DEBUG: 	 |-- ArkeiFiles
+2024-07-31 10:48:27,528 [root] DEBUG: 	 |-- AzorultMutexes
+2024-07-31 10:48:27,528 [root] DEBUG: 	 |-- BitcoinWallet
+2024-07-31 10:48:27,528 [root] DEBUG: 	 |-- BrowserStealer
+2024-07-31 10:48:27,528 [root] DEBUG: 	 |-- InfostealerBrowserPassword
+2024-07-31 10:48:27,528 [root] DEBUG: 	 |-- CookiesStealer
+2024-07-31 10:48:27,528 [root] DEBUG: 	 |-- CryptBotFiles
+2024-07-31 10:48:27,529 [root] DEBUG: 	 |-- CryptBotNetwork
+2024-07-31 10:48:27,529 [root] DEBUG: 	 |-- EchelonFiles
+2024-07-31 10:48:27,529 [root] DEBUG: 	 |-- FTPStealer
+2024-07-31 10:48:27,529 [root] DEBUG: 	 |-- IMStealer
+2024-07-31 10:48:27,529 [root] DEBUG: 	 |-- KeyLogger
+2024-07-31 10:48:27,529 [root] DEBUG: 	 |-- EmailStealer
+2024-07-31 10:48:27,529 [root] DEBUG: 	 |-- MassLoggerArtifacts
+2024-07-31 10:48:27,530 [root] DEBUG: 	 |-- MassLoggerFiles
+2024-07-31 10:48:27,530 [root] DEBUG: 	 |-- MassLoggerVersion
+2024-07-31 10:48:27,530 [root] DEBUG: 	 |-- PoullightFiles
+2024-07-31 10:48:27,530 [root] DEBUG: 	 |-- PurpleWaveMutexes
+2024-07-31 10:48:27,530 [root] DEBUG: 	 |-- PurpleWaveNetworkAcivity
+2024-07-31 10:48:27,530 [root] DEBUG: 	 |-- QuilClipperMutexes
+2024-07-31 10:48:27,530 [root] DEBUG: 	 |-- QuilClipperNetworkBehavior
+2024-07-31 10:48:27,530 [root] DEBUG: 	 |-- QulabFiles
+2024-07-31 10:48:27,531 [root] DEBUG: 	 |-- QulabMutexes
+2024-07-31 10:48:27,531 [root] DEBUG: 	 |-- RaccoonInfoStealerMutex
+2024-07-31 10:48:27,531 [root] DEBUG: 	 |-- raccoon
+2024-07-31 10:48:27,531 [root] DEBUG: 	 |-- CapturesScreenshot
+2024-07-31 10:48:27,531 [root] DEBUG: 	 |-- vidar
+2024-07-31 10:48:27,531 [root] DEBUG: 	 |-- InjectionCRT
+2024-07-31 10:48:27,531 [root] DEBUG: 	 |-- InjectionExplorer
+2024-07-31 10:48:27,532 [root] DEBUG: 	 |-- InjectionExtension
+2024-07-31 10:48:27,532 [root] DEBUG: 	 |-- InjectionNetworkTraffic
+2024-07-31 10:48:27,532 [root] DEBUG: 	 |-- InjectionRUNPE
+2024-07-31 10:48:27,532 [root] DEBUG: 	 |-- InjectionRWX
+2024-07-31 10:48:27,532 [root] DEBUG: 	 |-- injection_themeinitapihook
+2024-07-31 10:48:27,532 [root] DEBUG: 	 |-- Internet_Dropper
+2024-07-31 10:48:27,532 [root] DEBUG: 	 |-- IPC_NamedPipe
+2024-07-31 10:48:27,532 [root] DEBUG: 	 |-- JS_Phish
+2024-07-31 10:48:27,533 [root] DEBUG: 	 |-- JS_SuspiciousRedirect
+2024-07-31 10:48:27,533 [root] DEBUG: 	 |-- malicious_dynamic_function_loading
+2024-07-31 10:48:27,533 [root] DEBUG: 	 |-- EncryptPCInfo
+2024-07-31 10:48:27,533 [root] DEBUG: 	 |-- EnryptDataAgentTeslaHTTP
+2024-07-31 10:48:27,533 [root] DEBUG: 	 |-- EnryptDataAgentTeslaHTTPT2
+2024-07-31 10:48:27,533 [root] DEBUG: 	 |-- EnryptDataNanoCore
+2024-07-31 10:48:27,533 [root] DEBUG: 	 |-- MartiansIE
+2024-07-31 10:48:27,534 [root] DEBUG: 	 |-- MartiansOffice
+2024-07-31 10:48:27,534 [root] DEBUG: 	 |-- MimicsAgent
+2024-07-31 10:48:27,534 [root] DEBUG: 	 |-- MimicsFiletime
+2024-07-31 10:48:27,534 [root] DEBUG: 	 |-- MimicsIcon
+2024-07-31 10:48:27,534 [root] DEBUG: 	 |-- MasqueradesProcessName
+2024-07-31 10:48:27,534 [root] DEBUG: 	 |-- MimikatzModules
+2024-07-31 10:48:27,535 [root] DEBUG: 	 |-- QuilMinerNetworkBehavior
+2024-07-31 10:48:27,535 [root] DEBUG: 	 |-- ModifiesCerts
+2024-07-31 10:48:27,535 [root] DEBUG: 	 |-- DotNetCLRUsageLogKnob
+2024-07-31 10:48:27,535 [root] DEBUG: 	 |-- Modifies_HostFile
+2024-07-31 10:48:27,535 [root] DEBUG: 	 |-- ModifiesOEMInformation
+2024-07-31 10:48:27,535 [root] DEBUG: 	 |-- ModifySecurityCenterWarnings
+2024-07-31 10:48:27,536 [root] DEBUG: 	 |-- ModifiesUACNotify
+2024-07-31 10:48:27,536 [root] DEBUG: 	 |-- ModifiesDesktopWallpaper
+2024-07-31 10:48:27,536 [root] DEBUG: 	 |-- ZoneID
+2024-07-31 10:48:27,536 [root] DEBUG: 	 |-- move_file_on_reboot
+2024-07-31 10:48:27,536 [root] DEBUG: 	 |-- Multiple_UA
+2024-07-31 10:48:27,536 [root] DEBUG: 	 |-- NetworkAnomaly
+2024-07-31 10:48:27,537 [root] DEBUG: 	 |-- NetworkBIND
+2024-07-31 10:48:27,537 [root] DEBUG: 	 |-- NetworkCnCHTTPSArchive
+2024-07-31 10:48:27,537 [root] DEBUG: 	 |-- NetworkCnCHTTPSFreeWebHosting
+2024-07-31 10:48:27,537 [root] DEBUG: 	 |-- NetworkCnCHTTPSGeneric
+2024-07-31 10:48:27,537 [root] DEBUG: 	 |-- NetworkCnCHTTPSInteractsh
+2024-07-31 10:48:27,538 [root] DEBUG: 	 |-- NetworkCnCHTTPSOpenSource
+2024-07-31 10:48:27,538 [root] DEBUG: 	 |-- NetworkCnCHTTPSPasteSite
+2024-07-31 10:48:27,538 [root] DEBUG: 	 |-- NetworkCnCHTTPSPayload
+2024-07-31 10:48:27,538 [root] DEBUG: 	 |-- NetworkCnCHTTPSServiceInterface
+2024-07-31 10:48:27,538 [root] DEBUG: 	 |-- NetworkCnCHTTPSSocialMedia
+2024-07-31 10:48:27,538 [root] DEBUG: 	 |-- NetworkCnCHTTPSTelegram
+2024-07-31 10:48:27,538 [root] DEBUG: 	 |-- NetworkCnCHTTPSTempStorageSite
+2024-07-31 10:48:27,539 [root] DEBUG: 	 |-- NetworkCnCHTTPSTempURLDNS
+2024-07-31 10:48:27,539 [root] DEBUG: 	 |-- NetworkCnCHTTPSURLShortenerSite
+2024-07-31 10:48:27,539 [root] DEBUG: 	 |-- NetworkCnCHTTPSUserAgent
+2024-07-31 10:48:27,539 [root] DEBUG: 	 |-- NetworkCnCSMTPSExfil
+2024-07-31 10:48:27,539 [root] DEBUG: 	 |-- NetworkCnCSMTPSGeneric
+2024-07-31 10:48:27,539 [root] DEBUG: 	 |-- NetworkDNSBlockChain
+2024-07-31 10:48:27,539 [root] DEBUG: 	 |-- NetworkDNSIDN
+2024-07-31 10:48:27,540 [root] DEBUG: 	 |-- NetworkDNSOpenNIC
+2024-07-31 10:48:27,540 [root] DEBUG: 	 |-- NetworkDNSPasteSite
+2024-07-31 10:48:27,540 [root] DEBUG: 	 |-- NetworkDNSReverseProxy
+2024-07-31 10:48:27,540 [root] DEBUG: 	 |-- NetworkDNSSuspiciousQueryType
+2024-07-31 10:48:27,540 [root] DEBUG: 	 |-- NetworkDNSTempFileService
+2024-07-31 10:48:27,540 [root] DEBUG: 	 |-- NetworkDNSTempURLDNS
+2024-07-31 10:48:27,541 [root] DEBUG: 	 |-- NetworkDNSTunnelingRequest
+2024-07-31 10:48:27,541 [root] DEBUG: 	 |-- NetworkDNSURLShortener
+2024-07-31 10:48:27,541 [root] DEBUG: 	 |-- NetworkDOHTLS
+2024-07-31 10:48:27,541 [root] DEBUG: 	 |-- Suspicious_TLD
+2024-07-31 10:48:27,541 [root] DEBUG: 	 |-- NetworkDocumentHTTP
+2024-07-31 10:48:27,541 [root] DEBUG: 	 |-- ExplorerHTTP
+2024-07-31 10:48:27,542 [root] DEBUG: 	 |-- NetworkFakeUserAgent
+2024-07-31 10:48:27,542 [root] DEBUG: 	 |-- NetworkDocumentFile
+2024-07-31 10:48:27,542 [root] DEBUG: 	 |-- NetworkEXE
+2024-07-31 10:48:27,542 [root] DEBUG: 	 |-- Tor
+2024-07-31 10:48:27,542 [root] DEBUG: 	 |-- TorHiddenService
+2024-07-31 10:48:27,542 [root] DEBUG: 	 |-- Office_Code_Page
+2024-07-31 10:48:27,543 [root] DEBUG: 	 |-- OfficeAddinLoading
+2024-07-31 10:48:27,543 [root] DEBUG: 	 |-- OfficeCOMLoad
+2024-07-31 10:48:27,543 [root] DEBUG: 	 |-- OfficeDotNetLoad
+2024-07-31 10:48:27,543 [root] DEBUG: 	 |-- OfficeMSHTMLLoad
+2024-07-31 10:48:27,543 [root] DEBUG: 	 |-- OfficePerfKey
+2024-07-31 10:48:27,544 [root] DEBUG: 	 |-- OfficeVBLLoad
+2024-07-31 10:48:27,544 [root] DEBUG: 	 |-- OfficeWMILoad
+2024-07-31 10:48:27,544 [root] DEBUG: 	 |-- OfficeCVE201711882
+2024-07-31 10:48:27,544 [root] DEBUG: 	 |-- OfficeCVE201711882Network
+2024-07-31 10:48:27,544 [root] DEBUG: 	 |-- OfficeCVE202140444
+2024-07-31 10:48:27,544 [root] DEBUG: 	 |-- OfficeCVE202140444M2
+2024-07-31 10:48:27,545 [root] DEBUG: 	 |-- OfficeFlashLoad
+2024-07-31 10:48:27,545 [root] DEBUG: 	 |-- OfficePostScript
+2024-07-31 10:48:27,545 [root] DEBUG: 	 |-- Office_Macro
+2024-07-31 10:48:27,545 [root] DEBUG: 	 |-- ChangesTrustCenter_settings
+2024-07-31 10:48:27,545 [root] DEBUG: 	 |-- DisablesVBATrustAccess
+2024-07-31 10:48:27,546 [root] DEBUG: 	 |-- OfficeMacroAutoExecution
+2024-07-31 10:48:27,546 [root] DEBUG: 	 |-- OfficeMacroIOC
+2024-07-31 10:48:27,546 [root] DEBUG: 	 |-- OfficeMacroMaliciousPredition
+2024-07-31 10:48:27,546 [root] DEBUG: 	 |-- OfficeMacroSuspicious
+2024-07-31 10:48:27,546 [root] DEBUG: 	 |-- RTFASLRBypass
+2024-07-31 10:48:27,546 [root] DEBUG: 	 |-- RTFAnomalyCharacterSet
+2024-07-31 10:48:27,547 [root] DEBUG: 	 |-- RTFAnomalyVersion
+2024-07-31 10:48:27,547 [root] DEBUG: 	 |-- RTFEmbeddedContent
+2024-07-31 10:48:27,547 [root] DEBUG: 	 |-- RTFEmbeddedOfficeFile
+2024-07-31 10:48:27,547 [root] DEBUG: 	 |-- RTFExploitStatic
+2024-07-31 10:48:27,547 [root] DEBUG: 	 |-- OfficeSecurity
+2024-07-31 10:48:27,547 [root] DEBUG: 	 |-- OfficeAnamalousFeature
+2024-07-31 10:48:27,548 [root] DEBUG: 	 |-- OfficeDDECommand
+2024-07-31 10:48:27,548 [root] DEBUG: 	 |-- OfficeSuspiciousProcesses
+2024-07-31 10:48:27,548 [root] DEBUG: 	 |-- OfficeWriteEXE
+2024-07-31 10:48:27,548 [root] DEBUG: 	 |-- ArmadilloMutex
+2024-07-31 10:48:27,548 [root] DEBUG: 	 |-- ArmadilloRegKey
+2024-07-31 10:48:27,548 [root] DEBUG: 	 |-- ADS
+2024-07-31 10:48:27,549 [root] DEBUG: 	 |-- Autorun
+2024-07-31 10:48:27,549 [root] DEBUG: 	 |-- Autorun_scheduler
+2024-07-31 10:48:27,549 [root] DEBUG: 	 |-- PersistenceSafeBoot
+2024-07-31 10:48:27,549 [root] DEBUG: 	 |-- PersistenceBootexecute
+2024-07-31 10:48:27,549 [root] DEBUG: 	 |-- PersistenceRegistryScript
+2024-07-31 10:48:27,550 [root] DEBUG: 	 |-- PersistenceIFEO
+2024-07-31 10:48:27,550 [root] DEBUG: 	 |-- PersistenceSilentProcessExit
+2024-07-31 10:48:27,550 [root] DEBUG: 	 |-- PersistenceRDPRegistry
+2024-07-31 10:48:27,550 [root] DEBUG: 	 |-- PersistenceRDPShadowing
+2024-07-31 10:48:27,550 [root] DEBUG: 	 |-- PersistenceService
+2024-07-31 10:48:27,550 [root] DEBUG: 	 |-- PersistenceShimDatabase
+2024-07-31 10:48:27,551 [root] DEBUG: 	 |-- PowerpoolMutexes
+2024-07-31 10:48:27,551 [root] DEBUG: 	 |-- PowerShellNetworkConnection
+2024-07-31 10:48:27,551 [root] DEBUG: 	 |-- PowerShellScriptBlockLogging
+2024-07-31 10:48:27,551 [root] DEBUG: 	 |-- PowershellCommandSuspicious
+2024-07-31 10:48:27,551 [root] DEBUG: 	 |-- PowershellDownload
+2024-07-31 10:48:27,552 [root] DEBUG: 	 |-- PowershellRenamed
+2024-07-31 10:48:27,552 [root] DEBUG: 	 |-- PowershellRequest
+2024-07-31 10:48:27,552 [root] DEBUG: 	 |-- PowershellReversed
+2024-07-31 10:48:27,552 [root] DEBUG: 	 |-- PowershellVariableObfuscation
+2024-07-31 10:48:27,552 [root] DEBUG: 	 |-- PreventsSafeboot
+2024-07-31 10:48:27,552 [root] DEBUG: 	 |-- CmdlineProcessDiscovery
+2024-07-31 10:48:27,553 [root] DEBUG: 	 |-- CreateToolhelp32SnapshotProcessModuleEnumeration
+2024-07-31 10:48:27,553 [root] DEBUG: 	 |-- EnumeratesRunningProcesses
+2024-07-31 10:48:27,553 [root] DEBUG: 	 |-- ProcessInterest
+2024-07-31 10:48:27,553 [root] DEBUG: 	 |-- ProcessNeeded
+2024-07-31 10:48:27,553 [root] DEBUG: 	 |-- MassDataEncryption
+2024-07-31 10:48:27,553 [root] DEBUG: 	 |-- CryptoMixMutexes
+2024-07-31 10:48:27,554 [root] DEBUG: 	 |-- DharmaMutexes
+2024-07-31 10:48:27,554 [root] DEBUG: 	 |-- RansomwareDMALocker
+2024-07-31 10:48:27,554 [root] DEBUG: 	 |-- RansomwareExtensions
+2024-07-31 10:48:27,554 [root] DEBUG: 	 |-- RansomwareFileModifications
+2024-07-31 10:48:27,554 [root] DEBUG: 	 |-- RansomwareFiles
+2024-07-31 10:48:27,554 [root] DEBUG: 	 |-- FonixMutexes
+2024-07-31 10:48:27,554 [root] DEBUG: 	 |-- GandCrabMutexes
+2024-07-31 10:48:27,555 [root] DEBUG: 	 |-- GermanWiperMutexes
+2024-07-31 10:48:27,555 [root] DEBUG: 	 |-- MedusaLockerMutexes
+2024-07-31 10:48:27,555 [root] DEBUG: 	 |-- MedusaLockerRegkeys
+2024-07-31 10:48:27,555 [root] DEBUG: 	 |-- RansomwareMessage
+2024-07-31 10:48:27,555 [root] DEBUG: 	 |-- NemtyMutexes
+2024-07-31 10:48:27,555 [root] DEBUG: 	 |-- NemtyNetworkActivity
+2024-07-31 10:48:27,555 [root] DEBUG: 	 |-- NemtyNote
+2024-07-31 10:48:27,556 [root] DEBUG: 	 |-- NemtyRegkeys
+2024-07-31 10:48:27,556 [root] DEBUG: 	 |-- PYSAMutexes
+2024-07-31 10:48:27,556 [root] DEBUG: 	 |-- RansomwareRadamant
+2024-07-31 10:48:27,556 [root] DEBUG: 	 |-- RansomwareRecyclebin
+2024-07-31 10:48:27,556 [root] DEBUG: 	 |-- RevilMutexes
+2024-07-31 10:48:27,556 [root] DEBUG: 	 |-- RevilRegkey
+2024-07-31 10:48:27,556 [root] DEBUG: 	 |-- SatanMutexes
+2024-07-31 10:48:27,557 [root] DEBUG: 	 |-- SnakeRansomMutexes
+2024-07-31 10:48:27,557 [root] DEBUG: 	 |-- sodinokibi
+2024-07-31 10:48:27,557 [root] DEBUG: 	 |-- StopRansomMutexes
+2024-07-31 10:48:27,557 [root] DEBUG: 	 |-- StopRansomwareCMD
+2024-07-31 10:48:27,557 [root] DEBUG: 	 |-- StopRansomwareRegistry
+2024-07-31 10:48:27,557 [root] DEBUG: 	 |-- BeebusMutexes
+2024-07-31 10:48:27,557 [root] DEBUG: 	 |-- BlackNETMutexes
+2024-07-31 10:48:27,557 [root] DEBUG: 	 |-- BlackRATAPIs
+2024-07-31 10:48:27,558 [root] DEBUG: 	 |-- BlackRATMutexes
+2024-07-31 10:48:27,558 [root] DEBUG: 	 |-- BlackRATNetworkActivity
+2024-07-31 10:48:27,558 [root] DEBUG: 	 |-- BlackRATRegistryKeys
+2024-07-31 10:48:27,558 [root] DEBUG: 	 |-- CRATMutexes
+2024-07-31 10:48:27,558 [root] DEBUG: 	 |-- DCRatAPIs
+2024-07-31 10:48:27,558 [root] DEBUG: 	 |-- DCRatFiles
+2024-07-31 10:48:27,558 [root] DEBUG: 	 |-- DCRatMutex
+2024-07-31 10:48:27,558 [root] DEBUG: 	 |-- FynloskiMutexes
+2024-07-31 10:48:27,559 [root] DEBUG: 	 |-- KaraganyEventObjects
+2024-07-31 10:48:27,559 [root] DEBUG: 	 |-- KaraganyFiles
+2024-07-31 10:48:27,559 [root] DEBUG: 	 |-- LimeRATMutexes
+2024-07-31 10:48:27,559 [root] DEBUG: 	 |-- LimeRATRegkeys
+2024-07-31 10:48:27,559 [root] DEBUG: 	 |-- LodaRATFileBehavior
+2024-07-31 10:48:27,559 [root] DEBUG: 	 |-- LuminosityRAT
+2024-07-31 10:48:27,559 [root] DEBUG: 	 |-- ModiRATBehavior
+2024-07-31 10:48:27,560 [root] DEBUG: 	 |-- NanocoreRAT
+2024-07-31 10:48:27,560 [root] DEBUG: 	 |-- netwire
+2024-07-31 10:48:27,560 [root] DEBUG: 	 |-- NjratRegkeys
+2024-07-31 10:48:27,560 [root] DEBUG: 	 |-- ObliquekRATFiles
+2024-07-31 10:48:27,560 [root] DEBUG: 	 |-- ObliquekRATMutexes
+2024-07-31 10:48:27,560 [root] DEBUG: 	 |-- ObliquekRATNetworkActivity
+2024-07-31 10:48:27,560 [root] DEBUG: 	 |-- OrcusRAT
+2024-07-31 10:48:27,561 [root] DEBUG: 	 |-- ParallaxMutexes
+2024-07-31 10:48:27,561 [root] DEBUG: 	 |-- PcClientMutexes
+2024-07-31 10:48:27,561 [root] DEBUG: 	 |-- PlugxMutexes
+2024-07-31 10:48:27,561 [root] DEBUG: 	 |-- PoisonIvyMutexes
+2024-07-31 10:48:27,561 [root] DEBUG: 	 |-- QuasarMutexes
+2024-07-31 10:48:27,561 [root] DEBUG: 	 |-- RatsnifMutexes
+2024-07-31 10:48:27,561 [root] DEBUG: 	 |-- SennaMutexes
+2024-07-31 10:48:27,562 [root] DEBUG: 	 |-- SpynetRat
+2024-07-31 10:48:27,562 [root] DEBUG: 	 |-- TrochilusRATAPIs
+2024-07-31 10:48:27,562 [root] DEBUG: 	 |-- VenomRAT
+2024-07-31 10:48:27,562 [root] DEBUG: 	 |-- WarzoneRATFiles
+2024-07-31 10:48:27,562 [root] DEBUG: 	 |-- WarzoneRATRegkeys
+2024-07-31 10:48:27,562 [root] DEBUG: 	 |-- XpertRATFiles
+2024-07-31 10:48:27,562 [root] DEBUG: 	 |-- XpertRATMutexes
+2024-07-31 10:48:27,563 [root] DEBUG: 	 |-- XtremeMutexes
+2024-07-31 10:48:27,563 [root] DEBUG: 	 |-- ReadsSelf
+2024-07-31 10:48:27,563 [root] DEBUG: 	 |-- Recon_Beacon
+2024-07-31 10:48:27,563 [root] DEBUG: 	 |-- Fingerprint
+2024-07-31 10:48:27,563 [root] DEBUG: 	 |-- InstalledApps
+2024-07-31 10:48:27,563 [root] DEBUG: 	 |-- SystemInfo
+2024-07-31 10:48:27,563 [root] DEBUG: 	 |-- Accesses_RecycleBin
+2024-07-31 10:48:27,563 [root] DEBUG: 	 |-- RemcosFiles
+2024-07-31 10:48:27,564 [root] DEBUG: 	 |-- RemcosMutexes
+2024-07-31 10:48:27,564 [root] DEBUG: 	 |-- RemcosRegkeys
+2024-07-31 10:48:27,564 [root] DEBUG: 	 |-- RDPTCPKey
+2024-07-31 10:48:27,564 [root] DEBUG: 	 |-- UsesRDPClip
+2024-07-31 10:48:27,564 [root] DEBUG: 	 |-- UsesRemoteDesktopSession
+2024-07-31 10:48:27,564 [root] DEBUG: 	 |-- RemovesNetworkingIcon
+2024-07-31 10:48:27,564 [root] DEBUG: 	 |-- RemovesPinnedPrograms
+2024-07-31 10:48:27,565 [root] DEBUG: 	 |-- RemovesSecurityAndMaintenanceIcon
+2024-07-31 10:48:27,565 [root] DEBUG: 	 |-- RemovesStartMenuDefaults
+2024-07-31 10:48:27,565 [root] DEBUG: 	 |-- RemovesUsernameStartMenu
+2024-07-31 10:48:27,565 [root] DEBUG: 	 |-- RemovesZoneIdADS
+2024-07-31 10:48:27,565 [root] DEBUG: 	 |-- SpicyHotPotBehavior
+2024-07-31 10:48:27,565 [root] DEBUG: 	 |-- ScriptCreatedProcess
+2024-07-31 10:48:27,565 [root] DEBUG: 	 |-- ScriptNetworkActvity
+2024-07-31 10:48:27,565 [root] DEBUG: 	 |-- SuspiciousJSScript
+2024-07-31 10:48:27,566 [root] DEBUG: 	 |-- JavaScriptTimer
+2024-07-31 10:48:27,566 [root] DEBUG: 	 |-- Secure_Login_Phish
+2024-07-31 10:48:27,566 [root] DEBUG: 	 |-- SecurityXploded_Modules
+2024-07-31 10:48:27,566 [root] DEBUG: 	 |-- GetClipboardData
+2024-07-31 10:48:27,566 [root] DEBUG: 	 |-- SetsAutoconfigURL
+2024-07-31 10:48:27,566 [root] DEBUG: 	 |-- InstallsWinpcap
+2024-07-31 10:48:27,567 [root] DEBUG: 	 |-- SpoofsProcname
+2024-07-31 10:48:27,567 [root] DEBUG: 	 |-- CreatesAutorunInf
+2024-07-31 10:48:27,567 [root] DEBUG: 	 |-- StackPivot
+2024-07-31 10:48:27,567 [root] DEBUG: 	 |-- StackPivotFileCreated
+2024-07-31 10:48:27,567 [root] DEBUG: 	 |-- StackPivotProcessCreate
+2024-07-31 10:48:27,567 [root] DEBUG: 	 |-- StealingClipboardData
+2024-07-31 10:48:27,568 [root] DEBUG: 	 |-- StealthChildProc
+2024-07-31 10:48:27,568 [root] DEBUG: 	 |-- StealthFile
+2024-07-31 10:48:27,568 [root] DEBUG: 	 |-- StealthHiddenExtension
+2024-07-31 10:48:27,568 [root] DEBUG: 	 |-- StealthHiddenReg
+2024-07-31 10:48:27,568 [root] DEBUG: 	 |-- StealthHideNotifications
+2024-07-31 10:48:27,569 [root] DEBUG: 	 |-- StealthSystemProcName
+2024-07-31 10:48:27,569 [root] DEBUG: 	 |-- StealthTimeout
+2024-07-31 10:48:27,569 [root] DEBUG: 	 |-- StealthWebHistory
+2024-07-31 10:48:27,569 [root] DEBUG: 	 |-- Hidden_Window
+2024-07-31 10:48:27,569 [root] DEBUG: 	 |-- sysinternals_psexec
+2024-07-31 10:48:27,569 [root] DEBUG: 	 |-- sysinternals_tools
+2024-07-31 10:48:27,570 [root] DEBUG: 	 |-- QueriesKeyboardLayout
+2024-07-31 10:48:27,570 [root] DEBUG: 	 |-- TampersETW
+2024-07-31 10:48:27,570 [root] DEBUG: 	 |-- LSATampering
+2024-07-31 10:48:27,570 [root] DEBUG: 	 |-- TampersPowerShellLogging
+2024-07-31 10:48:27,570 [root] DEBUG: 	 |-- Flame
+2024-07-31 10:48:27,571 [root] DEBUG: 	 |-- TerminatesRemoteProcess
+2024-07-31 10:48:27,571 [root] DEBUG: 	 |-- TerritorialDisputeSIGs
+2024-07-31 10:48:27,571 [root] DEBUG: 	 |-- TrickBotTaskDelete
+2024-07-31 10:48:27,571 [root] DEBUG: 	 |-- TrickBotMutexes
+2024-07-31 10:48:27,571 [root] DEBUG: 	 |-- FleerCivetMutexes
+2024-07-31 10:48:27,571 [root] DEBUG: 	 |-- LokibotMutexes
+2024-07-31 10:48:27,572 [root] DEBUG: 	 |-- UrsnifBehavior
+2024-07-31 10:48:27,572 [root] DEBUG: 	 |-- UpatreFiles
+2024-07-31 10:48:27,572 [root] DEBUG: 	 |-- UpatreMutexes
+2024-07-31 10:48:27,572 [root] DEBUG: 	 |-- UserEnum
+2024-07-31 10:48:27,572 [root] DEBUG: 	 |-- ADFind
+2024-07-31 10:48:27,573 [root] DEBUG: 	 |-- UsesMSProtocol
+2024-07-31 10:48:27,573 [root] DEBUG: 	 |-- Virus
+2024-07-31 10:48:27,573 [root] DEBUG: 	 |-- NeshtaFiles
+2024-07-31 10:48:27,573 [root] DEBUG: 	 |-- NeshtaMutexes
+2024-07-31 10:48:27,573 [root] DEBUG: 	 |-- NeshtaRegKeys
+2024-07-31 10:48:27,573 [root] DEBUG: 	 |-- RenamerMutexes
+2024-07-31 10:48:27,573 [root] DEBUG: 	 |-- Webmail_Phish
+2024-07-31 10:48:27,574 [root] DEBUG: 	 |-- OWAWebShellFiles
+2024-07-31 10:48:27,574 [root] DEBUG: 	 |-- WebShellFiles
+2024-07-31 10:48:27,574 [root] DEBUG: 	 |-- WebShellProcesses
+2024-07-31 10:48:27,574 [root] DEBUG: 	 |-- PersistsDotNetDevUtility
+2024-07-31 10:48:27,574 [root] DEBUG: 	 |-- SpwansDotNetDevUtiliy
+2024-07-31 10:48:27,575 [root] DEBUG: 	 |-- AltersWindowsUtility
+2024-07-31 10:48:27,575 [root] DEBUG: 	 |-- DotNETCSCBuild
+2024-07-31 10:48:27,575 [root] DEBUG: 	 |-- MultipleExplorerInstances
+2024-07-31 10:48:27,575 [root] DEBUG: 	 |-- OverwritesAccessibilityUtility
+2024-07-31 10:48:27,575 [root] DEBUG: 	 |-- ScriptToolExecuted
+2024-07-31 10:48:27,576 [root] DEBUG: 	 |-- SuspiciousCertutilUse
+2024-07-31 10:48:27,576 [root] DEBUG: 	 |-- SuspiciousCommandTools
+2024-07-31 10:48:27,576 [root] DEBUG: 	 |-- SuspiciousMpCmdRunUse
+2024-07-31 10:48:27,576 [root] DEBUG: 	 |-- SuspiciousPingUse
+2024-07-31 10:48:27,576 [root] DEBUG: 	 |-- UsesPowerShellCopyItem
+2024-07-31 10:48:27,576 [root] DEBUG: 	 |-- UsesWindowsUtilities
+2024-07-31 10:48:27,576 [root] DEBUG: 	 |-- UsesWindowsUtilitiesAppCmd
+2024-07-31 10:48:27,577 [root] DEBUG: 	 |-- UsesWindowsUtilitiesCSVDELDFIDE
+2024-07-31 10:48:27,577 [root] DEBUG: 	 |-- UsesWindowsUtilitiesCipher
+2024-07-31 10:48:27,577 [root] DEBUG: 	 |-- UsesWindowsUtilitiesClickOnce
+2024-07-31 10:48:27,577 [root] DEBUG: 	 |-- UsesWindowsUtilitiesCurl
+2024-07-31 10:48:27,577 [root] DEBUG: 	 |-- UsesWindowsUtilitiesDSQuery
+2024-07-31 10:48:27,577 [root] DEBUG: 	 |-- UsesWindowsUtilitiesEsentutl
+2024-07-31 10:48:27,577 [root] DEBUG: 	 |-- UsesWindowsUtilitiesFinger
+2024-07-31 10:48:27,578 [root] DEBUG: 	 |-- UsesWindowsUtilitiesMode
+2024-07-31 10:48:27,578 [root] DEBUG: 	 |-- UsesWindowsUtilitiesNTDSutil
+2024-07-31 10:48:27,578 [root] DEBUG: 	 |-- UsesWindowsUtilitiesNltest
+2024-07-31 10:48:27,578 [root] DEBUG: 	 |-- UsesWindowsUtilitiesScheduler
+2024-07-31 10:48:27,578 [root] DEBUG: 	 |-- UsesWindowsUtilitiesXcopy
+2024-07-31 10:48:27,578 [root] DEBUG: 	 |-- WMICCommandSuspicious
+2024-07-31 10:48:27,579 [root] DEBUG: 	 |-- WiperZeroedBytes
+2024-07-31 10:48:27,579 [root] DEBUG: 	 |-- ScrconsWMIScriptConsumer
+2024-07-31 10:48:27,579 [root] DEBUG: 	 |-- WMICreateProcess
+2024-07-31 10:48:27,579 [root] DEBUG: 	 |-- WMIScriptProcess
+2024-07-31 10:48:27,579 [root] DEBUG: 	 |-- Win32ProcessCreate
+2024-07-31 10:48:27,580 [root] DEBUG: 	 |-- AllapleMutexes
+2024-07-31 10:48:27,580 [root] DEBUG: 	 |-- LinuxDeletesFiles
+2024-07-31 10:48:27,580 [root] DEBUG: 	 |-- LinuxDropsFiles
+2024-07-31 10:48:27,580 [root] DEBUG: 	 |-- LinuxReadsFiles
+2024-07-31 10:48:27,580 [root] DEBUG: 	 `-- LinuxWritesFiles
+2024-07-31 10:48:27,580 [root] DEBUG: Imported "reporting" modules:
+2024-07-31 10:48:27,581 [root] DEBUG: 	 |-- BinGraph
+2024-07-31 10:48:27,581 [root] DEBUG: 	 |-- CAPASummary
+2024-07-31 10:48:27,581 [root] DEBUG: 	 |-- JsonDump
+2024-07-31 10:48:27,581 [root] DEBUG: 	 |-- MITRE_TTPS
+2024-07-31 10:48:27,581 [root] DEBUG: 	 |-- MongoDB
+2024-07-31 10:48:27,581 [root] DEBUG: 	 |-- PCAP2CERT
+2024-07-31 10:48:27,582 [root] DEBUG: 	 |-- ReportHTML
+2024-07-31 10:48:27,582 [root] DEBUG: 	 |-- ReportHTMLSummary
+2024-07-31 10:48:27,582 [root] DEBUG: 	 `-- ReportPDF
+2024-07-31 10:48:27,582 [root] DEBUG: Imported "feeds" modules:
+2024-07-31 10:48:27,582 [root] DEBUG: 	 `-- AbuseCH_SSL
+2024-07-31 10:48:27,583 [root] DEBUG: Imported "machinery" modules:
+2024-07-31 10:48:27,583 [root] DEBUG: 	 `-- Physical
+2024-07-31 10:48:27,583 [root] DEBUG: Checking for locked tasks...
+2024-07-31 10:48:28,384 [modules.machinery.physical] DEBUG: Getting status for machine: win10clone2with
+2024-07-31 10:48:28,465 [modules.machinery.physical] DEBUG: Sending Wake on Lan message for win10clone2with (bc:24:11:79:d7:9c) to Broadcast IP 192.168.2.255
+2024-07-31 10:48:28,465 [modules.machinery.physical] DEBUG: Getting status for machine: win7clone
+2024-07-31 10:48:28,474 [modules.machinery.physical] DEBUG: Getting status for machine: win10clone4
+2024-07-31 10:48:28,483 [modules.machinery.physical] DEBUG: Getting status for machine: win10clone15
+2024-07-31 10:48:28,494 [lib.cuckoo.core.scheduler] INFO: Using "physical" machine manager with max_analysis_count=0, max_machines_count=10, and max_vmstartup_count=5
+2024-07-31 10:48:28,499 [lib.cuckoo.core.scheduler] INFO: Loaded 4 machine/s
+2024-07-31 10:48:28,533 [lib.cuckoo.core.scheduler] INFO: Waiting for analysis tasks
+2024-07-31 10:50:37,771 [lib.cuckoo.core.scheduler] DEBUG: Task #64: Processing task
+2024-07-31 10:50:37,857 [lib.cuckoo.core.scheduler] INFO: Task #64: File already exists at '/opt/CAPEv2/storage/binaries/a9d6e224709d2d498c1b530444b1f4a895a27f6f287806c6227f18c76c1bb872'
+2024-07-31 10:50:37,857 [lib.cuckoo.core.scheduler] INFO: Task #64: Starting analysis of FILE '/tmp/cuckoo-tmp/upload_8180e9oj/wmi-mal.exe'
+2024-07-31 10:50:37,930 [lib.cuckoo.core.scheduler] INFO: Task #64: acquired machine win10clone4 (label=win10clone4, arch=x64, platform=windows)
+2024-07-31 10:50:37,968 [modules.machinery.physical] DEBUG: Checking if machine win10clone4 is running
+2024-07-31 10:50:37,968 [modules.machinery.physical] DEBUG: Getting status for machine: win10clone4
+2024-07-31 10:50:37,983 [modules.machinery.physical] DEBUG: Machine already running: win10clone4
+2024-07-31 10:50:38,125 [lib.cuckoo.core.resultserver] DEBUG: Task #64: The associated machine IP is 192.168.2.34
+2024-07-31 10:50:38,154 [lib.cuckoo.core.scheduler] INFO: Enabled route 'internet'.
+2024-07-31 10:50:38,164 [lib.cuckoo.core.plugins] DEBUG: Auxiliary module AzSniffer not found in configuration file
+2024-07-31 10:50:38,223 [modules.auxiliary.sniffer] INFO: Started sniffer with PID 283145 (interface=ens19, host=192.168.2.34, dump path=/opt/CAPEv2/storage/analyses/64/dump.pcap)
+2024-07-31 10:50:38,223 [lib.cuckoo.core.plugins] DEBUG: Started auxiliary module: Sniffer
+2024-07-31 10:50:38,251 [lib.cuckoo.core.guest] INFO: Task #64: Starting analysis on guest (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:50:38,290 [lib.cuckoo.core.guest] INFO: Task #64: Guest is running CAPE Agent 0.17 (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:50:38,552 [lib.cuckoo.core.guest] DEBUG: Task #64: Uploading analyzer to guest (id=win10clone4, ip=192.168.2.34, size=16883844)
+2024-07-31 10:50:39,156 [lib.cuckoo.core.guest] INFO: Task #64: Uploading script files to guest (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:50:39,755 [lib.cuckoo.core.resultserver] DEBUG: Task #64: live log analysis.log initialized
+2024-07-31 10:50:40,142 [lib.cuckoo.core.resultserver] DEBUG: Task #64: Trying to upload file aux/DigiSig.json
+2024-07-31 10:50:40,312 [lib.cuckoo.core.resultserver] DEBUG: Task #64: Trying to upload file aux/usage.log
+2024-07-31 10:50:41,236 [lib.cuckoo.core.resultserver] DEBUG: Task #64: Trying to upload file shots/0001.jpg
+2024-07-31 10:50:42,347 [lib.cuckoo.core.resultserver] DEBUG: Task #64: Trying to upload file shots/0002.jpg
+2024-07-31 10:50:43,408 [lib.cuckoo.core.resultserver] DEBUG: Task #64: Trying to upload file shots/0003.jpg
+2024-07-31 10:50:44,259 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:50:45,595 [lib.cuckoo.core.resultserver] DEBUG: Task #64: Trying to upload file shots/0004.jpg
+2024-07-31 10:50:46,658 [lib.cuckoo.core.resultserver] DEBUG: Task #64: Trying to upload file shots/0005.jpg
+2024-07-31 10:50:47,785 [lib.cuckoo.core.resultserver] DEBUG: Task #64: Trying to upload file shots/0006.jpg
+2024-07-31 10:50:49,543 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:50:49,726 [lib.cuckoo.core.resultserver] INFO: Task 64: Process 4752 (parent 4252): wmi-mal.exe, path C:\Users\student18\AppData\Local\Temp\wmi-mal.exe
+2024-07-31 10:50:49,946 [lib.cuckoo.core.resultserver] DEBUG: Task #64: Trying to upload file shots/0007.jpg
+2024-07-31 10:50:49,980 [lib.cuckoo.core.resultserver] INFO: Task 64: Process 748 (parent 600): svchost.exe, path C:\Windows\System32\svchost.exe
+2024-07-31 10:50:51,013 [lib.cuckoo.core.resultserver] DEBUG: Task #64: Trying to upload file shots/0008.jpg
+2024-07-31 10:50:52,090 [lib.cuckoo.core.resultserver] DEBUG: Task #64: Trying to upload file shots/0009.jpg
+2024-07-31 10:50:52,108 [lib.cuckoo.core.resultserver] INFO: Task 64: Process 2936 (parent 600): svchost.exe, path C:\Windows\System32\svchost.exe
+2024-07-31 10:50:53,153 [lib.cuckoo.core.resultserver] DEBUG: Task #64: Trying to upload file shots/0010.jpg
+2024-07-31 10:50:54,586 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:50:54,878 [lib.cuckoo.core.resultserver] INFO: Task 64: Process 4644 (parent 748): WmiPrvSE.exe, path C:\Windows\System32\wbem\WmiPrvSE.exe
+2024-07-31 10:50:55,310 [lib.cuckoo.core.resultserver] DEBUG: Task #64: Trying to upload file shots/0011.jpg
+2024-07-31 10:50:56,371 [lib.cuckoo.core.resultserver] DEBUG: Task #64: Trying to upload file shots/0012.jpg
+2024-07-31 10:50:57,793 [lib.cuckoo.core.resultserver] DEBUG: Task #64: Trying to upload file procdump/70bd8b63ce0dd60d619c804369ecfa84e22f6e06714861acc5a2d9c513422cc9
+2024-07-31 10:50:58,480 [lib.cuckoo.core.resultserver] DEBUG: Task #64: Trying to upload file shots/0013.jpg
+2024-07-31 10:50:59,631 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:51:00,912 [lib.cuckoo.core.resultserver] DEBUG: Task #64: Trying to upload file shots/0014.jpg
+2024-07-31 10:51:04,910 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:51:09,950 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:51:14,989 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:51:20,039 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:51:25,082 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:51:30,123 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:51:35,167 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:51:40,206 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:51:45,249 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:51:50,296 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:51:55,341 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:52:00,389 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:52:05,442 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:52:10,483 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:52:12,437 [lib.cuckoo.core.resultserver] DEBUG: Task #64: Trying to upload file shots/0015.jpg
+2024-07-31 10:52:15,527 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:52:20,574 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:52:25,619 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:52:26,078 [lib.cuckoo.core.resultserver] DEBUG: Task #64: Trying to upload file shots/0016.jpg
+2024-07-31 10:52:30,694 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:52:35,759 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:52:40,821 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:52:45,880 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:52:50,940 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:52:56,002 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:53:01,061 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:53:06,129 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:53:11,189 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:53:16,238 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:53:21,304 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:53:26,372 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:53:31,435 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:53:36,497 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:53:41,553 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:53:46,614 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:53:51,677 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:53:56,746 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:54:01,813 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:54:06,882 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:54:11,956 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:54:17,018 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:54:22,085 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:54:25,509 [lib.cuckoo.core.resultserver] DEBUG: Task #64: Trying to upload file shots/0017.jpg
+2024-07-31 10:54:27,152 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:54:32,216 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:54:37,281 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:54:42,342 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:54:45,731 [lib.cuckoo.core.resultserver] INFO: Task 64: Process 6736 (parent 2936): WMIADAP.exe, path C:\Windows\System32\wbem\WMIADAP.exe
+2024-07-31 10:54:47,407 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:54:51,163 [lib.cuckoo.core.resultserver] DEBUG: Task #64: Trying to upload file curtain/1722365688.396666.curtain.log
+2024-07-31 10:54:52,482 [lib.cuckoo.core.guest] DEBUG: Task #64: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:54:52,708 [lib.cuckoo.core.resultserver] DEBUG: Task #64 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 10:54:52,709 [lib.cuckoo.core.resultserver] DEBUG: Task #64 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 10:54:52,709 [lib.cuckoo.core.resultserver] DEBUG: Task #64 had connection reset by peer for <Context for None>
+2024-07-31 10:54:52,710 [lib.cuckoo.core.resultserver] DEBUG: Task #64 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 10:54:52,710 [lib.cuckoo.core.resultserver] DEBUG: Task #64 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 10:54:52,711 [lib.cuckoo.core.resultserver] DEBUG: Task #64 had connection reset by peer for <Context for None>
+2024-07-31 10:54:52,711 [lib.cuckoo.core.resultserver] DEBUG: Task #64 had connection reset by peer for <Context for None>
+2024-07-31 10:54:52,711 [lib.cuckoo.core.resultserver] DEBUG: Task #64 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 10:54:52,712 [lib.cuckoo.core.resultserver] DEBUG: Task #64 had connection reset by peer for <Context for b'LOG'>
+2024-07-31 10:54:53,489 [lib.cuckoo.core.guest] INFO: Task #completed successfully: Analysis 64 (id=win10clone4, ip=192.168.2.34)
+2024-07-31 10:54:53,568 [lib.cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Sniffer
+2024-07-31 10:54:53,570 [modules.machinery.physical] DEBUG: Getting status for machine: win10clone4
+2024-07-31 10:54:53,582 [modules.machinery.physical] DEBUG: Rebooting machine: win10clone4
+2024-07-31 10:54:54,245 [modules.machinery.physical] DEBUG: Socket killed from analysis machine due to reboot
+2024-07-31 10:54:54,307 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 10:55:04,373 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 10:55:14,443 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 10:55:24,515 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 10:55:34,580 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 10:55:44,652 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 10:55:54,730 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 10:56:04,799 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 10:56:14,867 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 10:56:24,936 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 10:56:35,007 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 10:56:45,074 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 10:56:55,148 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 10:57:05,286 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 10:57:15,352 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 10:57:25,422 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 10:57:35,495 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 10:57:45,562 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 10:57:55,634 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 10:58:05,713 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 10:58:15,783 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 10:58:25,873 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 10:58:35,940 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 10:58:46,012 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 10:58:56,111 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 10:59:06,174 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 10:59:16,245 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 10:59:26,308 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 10:59:36,376 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 10:59:46,445 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 10:59:56,515 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:00:06,585 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:00:52,134 [lib.cuckoo.core.resultserver] DEBUG: Task #64: Stopped tracking machine 192.168.2.34
+2024-07-31 11:00:52,173 [lib.cuckoo.core.scheduler] INFO: Disabled route 'internet'
+2024-07-31 11:00:52,210 [lib.cuckoo.core.scheduler] DEBUG: Task #64: Released database task with status True
+2024-07-31 11:00:52,211 [lib.cuckoo.core.scheduler] INFO: Task #64: analysis procedure completed
+2024-07-31 11:24:49,987 [lib.cuckoo.core.scheduler] DEBUG: Task #65: Processing task
+2024-07-31 11:24:50,057 [lib.cuckoo.core.scheduler] INFO: Task #65: File already exists at '/opt/CAPEv2/storage/binaries/a9d6e224709d2d498c1b530444b1f4a895a27f6f287806c6227f18c76c1bb872'
+2024-07-31 11:24:50,058 [lib.cuckoo.core.scheduler] INFO: Task #65: Starting analysis of FILE '/tmp/cuckoo-tmp/upload_q_97js_l/wmi-mal.exe'
+2024-07-31 11:24:50,093 [lib.cuckoo.core.scheduler] INFO: Task #65: acquired machine win10clone4 (label=win10clone4, arch=x64, platform=windows)
+2024-07-31 11:24:50,130 [modules.machinery.physical] DEBUG: Checking if machine win10clone4 is running
+2024-07-31 11:24:50,137 [modules.machinery.physical] DEBUG: Getting status for machine: win10clone4
+2024-07-31 11:24:50,406 [modules.machinery.physical] DEBUG: Machine already running: win10clone4
+2024-07-31 11:24:50,493 [lib.cuckoo.core.resultserver] DEBUG: Task #65: The associated machine IP is 192.168.2.34
+2024-07-31 11:24:50,510 [lib.cuckoo.core.scheduler] INFO: Enabled route 'internet'.
+2024-07-31 11:24:50,516 [lib.cuckoo.core.plugins] DEBUG: Auxiliary module AzSniffer not found in configuration file
+2024-07-31 11:24:50,545 [modules.auxiliary.sniffer] INFO: Started sniffer with PID 284424 (interface=ens19, host=192.168.2.34, dump path=/opt/CAPEv2/storage/analyses/65/dump.pcap)
+2024-07-31 11:24:50,545 [lib.cuckoo.core.plugins] DEBUG: Started auxiliary module: Sniffer
+2024-07-31 11:24:50,560 [lib.cuckoo.core.guest] INFO: Task #65: Starting analysis on guest (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:24:50,585 [lib.cuckoo.core.guest] INFO: Task #65: Guest is running CAPE Agent 0.17 (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:24:50,823 [lib.cuckoo.core.guest] DEBUG: Task #65: Uploading analyzer to guest (id=win10clone4, ip=192.168.2.34, size=16883844)
+2024-07-31 11:24:51,384 [lib.cuckoo.core.guest] INFO: Task #65: Uploading script files to guest (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:24:52,441 [lib.cuckoo.core.resultserver] DEBUG: Task #65: live log analysis.log initialized
+2024-07-31 11:24:52,837 [lib.cuckoo.core.resultserver] DEBUG: Task #65: Trying to upload file aux/DigiSig.json
+2024-07-31 11:24:53,048 [lib.cuckoo.core.resultserver] DEBUG: Task #65: Trying to upload file aux/usage.log
+2024-07-31 11:24:54,138 [lib.cuckoo.core.resultserver] DEBUG: Task #65: Trying to upload file shots/0001.jpg
+2024-07-31 11:24:56,473 [lib.cuckoo.core.guest] DEBUG: Task #65: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:25:01,511 [lib.cuckoo.core.guest] DEBUG: Task #65: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:25:06,560 [lib.cuckoo.core.guest] DEBUG: Task #65: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:25:10,546 [lib.cuckoo.core.resultserver] DEBUG: Task #65: Trying to upload file curtain/1722367507.0818453.curtain.log
+2024-07-31 11:25:11,214 [lib.cuckoo.core.resultserver] DEBUG: Task #65 had connection reset by peer for <Context for None>
+2024-07-31 11:25:11,215 [lib.cuckoo.core.resultserver] DEBUG: Task #65 had connection reset by peer for <Context for b'LOG'>
+2024-07-31 11:25:11,216 [lib.cuckoo.core.resultserver] DEBUG: Task #65 had connection reset by peer for <Context for None>
+2024-07-31 11:25:11,613 [lib.cuckoo.core.guest] INFO: Task #completed successfully: Analysis 65 (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:25:11,701 [lib.cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Sniffer
+2024-07-31 11:25:11,701 [modules.machinery.physical] DEBUG: Getting status for machine: win10clone4
+2024-07-31 11:25:11,710 [modules.machinery.physical] DEBUG: Rebooting machine: win10clone4
+2024-07-31 11:25:12,426 [modules.machinery.physical] DEBUG: Socket killed from analysis machine due to reboot
+2024-07-31 11:25:12,503 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:25:22,614 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:25:32,684 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:25:42,758 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:25:52,829 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:26:02,897 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:26:12,976 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:26:23,046 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:26:33,120 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:26:43,190 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:26:53,281 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:27:03,354 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:27:13,442 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:27:23,526 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:27:33,622 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:27:43,693 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:27:53,766 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:28:03,836 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:28:13,906 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:28:23,975 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:28:34,056 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:28:44,126 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:28:54,206 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:29:04,282 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:29:14,372 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:29:24,440 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:29:34,528 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:29:44,608 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:29:54,703 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:30:04,773 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:30:50,535 [lib.cuckoo.core.resultserver] DEBUG: Task #65: Stopped tracking machine 192.168.2.34
+2024-07-31 11:30:50,557 [lib.cuckoo.core.scheduler] INFO: Disabled route 'internet'
+2024-07-31 11:30:50,602 [lib.cuckoo.core.scheduler] DEBUG: Task #65: Released database task with status True
+2024-07-31 11:30:50,603 [lib.cuckoo.core.scheduler] INFO: Task #65: analysis procedure completed
+2024-07-31 11:50:57,794 [lib.cuckoo.core.scheduler] DEBUG: Task #66: Processing task
+2024-07-31 11:50:57,865 [lib.cuckoo.core.scheduler] INFO: Task #66: File already exists at '/opt/CAPEv2/storage/binaries/a9d6e224709d2d498c1b530444b1f4a895a27f6f287806c6227f18c76c1bb872'
+2024-07-31 11:50:57,866 [lib.cuckoo.core.scheduler] INFO: Task #66: Starting analysis of FILE '/tmp/cuckoo-tmp/upload_q3j3l633/wmi-mal.exe'
+2024-07-31 11:50:57,903 [lib.cuckoo.core.scheduler] INFO: Task #66: acquired machine win10clone4 (label=win10clone4, arch=x64, platform=windows)
+2024-07-31 11:50:57,917 [modules.machinery.physical] DEBUG: Checking if machine win10clone4 is running
+2024-07-31 11:50:57,918 [modules.machinery.physical] DEBUG: Getting status for machine: win10clone4
+2024-07-31 11:50:57,929 [modules.machinery.physical] DEBUG: Machine already running: win10clone4
+2024-07-31 11:50:58,038 [lib.cuckoo.core.resultserver] DEBUG: Task #66: The associated machine IP is 192.168.2.34
+2024-07-31 11:50:58,058 [lib.cuckoo.core.scheduler] INFO: Enabled route 'internet'.
+2024-07-31 11:50:58,067 [lib.cuckoo.core.plugins] DEBUG: Auxiliary module AzSniffer not found in configuration file
+2024-07-31 11:50:58,090 [modules.auxiliary.sniffer] INFO: Started sniffer with PID 285206 (interface=ens19, host=192.168.2.34, dump path=/opt/CAPEv2/storage/analyses/66/dump.pcap)
+2024-07-31 11:50:58,091 [lib.cuckoo.core.plugins] DEBUG: Started auxiliary module: Sniffer
+2024-07-31 11:50:58,109 [lib.cuckoo.core.guest] INFO: Task #66: Starting analysis on guest (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:50:58,140 [lib.cuckoo.core.guest] INFO: Task #66: Guest is running CAPE Agent 0.17 (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:50:58,331 [lib.cuckoo.core.guest] DEBUG: Task #66: Uploading analyzer to guest (id=win10clone4, ip=192.168.2.34, size=16883844)
+2024-07-31 11:50:58,941 [lib.cuckoo.core.guest] INFO: Task #66: Uploading script files to guest (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:50:59,534 [lib.cuckoo.core.resultserver] DEBUG: Task #66: live log analysis.log initialized
+2024-07-31 11:50:59,909 [lib.cuckoo.core.resultserver] DEBUG: Task #66: Trying to upload file aux/DigiSig.json
+2024-07-31 11:51:00,090 [lib.cuckoo.core.resultserver] DEBUG: Task #66: Trying to upload file aux/usage.log
+2024-07-31 11:51:01,019 [lib.cuckoo.core.resultserver] DEBUG: Task #66: Trying to upload file shots/0001.jpg
+2024-07-31 11:51:04,036 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:51:05,277 [lib.cuckoo.core.resultserver] DEBUG: Task #66: Trying to upload file shots/0002.jpg
+2024-07-31 11:51:06,341 [lib.cuckoo.core.resultserver] DEBUG: Task #66: Trying to upload file shots/0003.jpg
+2024-07-31 11:51:09,081 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:51:09,539 [lib.cuckoo.core.resultserver] INFO: Task 66: Process 736 (parent 7904): wmi-mal.exe, path C:\Users\student18\AppData\Local\Temp\wmi-mal.exe
+2024-07-31 11:51:09,707 [lib.cuckoo.core.resultserver] INFO: Task 66: Process 740 (parent 616): svchost.exe, path C:\Windows\System32\svchost.exe
+2024-07-31 11:51:10,605 [lib.cuckoo.core.resultserver] DEBUG: Task #66: Trying to upload file shots/0004.jpg
+2024-07-31 11:51:11,804 [lib.cuckoo.core.resultserver] INFO: Task 66: Process 6088 (parent 616): svchost.exe, path C:\Windows\System32\svchost.exe
+2024-07-31 11:51:14,126 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:51:14,935 [lib.cuckoo.core.resultserver] INFO: Task 66: Process 2916 (parent 740): WmiPrvSE.exe, path C:\Windows\System32\wbem\WmiPrvSE.exe
+2024-07-31 11:51:15,934 [lib.cuckoo.core.resultserver] DEBUG: Task #66: Trying to upload file shots/0005.jpg
+2024-07-31 11:51:17,011 [lib.cuckoo.core.resultserver] DEBUG: Task #66: Trying to upload file shots/0006.jpg
+2024-07-31 11:51:19,174 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:51:24,213 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:51:29,261 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:51:32,772 [lib.cuckoo.core.resultserver] INFO: Task 66: Process 4684 (parent 736): cmd.exe, path C:\Windows\System32\cmd.exe
+2024-07-31 11:51:32,862 [lib.cuckoo.core.resultserver] DEBUG: Task #66: Trying to upload file shots/0007.jpg
+2024-07-31 11:51:32,968 [lib.cuckoo.core.resultserver] INFO: Task 66: Process 4580 (parent 4684): PING.EXE, path C:\Windows\System32\PING.EXE
+2024-07-31 11:51:33,941 [lib.cuckoo.core.resultserver] DEBUG: Task #66: Trying to upload file shots/0008.jpg
+2024-07-31 11:51:34,308 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:51:39,354 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:51:42,346 [lib.cuckoo.core.resultserver] DEBUG: Task #66: Trying to upload file shots/0009.jpg
+2024-07-31 11:51:44,403 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:51:49,450 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:51:51,729 [lib.cuckoo.core.resultserver] DEBUG: Task #66: Trying to upload file procdump/bae30db72941d3c36f81a6dcdc7c8db53337c02def947e1263e69027f7629fe1
+2024-07-31 11:51:51,893 [lib.cuckoo.core.resultserver] DEBUG: Task #66: Trying to upload file shots/0010.jpg
+2024-07-31 11:51:54,503 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:51:59,576 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:52:04,645 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:52:05,513 [lib.cuckoo.core.resultserver] DEBUG: Task #66: Trying to upload file shots/0011.jpg
+2024-07-31 11:52:09,712 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:52:14,793 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:52:19,869 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:52:24,944 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:52:30,019 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:52:35,089 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:52:40,164 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:52:45,269 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:52:50,343 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:52:55,406 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:53:00,486 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:53:05,565 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:53:10,638 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:53:15,700 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:53:20,792 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:53:25,861 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:53:30,947 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:53:36,019 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:53:41,098 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:53:46,183 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:53:51,249 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:53:56,323 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:54:01,395 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:54:06,476 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:54:11,553 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:54:16,624 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:54:21,687 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:54:26,764 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:54:31,858 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:54:36,944 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:54:42,017 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:54:47,099 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:54:52,171 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:54:57,242 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:55:02,321 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:55:05,524 [lib.cuckoo.core.resultserver] INFO: Task 66: Process 8024 (parent 6088): WMIADAP.exe, path C:\Windows\System32\wbem\WMIADAP.exe
+2024-07-31 11:55:07,403 [lib.cuckoo.core.guest] DEBUG: Task #66: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:55:10,726 [lib.cuckoo.core.resultserver] DEBUG: Task #66: Trying to upload file curtain/1722369308.177287.curtain.log
+2024-07-31 11:55:12,171 [lib.cuckoo.core.resultserver] DEBUG: Task #66 had connection reset by peer for <Context for None>
+2024-07-31 11:55:12,173 [lib.cuckoo.core.resultserver] DEBUG: Task #66 had connection reset by peer for <Context for None>
+2024-07-31 11:55:12,173 [lib.cuckoo.core.resultserver] DEBUG: Task #66 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 11:55:12,174 [lib.cuckoo.core.resultserver] DEBUG: Task #66 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 11:55:12,176 [lib.cuckoo.core.resultserver] DEBUG: Task #66 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 11:55:12,177 [lib.cuckoo.core.resultserver] DEBUG: Task #66 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 11:55:12,179 [lib.cuckoo.core.resultserver] DEBUG: Task #66 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 11:55:12,180 [lib.cuckoo.core.resultserver] DEBUG: Task #66 had connection reset by peer for <Context for b'LOG'>
+2024-07-31 11:55:12,180 [lib.cuckoo.core.resultserver] DEBUG: Task #66 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 11:55:12,181 [lib.cuckoo.core.resultserver] DEBUG: Task #66 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 11:55:12,471 [lib.cuckoo.core.guest] INFO: Task #completed successfully: Analysis 66 (id=win10clone4, ip=192.168.2.34)
+2024-07-31 11:55:12,557 [lib.cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Sniffer
+2024-07-31 11:55:12,558 [modules.machinery.physical] DEBUG: Getting status for machine: win10clone4
+2024-07-31 11:55:12,567 [modules.machinery.physical] DEBUG: Rebooting machine: win10clone4
+2024-07-31 11:55:13,219 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:55:23,287 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:55:33,357 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:55:43,427 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:55:53,508 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:56:03,578 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:56:13,647 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:56:23,730 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:56:33,801 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:56:43,879 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:56:53,952 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:57:04,025 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:57:14,092 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:57:24,161 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:57:34,261 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:57:44,336 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:57:54,423 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:58:04,491 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:58:14,567 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:58:24,637 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:58:34,715 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:58:44,783 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:58:54,864 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:59:04,933 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:59:15,002 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:59:25,068 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:59:35,142 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:59:45,218 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 11:59:55,286 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 12:00:05,362 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 12:00:15,433 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 12:00:45,077 [modules.machinery.physical] DEBUG: Machine not reachable yet after reset
+2024-07-31 12:00:48,083 [modules.machinery.physical] DEBUG: Machine not reachable yet after reset
+2024-07-31 12:00:51,086 [modules.machinery.physical] DEBUG: Machine not reachable yet after reset
+2024-07-31 12:00:54,114 [lib.cuckoo.core.resultserver] DEBUG: Task #66: Stopped tracking machine 192.168.2.34
+2024-07-31 12:00:54,140 [lib.cuckoo.core.scheduler] INFO: Disabled route 'internet'
+2024-07-31 12:00:54,173 [lib.cuckoo.core.scheduler] DEBUG: Task #66: Released database task with status True
+2024-07-31 12:00:54,176 [lib.cuckoo.core.scheduler] INFO: Task #66: analysis procedure completed
+2024-07-31 15:00:33,734 [lib.cuckoo.core.scheduler] DEBUG: Task #67: Processing task
+2024-07-31 15:00:33,808 [lib.cuckoo.core.scheduler] INFO: Task #67: File already exists at '/opt/CAPEv2/storage/binaries/a9d6e224709d2d498c1b530444b1f4a895a27f6f287806c6227f18c76c1bb872'
+2024-07-31 15:00:33,810 [lib.cuckoo.core.scheduler] INFO: Task #67: Starting analysis of FILE '/tmp/cuckoo-tmp/upload_xj4mv94a/wmi-mal.exe'
+2024-07-31 15:00:33,847 [lib.cuckoo.core.scheduler] INFO: Task #67: acquired machine win10clone4 (label=win10clone4, arch=x64, platform=windows)
+2024-07-31 15:00:33,872 [modules.machinery.physical] DEBUG: Checking if machine win10clone4 is running
+2024-07-31 15:00:33,887 [modules.machinery.physical] DEBUG: Getting status for machine: win10clone4
+2024-07-31 15:00:33,905 [modules.machinery.physical] DEBUG: Machine already running: win10clone4
+2024-07-31 15:00:34,014 [lib.cuckoo.core.resultserver] DEBUG: Task #67: The associated machine IP is 192.168.2.34
+2024-07-31 15:00:34,045 [lib.cuckoo.core.scheduler] INFO: Enabled route 'internet'.
+2024-07-31 15:00:34,051 [lib.cuckoo.core.plugins] DEBUG: Auxiliary module AzSniffer not found in configuration file
+2024-07-31 15:00:34,096 [modules.auxiliary.sniffer] INFO: Started sniffer with PID 291204 (interface=ens19, host=192.168.2.34, dump path=/opt/CAPEv2/storage/analyses/67/dump.pcap)
+2024-07-31 15:00:34,097 [lib.cuckoo.core.plugins] DEBUG: Started auxiliary module: Sniffer
+2024-07-31 15:00:34,122 [lib.cuckoo.core.guest] INFO: Task #67: Starting analysis on guest (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:00:34,172 [lib.cuckoo.core.guest] INFO: Task #67: Guest is running CAPE Agent 0.17 (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:00:34,410 [lib.cuckoo.core.guest] DEBUG: Task #67: Uploading analyzer to guest (id=win10clone4, ip=192.168.2.34, size=16883844)
+2024-07-31 15:00:35,034 [lib.cuckoo.core.guest] INFO: Task #67: Uploading script files to guest (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:00:35,646 [lib.cuckoo.core.resultserver] DEBUG: Task #67: live log analysis.log initialized
+2024-07-31 15:00:36,047 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file aux/DigiSig.json
+2024-07-31 15:00:36,224 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file aux/usage.log
+2024-07-31 15:00:37,234 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0001.jpg
+2024-07-31 15:00:40,126 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:00:45,173 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:00:45,719 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0002.jpg
+2024-07-31 15:00:45,740 [lib.cuckoo.core.resultserver] INFO: Task 67: Process 4608 (parent 4600): wmi-mal.exe, path C:\Users\student18\AppData\Local\Temp\wmi-mal.exe
+2024-07-31 15:00:45,910 [lib.cuckoo.core.resultserver] INFO: Task 67: Process 748 (parent 616): svchost.exe, path C:\Windows\System32\svchost.exe
+2024-07-31 15:00:46,812 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0003.jpg
+2024-07-31 15:00:47,874 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0004.jpg
+2024-07-31 15:00:47,996 [lib.cuckoo.core.resultserver] INFO: Task 67: Process 3192 (parent 616): svchost.exe, path C:\Windows\System32\svchost.exe
+2024-07-31 15:00:50,231 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:00:50,507 [lib.cuckoo.core.resultserver] INFO: Task 67: Process 2108 (parent 748): WmiPrvSE.exe, path C:\Windows\System32\wbem\WmiPrvSE.exe
+2024-07-31 15:00:51,082 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0005.jpg
+2024-07-31 15:00:52,139 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0006.jpg
+2024-07-31 15:00:55,278 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:01:00,326 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:01:05,375 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:01:10,420 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:01:13,893 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file procdump/89e0c9fb9cdd0ec35813d86b8500f63e9fff2fef6a32c3634bfb323c8fef32e8
+2024-07-31 15:01:14,315 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0007.jpg
+2024-07-31 15:01:15,462 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:01:17,564 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0008.jpg
+2024-07-31 15:01:20,504 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:01:21,976 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0009.jpg
+2024-07-31 15:01:23,059 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0010.jpg
+2024-07-31 15:01:25,551 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:01:30,597 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:01:34,603 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0011.jpg
+2024-07-31 15:01:35,645 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:01:35,717 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0012.jpg
+2024-07-31 15:01:36,947 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0013.jpg
+2024-07-31 15:01:38,025 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0014.jpg
+2024-07-31 15:01:39,216 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0015.jpg
+2024-07-31 15:01:40,277 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0016.jpg
+2024-07-31 15:01:41,021 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:01:41,355 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0017.jpg
+2024-07-31 15:01:43,482 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0018.jpg
+2024-07-31 15:01:46,322 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:01:46,403 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0019.jpg
+2024-07-31 15:01:46,537 [lib.cuckoo.core.resultserver] INFO: Task 67: Process 6208 (parent 748): dllhost.exe, path C:\Windows\System32\dllhost.exe
+2024-07-31 15:01:47,465 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0020.jpg
+2024-07-31 15:01:50,722 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0021.jpg
+2024-07-31 15:01:51,549 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:01:51,922 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0022.jpg
+2024-07-31 15:01:52,989 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0023.jpg
+2024-07-31 15:01:55,148 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0024.jpg
+2024-07-31 15:01:56,655 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:01:59,452 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0025.jpg
+2024-07-31 15:02:01,828 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:02:02,602 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0026.jpg
+2024-07-31 15:02:06,932 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:02:07,916 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0027.jpg
+2024-07-31 15:02:08,994 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0028.jpg
+2024-07-31 15:02:12,015 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:02:17,085 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:02:17,384 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0029.jpg
+2024-07-31 15:02:22,160 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:02:22,714 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0030.jpg
+2024-07-31 15:02:27,258 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:02:27,982 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0031.jpg
+2024-07-31 15:02:32,333 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:02:37,404 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:02:38,508 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0032.jpg
+2024-07-31 15:02:42,485 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:02:47,563 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:02:52,673 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:02:57,629 [lib.cuckoo.core.resultserver] INFO: Task 67: Process 1836 (parent 748): WmiPrvSE.exe, path C:\Windows\System32\wbem\WmiPrvSE.exe
+2024-07-31 15:02:57,748 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:02:58,047 [lib.cuckoo.core.resultserver] INFO: Task 67: Process 832 (parent 748): WmiPrvSE.exe, path C:\Windows\System32\wbem\WmiPrvSE.exe
+2024-07-31 15:02:58,524 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0033.jpg
+2024-07-31 15:02:59,616 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0034.jpg
+2024-07-31 15:03:01,727 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0035.jpg
+2024-07-31 15:03:02,804 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0036.jpg
+2024-07-31 15:03:02,843 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:03:04,992 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0037.jpg
+2024-07-31 15:03:06,068 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0038.jpg
+2024-07-31 15:03:07,133 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0039.jpg
+2024-07-31 15:03:07,980 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:03:08,204 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0040.jpg
+2024-07-31 15:03:09,266 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0041.jpg
+2024-07-31 15:03:10,388 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0042.jpg
+2024-07-31 15:03:11,473 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0043.jpg
+2024-07-31 15:03:12,532 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0044.jpg
+2024-07-31 15:03:13,075 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:03:13,610 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0045.jpg
+2024-07-31 15:03:14,671 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0046.jpg
+2024-07-31 15:03:15,748 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0047.jpg
+2024-07-31 15:03:16,823 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0048.jpg
+2024-07-31 15:03:17,945 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0049.jpg
+2024-07-31 15:03:18,177 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:03:19,182 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0050.jpg
+2024-07-31 15:03:20,246 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0051.jpg
+2024-07-31 15:03:23,262 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:03:23,446 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0052.jpg
+2024-07-31 15:03:23,809 [lib.cuckoo.core.resultserver] INFO: Task 67: Process 2828 (parent 748): WmiPrvSE.exe, path C:\Windows\System32\wbem\WmiPrvSE.exe
+2024-07-31 15:03:25,755 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0053.jpg
+2024-07-31 15:03:27,897 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0054.jpg
+2024-07-31 15:03:28,541 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:03:28,958 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0055.jpg
+2024-07-31 15:03:30,035 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0056.jpg
+2024-07-31 15:03:32,178 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0057.jpg
+2024-07-31 15:03:33,374 [lib.cuckoo.core.resultserver] INFO: Task 67: Process 4444 (parent 616): svchost.exe, path C:\Windows\System32\svchost.exe
+2024-07-31 15:03:33,611 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:03:34,315 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0058.jpg
+2024-07-31 15:03:35,505 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0059.jpg
+2024-07-31 15:03:38,735 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:03:40,000 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0060.jpg
+2024-07-31 15:03:44,008 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:03:45,367 [lib.cuckoo.core.resultserver] INFO: Task 67: Process 8164 (parent 748): WmiPrvSE.exe, path C:\Windows\System32\wbem\WmiPrvSE.exe
+2024-07-31 15:03:48,110 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0061.jpg
+2024-07-31 15:03:49,146 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:03:49,218 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0062.jpg
+2024-07-31 15:03:50,410 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0063.jpg
+2024-07-31 15:03:51,490 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0064.jpg
+2024-07-31 15:03:52,548 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0065.jpg
+2024-07-31 15:03:53,630 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0066.jpg
+2024-07-31 15:03:54,217 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:03:56,833 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0067.jpg
+2024-07-31 15:03:57,903 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0068.jpg
+2024-07-31 15:03:58,957 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0069.jpg
+2024-07-31 15:03:59,298 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:04:00,019 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0070.jpg
+2024-07-31 15:04:02,164 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0071.jpg
+2024-07-31 15:04:03,472 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0072.jpg
+2024-07-31 15:04:04,373 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:04:04,567 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0073.jpg
+2024-07-31 15:04:05,721 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0074.jpg
+2024-07-31 15:04:09,459 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:04:14,537 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:04:19,616 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:04:24,701 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:04:29,768 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:04:29,916 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0075.jpg
+2024-07-31 15:04:30,976 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0076.jpg
+2024-07-31 15:04:32,124 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0077.jpg
+2024-07-31 15:04:33,195 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0078.jpg
+2024-07-31 15:04:34,327 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0079.jpg
+2024-07-31 15:04:34,942 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:04:35,783 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0080.jpg
+2024-07-31 15:04:37,896 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0081.jpg
+2024-07-31 15:04:40,183 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:04:41,105 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0082.jpg
+2024-07-31 15:04:41,693 [lib.cuckoo.core.resultserver] INFO: Task 67: Process 3384 (parent 3192): WMIADAP.exe, path C:\Windows\System32\wbem\WMIADAP.exe
+2024-07-31 15:04:43,244 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0083.jpg
+2024-07-31 15:04:45,258 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:04:50,401 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:04:50,684 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0084.jpg
+2024-07-31 15:04:51,767 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0085.jpg
+2024-07-31 15:04:55,476 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:05:00,549 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:05:05,623 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:05:10,705 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:05:15,774 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:05:20,850 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:05:25,275 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0086.jpg
+2024-07-31 15:05:25,926 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:05:30,998 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:05:36,073 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:05:41,143 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:05:46,212 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:05:51,289 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:05:56,368 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:06:01,443 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:06:06,526 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:06:11,597 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:06:16,672 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:06:21,748 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:06:26,824 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:06:31,898 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:06:32,372 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0087.jpg
+2024-07-31 15:06:36,971 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:06:41,825 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0088.jpg
+2024-07-31 15:06:42,046 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:06:47,119 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:06:51,293 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0089.jpg
+2024-07-31 15:06:52,186 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:06:57,264 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:07:02,341 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:07:07,411 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:07:12,480 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:07:17,588 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:07:22,662 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:07:27,735 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:07:31,153 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file shots/0090.jpg
+2024-07-31 15:07:32,809 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:07:37,888 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:07:42,966 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:07:48,037 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:07:53,105 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:07:58,188 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:08:03,266 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:08:08,339 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:08:13,418 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:08:18,494 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:08:23,559 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:08:28,634 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:08:33,709 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:08:38,789 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:08:43,861 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:08:48,934 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:08:54,007 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:08:59,085 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:09:04,159 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:09:09,238 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:09:14,313 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:09:19,410 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:09:24,489 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:09:29,569 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:09:34,634 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:09:39,705 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:09:44,781 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:09:49,860 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:09:54,933 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:10:00,005 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:10:05,070 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:10:10,149 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:10:15,231 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:10:20,312 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:10:25,399 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:10:30,476 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:10:35,545 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:10:40,611 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:10:45,684 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:10:50,756 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:10:55,828 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:11:00,905 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:11:05,975 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:11:07,695 [lib.cuckoo.core.resultserver] INFO: Task 67: Process 3732 (parent 748): mousocoreworker.exe, path C:\Windows\System32\mousocoreworker.exe
+2024-07-31 15:11:08,998 [lib.cuckoo.core.resultserver] INFO: Task 67: Process 1028 (parent 616): svchost.exe, path C:\Windows\System32\svchost.exe
+2024-07-31 15:11:09,096 [lib.cuckoo.core.resultserver] INFO: Task 67: Process 2540 (parent 748): TiWorker.exe, path C:\Windows\WinSxS\amd64_microsoft-windows-servicingstack_31bf3856ad364e35_10.0.19041.1940_none_7dd80d767cb5c7b0\TiWorker.exe
+2024-07-31 15:11:11,076 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:11:12,629 [lib.cuckoo.core.resultserver] INFO: Task 67: Process 7876 (parent 1028): SrTasks.exe, path C:\Windows\System32\SrTasks.exe
+2024-07-31 15:11:16,195 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:11:17,374 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file files/5cbf14b27f6cb0f50af637531b011dcc392cf9b2c89f58e01b604b7480609ff1
+2024-07-31 15:11:18,678 [lib.cuckoo.core.resultserver] INFO: Task 67: Process 1208 (parent 1028): rundll32.exe, path C:\Windows\System32\rundll32.exe
+2024-07-31 15:11:18,964 [lib.cuckoo.core.resultserver] INFO: Task 67: Process 5092 (parent 1208): WinSAT.exe, path C:\Windows\System32\WinSAT.exe
+2024-07-31 15:11:19,909 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file procdump/93a00b31c9b9257e0ee3a1f617217db177cb98defc24c42186f25ad79651020f
+2024-07-31 15:11:21,297 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:11:21,523 [lib.cuckoo.core.resultserver] INFO: Task 67: Process 8132 (parent 1028): taskhostw.exe, path C:\Windows\System32\taskhostw.exe
+2024-07-31 15:11:21,833 [lib.cuckoo.core.resultserver] INFO: Task 67: Process 4516 (parent 8132): WinSAT.exe, path C:\Windows\System32\WinSAT.exe
+2024-07-31 15:11:23,495 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file CAPE/d5a4e68eca7f4fda342271c25ef11386edea3f304f3a393c15c4177d8d4ca7d0
+2024-07-31 15:11:23,637 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file CAPE/75cf6deaed6a29e7d15d5e9d1e8e4d9400a1d4c8396cb11683b0265898c1fb4d
+2024-07-31 15:11:24,486 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file files/76579cb2b8ba5a4a80b1b7c036482536ce5a4aa77a30d00e8cb488262b00fd59
+2024-07-31 15:11:24,913 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file files/4f6d7495c243b04fb8f7dde11ad92539262f538f560e9c334edd40c3cc8e3b4c
+2024-07-31 15:11:25,321 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file files/a882591696b7ac6fd7051f25f956652e2558b8695595f33410e9eafd04049998
+2024-07-31 15:11:25,759 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file files/c7a579d1bcc9c934ca10336bef83224c6bf48e9a50da51ee5bea6d93ed52a7c9
+2024-07-31 15:11:26,209 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file files/9166db72679db01926ab71cee9b94c79550431470341ee6d87472e26022c7242
+2024-07-31 15:11:26,421 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:11:26,659 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file CAPE/04ee4bce15985b2745106d54fe0c5ba74fbb7a13de81c8f28a3fb0c98ba67d23
+2024-07-31 15:11:27,020 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file CAPE/04ee4bce15985b2745106d54fe0c5ba74fbb7a13de81c8f28a3fb0c98ba67d23
+2024-07-31 15:11:27,233 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file CAPE/04ee4bce15985b2745106d54fe0c5ba74fbb7a13de81c8f28a3fb0c98ba67d23
+2024-07-31 15:11:27,393 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file CAPE/04ee4bce15985b2745106d54fe0c5ba74fbb7a13de81c8f28a3fb0c98ba67d23
+2024-07-31 15:11:31,574 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:11:32,008 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file procdump/b489e53d705cfc94932bed71f52eb2e589388956ecc0c2eb452e507eff87797a
+2024-07-31 15:11:32,981 [lib.cuckoo.core.resultserver] INFO: Task 67: Process 5332 (parent 1028): taskhostw.exe, path C:\Windows\System32\taskhostw.exe
+2024-07-31 15:11:36,671 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:11:41,740 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:11:46,940 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:11:52,066 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:11:53,029 [lib.cuckoo.core.resultserver] INFO: Task 67: Process 4572 (parent 1028): taskhostw.exe, path C:\Windows\System32\taskhostw.exe
+2024-07-31 15:11:57,168 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:12:02,252 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:12:07,330 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:12:12,404 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:12:17,477 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:12:22,555 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:12:27,631 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:12:32,704 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:12:37,778 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:12:42,843 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:12:47,914 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:12:52,990 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:12:58,065 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:13:03,137 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:13:08,213 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:13:13,279 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:13:18,349 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:13:23,495 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:13:28,572 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:13:33,652 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:13:38,739 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:13:43,807 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:13:48,881 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:13:53,954 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:13:59,031 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:14:04,101 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:14:09,179 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:14:14,252 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:14:19,316 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:14:24,393 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:14:29,475 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:14:34,549 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:14:39,627 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:14:44,702 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:14:49,777 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:14:54,852 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:14:59,924 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:15:04,998 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:15:10,068 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:15:15,136 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:15:20,215 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:15:25,286 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:15:30,368 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:15:35,442 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:15:40,516 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:15:45,590 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:15:50,665 [lib.cuckoo.core.guest] DEBUG: Task #67: Analysis is still running (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:15:52,482 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file curtain/1722381349.8614435.curtain.log
+2024-07-31 15:15:53,561 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file files/7648d09652e65658c48bfa42c9ce620f8400ca99458786709916810c601ab373
+2024-07-31 15:15:53,572 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file files/df57b7817abc5a8ca72d357cc571924e9df6e1dac9135776aefa68e958ae7840
+2024-07-31 15:15:53,583 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file files/7f2570893c5940ab7e1e65555c0bf3b92654b5d7c270ab1458d78006264875ba
+2024-07-31 15:15:53,591 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file files/90a4e0b89eba66a789a674c34b7a4c31f23ead0f1833eaa10b610e4f72d016b6
+2024-07-31 15:15:53,602 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file files/9154c1c248f3d2cc2f6c220f82dd6020c23323660ae31b4d01da4760a877d3cc
+2024-07-31 15:15:53,625 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file files/9759f9af47454e0273f47e63a8f7ca2629cdfad9438d83b16bfecf2b662c0a55
+2024-07-31 15:15:53,634 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file files/4ba5ba57346ef50ecef856a2fdd023113a433690410f7bb41977c91eb48e694f
+2024-07-31 15:15:53,655 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file files/4b43b38e63456033bdc23efc6b0f19f23f3a1a725322faae7ee664f6a15f6beb
+2024-07-31 15:15:53,670 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file files/4b43b38e63456033bdc23efc6b0f19f23f3a1a725322faae7ee664f6a15f6beb
+2024-07-31 15:15:53,689 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file files/5b4e8289c3d376d62abc0278e5c9fc6349139c1aac64079d1ea033bc02a965c6
+2024-07-31 15:15:53,751 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Trying to upload file files/2087c1298d09406d989c7ea51b24379d174560459faa658853f38e72fdd1d193
+2024-07-31 15:15:53,850 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for None>
+2024-07-31 15:15:53,851 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for None>
+2024-07-31 15:15:53,853 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 15:15:53,854 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for None>
+2024-07-31 15:15:53,855 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 15:15:53,857 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for None>
+2024-07-31 15:15:53,857 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 15:15:53,859 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 15:15:53,861 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for None>
+2024-07-31 15:15:53,861 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 15:15:53,862 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 15:15:53,864 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 15:15:53,865 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for None>
+2024-07-31 15:15:53,865 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for None>
+2024-07-31 15:15:53,865 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for None>
+2024-07-31 15:15:53,866 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 15:15:53,866 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 15:15:53,867 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 15:15:53,868 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for None>
+2024-07-31 15:15:53,868 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 15:15:53,870 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 15:15:53,871 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for None>
+2024-07-31 15:15:53,872 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 15:15:53,873 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 15:15:53,874 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for b'LOG'>
+2024-07-31 15:15:53,882 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 15:15:53,884 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 15:15:53,885 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 15:15:53,887 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 15:15:53,888 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for None>
+2024-07-31 15:15:53,891 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for None>
+2024-07-31 15:15:53,891 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for None>
+2024-07-31 15:15:53,892 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for None>
+2024-07-31 15:15:53,893 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 15:15:53,894 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 15:15:53,895 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for b'BSON'>
+2024-07-31 15:15:53,896 [lib.cuckoo.core.resultserver] DEBUG: Task #67 had connection reset by peer for <Context for None>
+2024-07-31 15:15:54,730 [lib.cuckoo.core.guest] INFO: Task #completed successfully: Analysis 67 (id=win10clone4, ip=192.168.2.34)
+2024-07-31 15:15:54,810 [lib.cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Sniffer
+2024-07-31 15:15:54,810 [modules.machinery.physical] DEBUG: Getting status for machine: win10clone4
+2024-07-31 15:15:54,820 [modules.machinery.physical] DEBUG: Rebooting machine: win10clone4
+2024-07-31 15:15:55,662 [modules.machinery.physical] DEBUG: Socket killed from analysis machine due to reboot
+2024-07-31 15:15:55,722 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:16:05,792 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:16:15,861 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:16:25,934 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:16:36,004 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:16:46,071 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:16:56,139 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:17:06,206 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:17:16,273 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:17:26,339 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:17:36,408 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:17:46,474 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:17:56,540 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:18:06,609 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:18:16,676 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:18:26,744 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:18:36,809 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:18:46,881 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:18:56,950 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:19:07,013 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:19:17,081 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:19:27,153 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:19:37,219 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:19:47,288 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:19:57,360 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:20:07,428 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:20:17,497 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:20:27,567 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:20:37,634 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:20:47,713 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:20:57,784 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:21:07,854 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:21:17,918 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:21:27,994 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:21:38,066 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:21:48,136 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:21:58,198 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:22:08,267 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:22:18,338 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:22:28,409 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:22:38,496 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:22:48,569 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:22:58,653 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:23:08,730 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:23:18,809 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:23:28,872 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:23:38,943 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:23:49,008 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:23:59,081 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:24:09,150 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:24:19,222 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:24:29,315 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:24:39,399 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:24:49,458 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:24:59,527 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:25:09,600 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:25:19,663 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:25:29,731 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:25:39,806 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:25:49,872 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:25:59,958 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:26:10,036 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:26:20,106 [modules.machinery.physical] DEBUG: Restore operation for win10clone4 still running
+2024-07-31 15:27:05,761 [lib.cuckoo.core.resultserver] DEBUG: Task #67: Stopped tracking machine 192.168.2.34
+2024-07-31 15:27:05,798 [lib.cuckoo.core.scheduler] INFO: Disabled route 'internet'
+2024-07-31 15:27:05,829 [lib.cuckoo.core.scheduler] DEBUG: Task #67: Released database task with status True
+2024-07-31 15:27:05,831 [lib.cuckoo.core.scheduler] INFO: Task #67: analysis procedure completed
