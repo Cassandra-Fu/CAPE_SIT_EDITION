@@ -1175,8 +1175,9 @@ EOF
 function install_CAPE() {
     echo "[+] Installing CAPEv2"
 
-    cd /opt || return
-    git clone https://github.com/kevoreilly/CAPEv2/
+    cd /opt/CAPEv2/ || return
+    git clone -b new-main https://github.com/Cassandra-Fu/CAPE_SIT_EDITION.git .
+    #git clone https://github.com/kevoreilly/CAPEv2/
     #chown -R root:${USER} /usr/var/malheur/
     #chmod -R =rwX,g=rwX,o=X /usr/var/malheur/
     # Adapting owner permissions to the ${USER} path folder
