@@ -3,21 +3,26 @@ import os
 import subprocess
 from urllib.parse import urlparse
 
-try:
-    from azure.core.exceptions import AzureError
-    from azure.identity import ClientSecretCredential
-    from azure.mgmt.network import NetworkManagementClient
-    from azure.mgmt.network.models import PacketCapture, PacketCaptureStorageLocation
-    from azure.mgmt.storage import StorageManagementClient
-    from azure.storage.blob import BlobServiceClient
+from lib.cuckoo.common.config import Config
 
-    HAVE_AZURE = True
-except ImportError:
-    HAVE_AZURE = False
-    print("Missing machinery-required libraries.")
-    print(
-        "poetry run python -m pip install azure-identity msrest msrestazure azure-mgmt-compute azure-mgmt-network azure-mgmt-storage azure-storage-blob"
-    )
+HAVE_AZURE = False
+cfg = Config()
+if cfg.cuckoo.machinery == "az":
+    try:
+        from azure.core.exceptions import AzureError
+        from azure.identity import ClientSecretCredential
+        from azure.mgmt.network import NetworkManagementClient
+        from azure.mgmt.network.models import PacketCapture, PacketCaptureStorageLocation
+        from azure.mgmt.storage import StorageManagementClient
+        from azure.storage.blob import BlobServiceClient
+
+        HAVE_AZURE = True
+    except ImportError:
+        HAVE_AZURE = False
+        print("Missing machinery-required libraries.")
+        print(
+            "poetry run python -m pip install azure-identity msrest msrestazure azure-mgmt-compute azure-mgmt-network azure-mgmt-storage azure-storage-blob"
+        )
 
 from lib.cuckoo.common.abstracts import Auxiliary
 from lib.cuckoo.common.config import Config
@@ -28,8 +33,10 @@ log = logging.getLogger(__name__)
 class AzSniffer(Auxiliary):
     def __init__(self):
         super().__init__()
+        self.azsniffer_cfg = Config("auxiliary").get("AzSniffer")
+        self.enabled = self.azsniffer_cfg.enabled
 
-        if not HAVE_AZURE:
+        if not HAVE_AZURE or not self.enabled:
             return
 
         self.cfg = Config("az")
@@ -58,6 +65,8 @@ class AzSniffer(Auxiliary):
         return ClientSecretCredential(tenant_id=self.tenant_id, client_id=self.client_id, client_secret=self.client_secret)
 
     def start(self):
+        if not self.enabled:
+            return
         self.capture_name = f"PacketCapture_{self.task.id}"
         custom_filters = []
         self.create_packet_capture(custom_filters)
@@ -96,6 +105,9 @@ class AzSniffer(Auxiliary):
             raise
 
     def stop(self):
+        if not self.enabled:
+            return
+
         if not self.capture_name:
             log.error("No packet capture to stop")
             return

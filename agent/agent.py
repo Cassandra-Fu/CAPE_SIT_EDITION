@@ -12,16 +12,20 @@ import json
 import multiprocessing
 import os
 import platform
+import random
 import shlex
 import shutil
 import socket
 import socketserver
 import stat
+import string
 import subprocess
 import sys
 import tempfile
+import time
 import traceback
 from io import StringIO
+from threading import Lock
 from typing import Iterable
 from zipfile import ZipFile
 
@@ -40,7 +44,7 @@ if sys.version_info[:2] < (3, 6):
 if sys.maxsize > 2**32 and sys.platform == "win32":
     sys.exit("You should install python3 x86! not x64")
 
-AGENT_VERSION = "0.17"
+AGENT_VERSION = "0.18"
 AGENT_FEATURES = [
     "execpy",
     "execute",
@@ -53,6 +57,7 @@ BASE_64_ENCODING = "base64"
 
 if sys.platform == "win32":
     AGENT_FEATURES.append("mutex")
+    AGENT_FEATURES.append("browser_extension")
     MUTEX_TIMEOUT_MS = 500
     from ctypes import WinError, windll
 
@@ -88,6 +93,8 @@ class Status(enum.IntEnum):
         return None
 
 
+AGENT_BROWSER_EXT_PATH = ""
+AGENT_BROWSER_LOCK = Lock()
 ANALYZER_FOLDER = ""
 agent_mutexes = {}
 """Holds handles of mutexes held by the agent."""
@@ -174,8 +181,8 @@ class MiniHTTPServer:
         port: int = 8000,
         event: multiprocessing.Event = None,
     ):
-        socketserver.TCPServer.allow_reuse_address = True
-        self.s = socketserver.TCPServer((host, port), self.handler)
+        socketserver.ThreadingTCPServer.allow_reuse_address = True
+        self.s = socketserver.ThreadingTCPServer((host, port), self.handler)
 
         # tell anyone waiting that they're good to go
         if event:
@@ -195,7 +202,7 @@ class MiniHTTPServer:
         if "client_ip" in state and request.client_ip != state["client_ip"]:
             if request.client_ip != "127.0.0.1":
                 return
-            if obj.path != "/status" or request.method != "POST":
+            if obj.path not in ["/status", "/browser_extension"] or request.method != "POST":
                 return
 
         for route, fn in self.routes[obj.command]:
@@ -219,6 +226,7 @@ class MiniHTTPServer:
             self.close_connection = True
 
     def shutdown(self):
+
         # BaseServer also features a .shutdown() method, but you can't use
         # that from the same thread as that will deadlock the whole thing.
         if hasattr(self, "s"):
@@ -258,26 +266,47 @@ class jsonify:
 class send_file:
     """Wrapper that represents Flask.send_file functionality."""
 
-    def __init__(self, path, encoding):
+    def __init__(self, path, encoding, streaming):
         self.length = None
         self.path = path
         self.status_code = 200
         self.encoding = encoding
+        self.streaming = False
+        if streaming == "1":
+            self.streaming = True
 
     def okay_to_send(self):
         return os.path.isfile(self.path) and os.access(self.path, os.R_OK)
 
     def init(self):
         if self.okay_to_send():
-            if self.encoding != BASE_64_ENCODING:
+            if self.encoding != BASE_64_ENCODING and not self.streaming:
                 self.length = os.path.getsize(self.path)
         else:
             self.status_code = 404
+
+    def write_streaming(self, httplog, sock):
+        """Streaming output. similar to using 'tail -f <file>"""
+
+        with open(self.path, "rb") as f:
+            while True:
+                line = f.readline()
+                if not line:
+                    time.sleep(0.1)
+                    continue
+                try:
+                    sock.write(line)
+                except (BrokenPipeError, ConnectionResetError):
+                    httplog.log_message(f"Client disconnected while reading {self.path}")
+                    break
 
     def write(self, httplog, sock):
         if not self.okay_to_send():
             return
 
+        if self.streaming:
+            self.write_streaming(httplog, sock)
+            return
         try:
             with open(self.path, "rb") as f:
                 buf = f.read(1024 * 1024)
@@ -290,7 +319,8 @@ class send_file:
             httplog.log_error(f"Error reading file {self.path}: {ex}")
 
     def headers(self, obj):
-        obj.send_header("Content-Length", self.length)
+        if self.length is not None:
+            obj.send_header("Content-Length", self.length)
 
 
 class request:
@@ -565,7 +595,7 @@ def do_retrieve():
     if "filepath" not in request.form:
         return json_error(400, "No filepath has been provided")
 
-    return send_file(request.form["filepath"], request.form.get("encoding", ""))
+    return send_file(request.form["filepath"], request.form.get("encoding", ""), request.form.get("streaming", ""))
 
 
 @app.route("/extract", methods=["POST"])
@@ -727,6 +757,26 @@ def do_execpy():
         state["status"] = Status.FAILED
         state["description"] = "Error executing Python command"
         return json_exception(f"Error executing Python command: {ex}")
+
+
+@app.route("/browser_extension", methods=["POST"])
+def do_browser_ext():
+    global AGENT_BROWSER_EXT_PATH
+    AGENT_BROWSER_LOCK.acquire()
+    if not AGENT_BROWSER_EXT_PATH:
+        try:
+            ext_tmpdir = tempfile.mkdtemp(prefix="tmp")
+        except Exception:
+            AGENT_BROWSER_LOCK.release()
+            return json_exception("Error creating temporary directory")
+        ext_filepath = "bext_" + "".join(random.choice(string.ascii_letters) for _ in range(11)) + ".json"
+        AGENT_BROWSER_EXT_PATH = os.path.join(ext_tmpdir, ext_filepath)
+    network_data = request.form.get("networkData")
+    if network_data:
+        with open(AGENT_BROWSER_EXT_PATH, "w") as ext_fd:
+            ext_fd.write(network_data)
+    AGENT_BROWSER_LOCK.release()
+    return json_success("OK")
 
 
 @app.route("/pinning")

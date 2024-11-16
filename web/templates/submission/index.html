@@ -56,6 +56,12 @@ $(document).ready( function() {
             document.getElementById('non-pcap-2').style.display = "block";
         }
     });
+    $('#form_package').change(function () {
+        let title = $('option:selected', this).attr('title');
+        $("#package_description").text(title);
+    });
+    // tooltips
+    $('[data-toggle="tooltip"]').tooltip(); 
 });
 </script>
 <div class="row">
@@ -177,8 +183,8 @@ $(document).ready( function() {
                                 {% endif %}
                                 {% if resubmit %}
                                     <div class="form-group">
-                                        <label for="form_package">Task Category</label>
-                                        <select class="form-control" id="form_package" name="job_category">
+                                        <label for="form_job_category">Task Category</label>
+                                        <select class="form-control" id="form_job_category" name="job_category">
                                             <option value="hash" checked>Resubmit</option>
                                             <option value="sample">Files</option>
                                             <option value="static">Static analysis</option>
@@ -190,13 +196,14 @@ $(document).ready( function() {
                                     </div>
                                 {% endif %}
                                 <div class="form-group">
-                                    <label for="form_package">Analysis Package</label>
+                                    <label for="form_package">Analysis Package (hover for more info)</label>
                                     <select class="form-control" id="form_package" name="package">
-                                        <option value="" active>Detect Automatically</option>
+                                        <option value="" title="">Detect Automatically</option>
                                         {% for package in packages %}
-                                        <option value="{{package}}">{{package}}</option>
+                                        <option value="{{package.value}}" title="{{ package.description }}">{{package.name}} - {{ package.summary }}</option>
                                         {% endfor %}
                                     </select>
+                                    <small id="package_description"></small>
                                 </div>
                                 {% if not config.dist_master_storage_only %}
                                     <div class="form-group">
@@ -529,6 +536,19 @@ $(document).ready( function() {
                                                     <td><code>unpacker</code></td>
                                                     <td>Ex: unpacker=2 - Add description here</td>
                                                 </tr>
+                                                <tr>
+                                                    <td><code>check_shellcode</code></td>
+                                                    <td>Setting check_shellcode=0 will disable checking for shellcode during package identification and extracting from archive</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>unhook-apis</code></td>
+                                                    <td>Capability to dynamically unhook previously hooked functions (unhook-apis option takes colon-separated list e.g. unhook-apis=NtSetInformationThread:NtDelayExecution)</td>
+                                                </tr>
+						<tr>
+                                                    <td><code>ttd</code></td>
+                                                    <td>ttd=1. TTD integration (Microsoft Time Travel Debugging). Requires binaries to be placed in correct folder</td>
+                                                </tr>
+                                                
                                             </tbody>
                                         </table>
                                     </div>
@@ -588,93 +608,100 @@ $(document).ready( function() {
                                 <label for="form_custom">Custom</label>
                                 <input type="text" class="form-control" id="form_custom" name="custom" />
                             </div>
-                            <div class="form-check">
-                                <label>
-                                    <input type="checkbox" name="process_dump" /> Disable process dumps
-                                </label>
-                            </div>
-                            {% if config.procmemory %}
-                            <div class="form-check">
-                                <label>
-                                    <input type="checkbox" name="process_memory"/> Full process memory dumps
-                                </label>
-                            </div>
-                            {% endif %}
-                            {% if config.amsidump %}
-                            <div class="form-check">
-                                <label>
-                                    <input type="checkbox" name="amsidump" checked/> AMSI dumps <span class="text-muted"><small>(Windows 10+ Anti-Malware Scan Interface)</small></span>
-                                </label>
-                            </div>
-                            {% endif %}
-                            <div class="form-check">
-                                <label>
-                                    <input type="checkbox" name="import_reconstruction" /> Enable import reconstruction in process dumps
-                                </label>
-                            </div>
-                            {% if config.memory %}
-                            <div class="form-check">
-                                <label>
-                                    <input type="checkbox" name="memory" /> Full Memory Dump <span class="text-muted"><small>(if the "memory" processing module is enabled, will launch a Volatility analysis)</small></span>
-                                </label>
-                            </div>
-                            {% endif %}
-                            <div class="form-check">
-                                <label>
-                                    <input type="checkbox" name="enforce_timeout" /> Enforce Timeout
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <label>
-                                    <input type="checkbox" name="free" /> Run without monitoring <span class="text-muted"><small>(disables many capabilities)</small></span>
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <label>
-                                    <input type="checkbox" name="unpacker" /> 'Active' unpacking <span class="text-muted"><small>(uses debugger breakpoints) </small></span>
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <label>
-                                    <input type="checkbox" name="syscall" checked/> Syscall hooks <span class="text-muted"><small>(Windows 10+) </small></span>
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <label>
-                                    <input type="checkbox" name="norefer" /> No Fake Referrer for URL Tasks
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <label>
-                                    <input type="checkbox" name="nohuman" /> Disable automated interaction
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <label>
-                                    <input type="checkbox" name="interactive" /> Interactive desktop
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <label>
-                                    <input type="checkbox" name="manual_detonation" /> Manual detonation. Must be used with Interactive desktop
-                                </label>
-                            </div>
-                            {% if config.kernel %}
-                            <div class="form-check">
-                                <label>
-                                    <input type="checkbox" name="kernel_analysis" /> Enable zer0m0n kernel-based behavioral analysis
-                                </label>
-                            </div>
-                            {% endif %}
-                            <div class="form-check">
-                                <label>
-                                    <input type="checkbox" name="static"/> Try to extract config without VM <span class="text-muted"><small>(Submit to VM if not extracted)</small></span>
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <label>
-                                    <input type="checkbox" name="oldloader" /> Thread-based monitor injection <span class="text-muted"><small>(Cuckoo-style)</small></span>
-                                </label>
+
+                            <!-- Button to toggle the collapse -->
+                            <button class="btn btn-secondary btn-sm mb-3" type="button" data-toggle="collapse" data-target="#advancedOptions" aria-expanded="false" aria-controls="advancedOptions">
+                            Advanced Options
+                            </button>
+                            <div class="collapse" id="advancedOptions">
+                                <div class="form-check">
+                                    <label>
+                                        <input type="checkbox" name="process_dump" /> Disable process dumps
+                                    </label>
+                                </div>
+                                {% if config.procmemory %}
+                                <div class="form-check">
+                                    <label>
+                                        <input type="checkbox" name="process_memory"/> Full process memory dumps
+                                    </label>
+                                </div>
+                                {% endif %}
+                                {% if config.amsidump %}
+                                <div class="form-check">
+                                    <label>
+                                        <input type="checkbox" name="amsidump" checked/> AMSI dumps <span class="text-muted"><small>(Windows 10+ Anti-Malware Scan Interface)</small></span>
+                                    </label>
+                                </div>
+                                {% endif %}
+                                <div class="form-check">
+                                    <label>
+                                        <input type="checkbox" name="import_reconstruction" data-toggle="tooltip" title="Where an unpacked sample like from upx is missing imports for static analysis" /> Enable import reconstruction in process dumps
+                                    </label>
+                                </div>
+                                {% if config.memory %}
+                                <div class="form-check">
+                                    <label>
+                                        <input type="checkbox" name="memory" /> Full Memory Dump <span class="text-muted"><small>(if the "memory" processing module is enabled, will launch a Volatility analysis)</small></span>
+                                    </label>
+                                </div>
+                                {% endif %}
+                                <div class="form-check">
+                                    <label>
+                                        <input type="checkbox" name="enforce_timeout" /> Enforce Timeout
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label>
+                                        <input type="checkbox" name="free" /> Run without monitoring <span class="text-muted"><small>(disables many capabilities)</small></span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label>
+                                        <input type="checkbox" name="unpacker" data-toggle="tooltip" title="Where default unpacking isn't producing good/early enough capture (very rare)" /> 'Active' unpacking <span class="text-muted"><small>(uses debugger breakpoints) </small></span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label>
+                                        <input type="checkbox" name="syscall" checked/> Syscall hooks <span class="text-muted"><small>(Windows 10+) </small></span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label>
+                                        <input type="checkbox" name="norefer" /> No Fake Referrer for URL Tasks
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label>
+                                        <input type="checkbox" name="nohuman" /> Disable automated interaction
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label>
+                                        <input type="checkbox" name="interactive" /> Interactive desktop
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label>
+                                        <input type="checkbox" name="manual" /> Manual detonation. Must be used with Interactive desktop
+                                    </label>
+                                </div>
+                                {% if config.kernel %}
+                                <div class="form-check">
+                                    <label>
+                                        <input type="checkbox" name="kernel_analysis" /> Enable zer0m0n kernel-based behavioral analysis
+                                    </label>
+                                </div>
+                                {% endif %}
+                                <div class="form-check">
+                                    <label>
+                                        <input type="checkbox" name="static"/> Try to extract config without VM <span class="text-muted"><small>(Submit to VM if not extracted)</small></span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label>
+                                        <input type="checkbox" name="oldloader" data-toggle="tooltip" title="May be useful in some rare cases where detonation fails" /> Thread-based monitor injection <span class="text-muted"><small>(Cuckoo-style)</small></span>
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -152,17 +152,6 @@ def create_structure():
         )
 
 
-class DatabaseHandler(logging.Handler):
-    """Logging to database handler.
-    Used to log errors related to tasks in database.
-    """
-
-    def emit(self, record):
-        if hasattr(record, "task_id"):
-            db = Database()
-            db.add_error(record.msg, int(record.task_id))
-
-
 class ConsoleHandler(logging.StreamHandler):
     """Logging to console handler."""
 
@@ -174,6 +163,10 @@ class ConsoleHandler(logging.StreamHandler):
         elif record.levelname in ("ERROR", "CRITICAL"):
             colored.msg = red(record.msg)
         else:
+            # Hack for pymongo.logger.LogMessage
+            if not isinstance(record.msg, str):
+                record.msg = str(record.msg)
+
             if "analysis procedure completed" in record.msg:
                 colored.msg = cyan(record.msg)
             else:
@@ -183,7 +176,7 @@ class ConsoleHandler(logging.StreamHandler):
 
 
 def check_linux_dist():
-    ubuntu_versions = ("20.04", "22.04")
+    ubuntu_versions = ("20.04", "22.04", "24.04")
     with suppress(AttributeError):
         platform_details = platform.dist()
         if platform_details[0] != "Ubuntu" and platform_details[1] not in ubuntu_versions:
@@ -349,6 +342,7 @@ def init_rooter():
         raise CuckooStartupError(f"Unknown rooter error: {e}")
 
     rooter("cleanup_rooter")
+    rooter("cleanup_vrf", routing.routing.internet)
 
     # Do not forward any packets unless we have explicitly stated so.
     rooter("forward_drop")
@@ -431,12 +425,16 @@ def init_routing():
                     f"The routing table that has been configured ({routing.routing.rt_table}) for dirty line interface is not available"
                 )
 
-        # Disable & enable NAT on this network interface. Disable it just
-        # in case we still had the same rule from a previous run.
-        rooter("disable_nat", routing.routing.internet)
-        rooter("enable_nat", routing.routing.internet)
-
-        # Populate routing table with entries from main routing table.
+        if routing.routing.nat:
+            # Disable & enable NAT on this network interface. Disable it just
+            # in case we still had the same rule from a previous run.
+            rooter("disable_nat", routing.routing.internet)
+            rooter("enable_nat", routing.routing.internet)
+            # Populate routing table with entries from main routing table.
+        else:
+            rooter("disable_nat", routing.routing.internet)
+            if routing.routing.no_local_routing:
+                rooter("init_vrf", routing.routing.rt_table, routing.routing.internet)
         if routing.routing.auto_rt:
             rooter("flush_rttable", routing.routing.rt_table)
             rooter("init_rttable", routing.routing.rt_table, routing.routing.internet)

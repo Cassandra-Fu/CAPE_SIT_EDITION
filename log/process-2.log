@@ -1,0 +1,3 @@
+2024-11-16 10:39:56,775 [Task 2] [lib.cuckoo.common.integrations.virustotal] ERROR: VT: Request failed
+2024-11-16 10:39:57,579 [Task 2] [lib.cuckoo.common.integrations.capa] INFO: FLARE CAPA -> No process data available
+2024-11-16 10:39:57,580 [Task 2] [mitre] ERROR: ('Mitre', AttributeError("'NoneType' object has no attribute 'enterprise'"))
